@@ -1,0 +1,129 @@
+"","Entity","Code","Year","Solar....electricity."
+"1","ASEAN (Ember)","",2022,3.0468497
+"2","Africa","",2022,2.0366042
+"3","Africa (EI)","",2022,2.0366042
+"4","Africa (Ember)","",2022,1.9327394
+"5","Algeria","DZA",2022,0.74394286
+"6","Argentina","ARG",2022,2.025475
+"7","Asia","",2022,4.6000037
+"8","Asia (Ember)","",2022,4.8486795
+"9","Asia Pacific (EI)","",2022,5.1090026
+"10","Australia","AUS",2022,13.3065815
+"11","Austria","AUT",2022,4.2201266
+"12","Azerbaijan","AZE",2022,0.20976418
+"13","Bangladesh","BGD",2022,0.7626422
+"14","Belarus","BLR",2022,0.7190276
+"15","Belgium","BEL",2022,7.7711987
+"16","Bolivia","BOL",2022,4.347826
+"17","Bosnia and Herzegovina","BIH",2022,0.80049264
+"18","Brazil","BRA",2022,3.8890846
+"19","Bulgaria","BGR",2022,3.4005535
+"20","Burundi","BDI",2022,2.7777777
+"21","CIS (EI)","",2022,0.32574284
+"22","Canada","CAN",2022,0.87090003
+"23","Central America (EI)","",2022,4.694674
+"24","Chile","CHL",2022,17.44773
+"25","China","CHN",2022,4.7555585
+"26","Colombia","COL",2022,0.57974446
+"27","Costa Rica","CRI",2022,0.4750594
+"28","Croatia","HRV",2022,1.062323
+"29","Cyprus","CYP",2022,11.596957
+"30","Czechia","CZE",2022,2.9491246
+"31","Denmark","DNK",2022,5.7815228
+"32","Eastern Africa (EI)","",2022,1.6595567
+"33","Ecuador","ECU",2022,0.12077295
+"34","Egypt","EGY",2022,2.4268348
+"35","El Salvador","SLV",2022,14.435696
+"36","Estonia","EST",2022,6.3549156
+"37","Europe","",2022,4.877562
+"38","Europe (EI)","",2022,6.31747
+"39","Europe (Ember)","",2022,4.8586726
+"40","European Union (27)","",2022,7.3698545
+"41","Finland","FIN",2022,0.41101524
+"42","France","FRA",2022,4.255772
+"43","G20 (Ember)","",2022,4.8654633
+"44","G7 (Ember)","",2022,5.6783104
+"45","Georgia","GEO",2022,0
+"46","Germany","DEU",2022,10.129147
+"47","Greece","GRC",2022,12.623952
+"48","High-income countries","",2022,5.4853177
+"49","Hong Kong","HKG",2022,0.14416234
+"50","Hungary","HUN",2022,12.584458
+"51","Iceland","ISL",2022,0
+"52","India","IND",2022,5.178052
+"53","Indonesia","IDN",2022,0.1319182
+"54","Iran","IRN",2022,0.18068552
+"55","Iraq","IRQ",2022,0.36016667
+"56","Ireland","IRL",2022,0.26777744
+"57","Israel","ISR",2022,9.275628
+"58","Italy","ITA",2022,9.944058
+"59","Japan","JPN",2022,10.208748
+"60","Kazakhstan","KAZ",2022,1.2502217
+"61","Kenya","KEN",2022,2.4330902
+"62","Kosovo","OWID_KOS",2022,0.18501388
+"63","Kuwait","KWT",2022,0.25231963
+"64","Latin America and Caribbean (Ember)","",2022,3.7271113
+"65","Latvia","LVA",2022,0.19762845
+"66","Lithuania","LTU",2022,10.31175
+"67","Lower-middle-income countries","",2022,3.775684
+"68","Luxembourg","LUX",2022,19.469027
+"69","Malaysia","MYS",2022,1.1135118
+"70","Mexico","MEX",2022,3.8311875
+"71","Middle Africa (EI)","",2022,1.0061591
+"72","Middle East (EI)","",2022,1.735404
+"73","Moldova","MDA",2022,0.1858736
+"74","Mongolia","MNG",2022,1.9257221
+"75","Montenegro","MNE",2022,0
+"76","Morocco","MAR",2022,3.517711
+"77","Netherlands","NLD",2022,13.921747
+"78","New Zealand","NZL",2022,0.45351475
+"79","Nigeria","NGA",2022,0.15576325
+"80","Non-OECD (EI)","",2022,3.730479
+"81","North America","",2022,4.1391735
+"82","North America (EI)","",2022,4.171941
+"83","North America (Ember)","",2022,4.251513
+"84","North Macedonia","MKD",2022,0.42918456
+"85","Norway","NOR",2022,0.111343995
+"86","OECD (EI)","",2022,5.7962637
+"87","OECD (Ember)","",2022,5.799663
+"88","Oceania","",2022,12.292398
+"89","Oceania (Ember)","",2022,11.079379
+"90","Oman","OMN",2022,0.43138313
+"91","Pakistan","PAK",2022,0.93973845
+"92","Peru","PER",2022,1.4103202
+"93","Philippines","PHL",2022,1.605464
+"94","Poland","POL",2022,4.545454
+"95","Portugal","PRT",2022,6.537479
+"96","Qatar","QAT",2022,0.021786492
+"97","Romania","ROU",2022,3.1793962
+"98","Russia","RUS",2022,0.23678616
+"99","Saudi Arabia","SAU",2022,0.20701832
+"100","Serbia","SRB",2022,0.027639579
+"101","Singapore","SGP",2022,1.7156415
+"102","Slovakia","SVK",2022,2.5813694
+"103","Slovenia","SVN",2022,3.3157496
+"104","South Africa","ZAF",2022,2.9073033
+"105","South America","",2022,3.9695399
+"106","South Korea","KOR",2022,4.7962933
+"107","South and Central America (EI)","",2022,3.8839676
+"108","Spain","ESP",2022,11.505917
+"109","Sri Lanka","LKA",2022,5.988759
+"110","Sweden","SWE",2022,1.3630009
+"111","Switzerland","CHE",2022,4.3373494
+"112","Taiwan","TWN",2022,3.7498248
+"113","Thailand","THA",2022,2.6299245
+"114","Trinidad and Tobago","TTO",2022,0.054497816
+"115","Tunisia","TUN",2022,2.021696
+"116","Turkey","TUR",2022,4.857555
+"117","Turkmenistan","TKM",2022,0.022078415
+"118","Ukraine","UKR",2022,5.3332143
+"119","United Arab Emirates","ARE",2022,4.49514
+"120","United Kingdom","GBR",2022,4.281449
+"121","United States","USA",2022,4.75438
+"122","Upper-middle-income countries","",2022,4.0601015
+"123","Uruguay","URY",2022,3.2608695
+"124","Uzbekistan","UZB",2022,0.2592013
+"125","Venezuela","VEN",2022,0.0004400895
+"126","Vietnam","VNM",2022,9.983671
+"127","Western Africa (EI)","",2022,1.3724946
+"128","World","OWID_WRL",2022,4.5193524
