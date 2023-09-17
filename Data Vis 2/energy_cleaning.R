@@ -12,10 +12,15 @@ solar_share <- energy |> select(country, year, iso_code, solar_share_elec, solar
 
 
 solar_share <- read.csv("data/share-electricity-solar.csv") |> rename(`solar_perc` = `Solar....electricity.`)
+solar_share <- solar_share |> 
+  pivot_wider(names_from=Year, values_from=solar_perc) |> 
+  mutate_if(is.numeric, ~replace(., is.na(.), 0)) |> 
+  pivot_longer(cols=`2000`:`1999`, names_to="Year", values_to="solar_perc")
+
 write.csv(solar_share, "data/share-elec-solar.csv")
 
-solar_share <- read.csv("data/share-electricity-solar.csv") |> filter(Year == 2022) |> rename(`solar_perc` = `Solar....electricity.`)
-write.csv(solar_share, "data/share-elec-solar-2022.csv")
+solar_share_2022 <- read.csv("data/share-electricity-solar.csv") |> filter(Year == 2022) |> rename(`solar_perc` = `Solar....electricity.`)
+write.csv(solar_share_2022, "data/share-elec-solar-2022.csv")
 
-solar_share <- read.csv("data/share-electricity-solar.csv") |> filter(Year == 2021) |> rename(`solar_perc` = `Solar....electricity.`)
-write.csv(solar_share, "data/share-elec-solar-2021.csv")
+solar_share_2021 <- read.csv("data/share-electricity-solar.csv") |> filter(Year == 2021) |> rename(`solar_perc` = `Solar....electricity.`)
+write.csv(solar_share_2021, "data/share-elec-solar-2021.csv")
