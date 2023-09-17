@@ -19,7 +19,7 @@
     "layer":[
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+          "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/oceans.topojson",
           "format": {"type": "topojson", "feature": "oceans"}
         },
         "mark": {"type": "geoshape", "fill": "#a3deec"}
