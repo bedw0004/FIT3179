@@ -1,8 +1,28 @@
 #choropleth_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
+	top:50px;
+	bottom: 50px; 
+	left: 50px;
+	right: 50px;
 	/*height: 1000px;
 	width: 800px;*/
+}
+
+#choropleth_map_heading {
+	top:50px;
+	bottom: 50px; 
+	left: 50px;
+	right: 50px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+@font-face {
+	font-family: MyFont;
+	src: url(fonts/Roboto/Roboto-Light.ttf);
+}
+
+
+h1 {
+	font-family: MyFont;
+	color: black;
 }

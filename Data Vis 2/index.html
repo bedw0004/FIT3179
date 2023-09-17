@@ -9,15 +9,20 @@
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Montserrat:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
-  
+<h1 id="choropleth_map_heading">Share of electricity production from solar</h1>
 <div id="choropleth_map"></div>
 
 <script type="text/javascript">
 
-  var spec2 = "js/choropleth_share_solar.vg.json";
+  var spec2 = "js/choropleth_share_solar_missing.vg.json";
   vegaEmbed('#choropleth_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
