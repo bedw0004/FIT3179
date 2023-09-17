@@ -10,6 +10,10 @@ energy_clean <- energy |> select(country, year, iso_code, population, oil_produc
 
 solar_share <- energy |> select(country, year, iso_code, solar_share_elec, solar_share_energy)
 
+
+solar_share <- read.csv("data/share-electricity-solar.csv") |> rename(`solar_perc` = `Solar....electricity.`)
+write.csv(solar_share, "data/share-elec-solar.csv")
+
 solar_share <- read.csv("data/share-electricity-solar.csv") |> filter(Year == 2022) |> rename(`solar_perc` = `Solar....electricity.`)
 write.csv(solar_share, "data/share-elec-solar-2022.csv")
 
