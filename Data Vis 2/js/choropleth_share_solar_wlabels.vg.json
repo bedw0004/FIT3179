@@ -99,6 +99,47 @@
                 {"field": "solar_prop", "type": "quantitative", "title": "Percentage of solar electricity", "format": "0.1%"}
             ]
         }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/ne_110m.topojson",
+          "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+        },
+        "transform": [
+          {
+            "lookup": "properties.NAME",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/country_info.csv"
+              },
+              "key": "name",
+              "fields": ["latitude", "longitude"]
+            }
+          },
+          {
+            "lookup": "properties.ISO_A3_EH",
+            "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/share-elec-solar.csv"
+                },
+                "key": "Code",
+                "fields": ["Entity"]
+            }
+          }
+        ],
+        "mark": {"type": "text"},
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"},
+          "text": {"field": "Entity", "type": "nominal"},
+          "opacity": {
+            "condition": {
+              "test": "datum['Entity'] == 'China' || datum['Entity'] == 'Namibia' || datum['Entity'] == 'Australia' ||  datum['Entity'] == 'United States'",
+              "value": 1
+            },
+            "value": 0
+          }
+        }
       }
     ],
   
