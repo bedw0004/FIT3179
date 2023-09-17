@@ -4,9 +4,6 @@
     "width": 800,
     "height": 400,
     "projection": {"type": "equalEarth"},
-    "data": {
-    "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/share-elec-solar.csv"
-    },
     "params": [
     {
       "name": "Year_select",
@@ -20,33 +17,21 @@
       }
     }],  
     "layer":[
-    {
-      "transform": [
-        {
-            "lookup": "Code",
-            "from": {
-                "data": {
-                "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/ne_110m_admin_0_countries.topojson",
-                "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
-                },
-                "key": "properties.GU_A3"
-            },
-            "as": "geo"
+      {
+        "data": {
+        "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
         },
-        {"calculate": "'Data is not available in ' + datum.Year", "as": "note"}
-      ],
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "#f1ece9"},
-      "encoding": {
-        "shape": {
-          "field": "geo",
-          "type": "geojson"
+        "transform": [
+          {"calculate": "'Data is not available in ' + datum.properties.NAME + ' for this year'", "as": "note"}
+        ],
+        "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "#f1ece9"},
+        "encoding": {"tooltip": {"field": "note"}}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/share-elec-solar.csv"
         },
-        "tooltip": {
-          "field": "note"
-        }
-      }
-    },
-    {
         "transform": [
             {"filter": "datum.Year == Year_select"},
             {
@@ -56,13 +41,12 @@
                     "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/ne_110m_admin_0_countries.topojson",
                     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
                     },
-                    "key": "properties.GU_A3",
-                    "fields": ["geometry"]
+                    "key": "properties.ISO_A3_EH"
                 },
                 "as": "geo"
             }
         ],
-        "mark": {"type": "geoshape"},
+        "mark": {"type": "geoshape", "stroke": "#f1ece9", "strokeWidth": "0.4"},
         "encoding": {
             "shape": {
               "field": "geo",
@@ -71,6 +55,7 @@
             "color": {
                 "field": "solar_perc",
                 "type": "quantitative",
+                "title": "Percentage",
                 "scale": {
                     "type": "threshold",
                     "domain": [0, 2, 5, 10],
@@ -79,11 +64,11 @@
             },
             "tooltip": [
                 {"field": "geo.properties.NAME", "type": "nominal", "title": "Country"},
-                {"field": "geo.properties.GU_A3", "type": "nominal", "title": "Code"},
                 {"field": "solar_perc", "type": "quantitative", "title": "Percentage of electricity from solar", "format": ".2f"},
                 {"field": "Year", "type": "quantitative"}
             ]
         }
-    }
-]
-}
+      }
+    ]
+  }
+  
