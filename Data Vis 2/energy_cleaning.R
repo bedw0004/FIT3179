@@ -10,7 +10,15 @@ energy_clean <- energy |> select(country, year, iso_code, population, oil_produc
 
 solar_share <- energy |> select(country, year, iso_code, solar_share_elec, solar_share_energy)
 
+######## THE ENERGY PROBLEM
+co2_gdppc <- read.csv("data/consumption-co2-per-capita-vs-gdppc.csv") |> 
+  filter(Year > 1985) |> 
+  rename("GDP_pc" = "GDP.per.capita..PPP..constant.2017.international...") |> 
+  rename("population" = "Population..historical.estimates.") |> 
+  rename("annual_co2_pc" = "Annual.consumption.based.CO..emissions..per.capita.")
+write.csv(solar_share, "data/co2_gdppc.csv")
 
+######## SHARE OF SOLAR ELECTRICITY
 solar_share <- read.csv("data/share-electricity-solar.csv") |> 
   rename(`solar_perc` = `Solar....electricity.`) |> 
   pivot_wider(names_from=Year, values_from=solar_perc) |> 
@@ -35,3 +43,4 @@ write.csv(solar_share_2022, "data/share-elec-solar-2022.csv")
 
 solar_share_2021 <- read.csv("data/share-electricity-solar.csv") |> filter(Year == 2021) |> rename(`solar_perc` = `Solar....electricity.`)
 write.csv(solar_share_2021, "data/share-elec-solar-2021.csv")
+
