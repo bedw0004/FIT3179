@@ -15,7 +15,8 @@ co2_gdppc <- read.csv("data/consumption-co2-per-capita-vs-gdppc.csv") |>
   filter(Year > 1985) |> 
   rename("GDP_pc" = "GDP.per.capita..PPP..constant.2017.international...") |> 
   rename("population" = "Population..historical.estimates.") |> 
-  rename("annual_co2_pc" = "Annual.consumption.based.CO..emissions..per.capita.")
+  rename("annual_co2_pc" = "Annual.consumption.based.CO..emissions..per.capita.") |> 
+  drop_na()
 write.csv(co2_gdppc, "data/co2_gdppc.csv")
 
 ######## SHARE OF SOLAR ELECTRICITY
