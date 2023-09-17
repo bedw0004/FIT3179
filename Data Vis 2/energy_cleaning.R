@@ -12,6 +12,10 @@ solar_share <- energy |> select(country, year, iso_code, solar_share_elec, solar
 
 ######## THE ENERGY PROBLEM
 co2_gdppc <- read.csv("data/consumption-co2-per-capita-vs-gdppc.csv") |> 
+  group_by(Entity) |> 
+  mutate_at(c("Continent"), ~na_if(., "")) |> 
+  fill(Continent, .direction='downup') |> 
+  ungroup() |> 
   filter(Year > 1985) |> 
   rename("GDP_pc" = "GDP.per.capita..PPP..constant.2017.international...") |> 
   rename("population" = "Population..historical.estimates.") |> 
