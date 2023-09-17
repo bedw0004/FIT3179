@@ -7,7 +7,7 @@
     "params": [
     {
       "name": "Year_select",
-      "value": 2021,
+      "value": 2022,
       "bind": {
         "input": "range",
         "min": 1985,
@@ -46,7 +46,7 @@
                 "as": "geo"
             }
         ],
-        "mark": {"type": "geoshape", "stroke": "#f1ece9", "strokeWidth": "0.4"},
+        "mark": {"type": "geoshape", "stroke": "#f1ece9", "strokeWidth": "0.4",},
         "encoding": {
             "shape": {
               "field": "geo",
