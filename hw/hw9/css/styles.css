@@ -1,0 +1,19 @@
+#choropleth_map {
+	top:10px;
+	bottom: 50px; 
+	left: 50px;
+	right: 50px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#choropleth_map_heading {
+	padding-left: 35px;
+	padding-top: 10px;
+}
+
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	color: black;
+}
