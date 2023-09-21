@@ -22,8 +22,8 @@
 
 <script type="text/javascript">
 
-  var spec2 = "js/choropleth_map_solar_share.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+  var spec = "js/choropleth_map_solar_share.vg.json";
+  vegaEmbed('#choropleth_map', spec, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
