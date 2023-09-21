@@ -4,7 +4,7 @@
     "height": 500,
     "title": "CO₂ emissions per capita vs. GDP per capita",
     "data": {
-      "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/co2_gdppc.csv"
+      "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/co2_gdppc.csv"
     },
     "params": [
     {

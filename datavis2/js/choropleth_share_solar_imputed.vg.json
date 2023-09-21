@@ -5,7 +5,7 @@
   "height": 400,
   "projection": {"type": "equalEarth"},
   "data": {
-  "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/share-elec-solar.csv"
+  "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/share-elec-solar.csv"
   },
   "params": [
   {
@@ -27,7 +27,7 @@
               "lookup": "Code",
               "from": {
                   "data": {
-                  "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/ne_110m_admin_0_countries.topojson",
+                  "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ne_110m_admin_0_countries.topojson",
                   "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
                   },
                   "key": "properties.ISO_A3_EH"
