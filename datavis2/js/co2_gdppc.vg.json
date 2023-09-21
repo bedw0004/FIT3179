@@ -1,0 +1,113 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 500,
+    "title": "CO₂ emissions per capita vs. GDP per capita",
+    "data": {
+      "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/Data%20Vis%202/data/co2_gdppc.csv"
+    },
+    "params": [
+    {
+        "name": "Year_select",
+        "value": 2014,
+        "bind": {
+          "input": "range",
+          "min": 1990,
+          "max": 2020,
+          "step": 1,
+          "name": "Year: "
+        }
+    }],
+  
+    "transform": [
+      {"filter": "datum.Year == Year_select"},
+      {"filter": "datum.population != 'NA'"},
+      {"filter": "datum.GDP_pc != 'NA'"},
+      {"filter": "datum.annual_co2_pc != 'NA'"},
+      {"filter": "datum.annual_co2_pc < 30"}
+    ],
+  
+    "encoding": {
+      "x": {
+        "field": "GDP_pc",
+        "type": "quantitative",
+        "title": "GDP per capita (International $)",
+        "axis": {"tickCount": 2},
+        "scale": {"type": "log", "domain": [400, 200000]}
+      },
+      "y": {
+        "field": "annual_co2_pc",
+        "title": "Annual CO2 consumption based emissions per capita (tonnes)",
+        "type": "quantitative",
+        "axis": {"tickCount": 4},
+        "scale": {"type": "linear", "domain": [0, 30]}
+      }
+    },
+    "layer": [
+      {
+        "mark": "circle",
+        "transform": [
+          {"calculate": "datum.population/1000000","as": "population_mil"}
+        ],
+        "encoding": {
+          "size": {
+            "field": "population_mil",
+            "title": "Population (millions)",
+            "type": "quantitative",
+            "scale": {
+              "type": "linear",
+              "domain": [1, 1000],
+              "range": [50, 1000]
+            },
+            "legend": {"format": ".0f"}
+          },
+          "color": {
+            "field": "Continent",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "North America",
+                "South America",
+                "Europe",
+                "Africa",
+                "Asia",
+                "Oceania"
+              ],
+              "range": [
+                "#e41a1c",
+                "#377eb8",
+                "#4daf4a",
+                "#E6D554",
+                "#ff7f00",
+                "#984ea3"
+              ]
+            }
+          },
+          "opacity": {"value": 0.6},
+          "tooltip": [
+            {"field": "Entity", "title": "Country", "type": "nominal"},
+            {"field": "Year", "type": "quantitative"},
+            {"field": "annual_co2_pc", "title": "Annual CO2 consumption (tonnes)", "type": "quantitative", "format": ".2f"},
+            {"field": "GDP_pc", "title": "GDP per capita", "type": "quantitative", "format": ".2f"},
+            {"field": "population_mil", "title": "Population (millions)", "type": "quantitative", "format": ".1f"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -18,
+          "fontSize": 11.5
+        },
+        "transform": [
+          {"filter": "datum['Entity'] == 'China' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Russia'|| datum['Entity'] == 'India' ||  datum['Entity'] == 'United States'"}
+        ],
+        "encoding": {
+          "text": {"field": "Entity", "type": "nominal"},
+          "color": {"value": "black"}
+        }
+      }
+    ]
+  }
