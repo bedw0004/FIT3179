@@ -10,14 +10,14 @@
           "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/oceans.topojson",
           "format": {"type": "topojson", "feature": "oceans"}
         },
-        "mark": {"type": "geoshape", "fill": "#fdefe7a2"}
+        "mark": {"type": "geoshape", "fill": "#d2efff9c"}
       },
       {
         "data": {
           "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ne_110m.topojson",
           "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
         },
-        "mark": {"type": "geoshape", "fill": null, "stroke": "#e1e9df9f"}
+        "mark": {"type": "geoshape", "fill": null, "stroke": "#ece8ec"}
       },
 
       {
@@ -61,7 +61,7 @@
         ],
         "mark": {
           "type": "geoshape", 
-          "stroke": "#bfe0bf", 
+          "stroke": "#d4bfe083", 
           "strokeWidth": 0.4, 
           "strokeOpacity": 0.5
         },
@@ -77,7 +77,7 @@
                 "scale": {
                     "type": "threshold",
                     "domain": [ 0.01, 0.05, 0.10, 0.15, 0.20],
-                    "range": ["#edf8fb", "#ccece6", "#99d8c9", "#66c2a4", "#2ca25f", "#006d2c"]
+                    "range": ["#feebe2", "#fcc5c0", "#fa9fb5", "#f768a1", "#c51b8a", "#7a0177"]
                 },
                 "legend": {"format": ".0%"}
             },
