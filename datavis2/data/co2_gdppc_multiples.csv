@@ -1,65 +1,65 @@
 "","Entity","Code","Year","population","Continent","type","vals"
-"1","Australia","AUS",1990,17048002,"Oceania","annual_co2_pc",14.263723
+"1","Australia","AUS",1990,17048002,"Oceania","annual_co2_pc",28527.446
 "2","Australia","AUS",1990,17048002,"Oceania","GDP_pc",31006.1
-"3","Australia","AUS",1991,17271092,"Oceania","annual_co2_pc",14.118852
+"3","Australia","AUS",1991,17271092,"Oceania","annual_co2_pc",28237.704
 "4","Australia","AUS",1991,17271092,"Oceania","GDP_pc",30496.127
-"5","Australia","AUS",1992,17462500,"Oceania","annual_co2_pc",14.11306
+"5","Australia","AUS",1992,17462500,"Oceania","annual_co2_pc",28226.12
 "6","Australia","AUS",1992,17462500,"Oceania","GDP_pc",30285.854
-"7","Australia","AUS",1993,17631514,"Oceania","annual_co2_pc",14.0318775
+"7","Australia","AUS",1993,17631514,"Oceania","annual_co2_pc",28063.755
 "8","Australia","AUS",1993,17631514,"Oceania","GDP_pc",31232.586
-"9","Australia","AUS",1994,17805506,"Oceania","annual_co2_pc",14.365695
+"9","Australia","AUS",1994,17805506,"Oceania","annual_co2_pc",28731.39
 "10","Australia","AUS",1994,17805506,"Oceania","GDP_pc",32164.658
-"11","Australia","AUS",1995,18003002,"Oceania","annual_co2_pc",14.520001
+"11","Australia","AUS",1995,18003002,"Oceania","annual_co2_pc",29040.002
 "12","Australia","AUS",1995,18003002,"Oceania","GDP_pc",33044.844
-"13","Australia","AUS",1996,18211850,"Oceania","annual_co2_pc",14.703377
+"13","Australia","AUS",1996,18211850,"Oceania","annual_co2_pc",29406.754
 "14","Australia","AUS",1996,18211850,"Oceania","GDP_pc",33905.26
-"15","Australia","AUS",1997,18410254,"Oceania","annual_co2_pc",14.954647
+"15","Australia","AUS",1997,18410254,"Oceania","annual_co2_pc",29909.294
 "16","Australia","AUS",1997,18410254,"Oceania","GDP_pc",34852.75
-"17","Australia","AUS",1998,18601666,"Oceania","annual_co2_pc",15.831035
+"17","Australia","AUS",1998,18601666,"Oceania","annual_co2_pc",31662.07
 "18","Australia","AUS",1998,18601666,"Oceania","GDP_pc",36099.023
-"19","Australia","AUS",1999,18800892,"Oceania","annual_co2_pc",15.713442
+"19","Australia","AUS",1999,18800892,"Oceania","annual_co2_pc",31426.884
 "20","Australia","AUS",1999,18800892,"Oceania","GDP_pc",37475.98
-"21","Australia","AUS",2000,19017968,"Oceania","annual_co2_pc",15.258868
+"21","Australia","AUS",2000,19017968,"Oceania","annual_co2_pc",30517.736
 "22","Australia","AUS",2000,19017968,"Oceania","GDP_pc",38494.887
-"23","Australia","AUS",2001,19248146,"Oceania","annual_co2_pc",15.528007
+"23","Australia","AUS",2001,19248146,"Oceania","annual_co2_pc",31056.014
 "24","Australia","AUS",2001,19248146,"Oceania","GDP_pc",38779.6
-"25","Australia","AUS",2002,19475842,"Oceania","annual_co2_pc",16.304628
+"25","Australia","AUS",2002,19475842,"Oceania","annual_co2_pc",32609.256
 "26","Australia","AUS",2002,19475842,"Oceania","GDP_pc",39872.15
-"27","Australia","AUS",2003,19699004,"Oceania","annual_co2_pc",16.992603
+"27","Australia","AUS",2003,19699004,"Oceania","annual_co2_pc",33985.206
 "28","Australia","AUS",2003,19699004,"Oceania","GDP_pc",40642.562
-"29","Australia","AUS",2004,19925060,"Oceania","annual_co2_pc",17.291674
+"29","Australia","AUS",2004,19925060,"Oceania","annual_co2_pc",34583.348
 "30","Australia","AUS",2004,19925060,"Oceania","GDP_pc",41905.85
-"31","Australia","AUS",2005,20171732,"Oceania","annual_co2_pc",17.050724
+"31","Australia","AUS",2005,20171732,"Oceania","annual_co2_pc",34101.448
 "32","Australia","AUS",2005,20171732,"Oceania","GDP_pc",42704.44
-"33","Australia","AUS",2006,20467032,"Oceania","annual_co2_pc",17.409512
+"33","Australia","AUS",2006,20467032,"Oceania","annual_co2_pc",34819.024
 "34","Australia","AUS",2006,20467032,"Oceania","GDP_pc",43286.723
-"35","Australia","AUS",2007,20830832,"Oceania","annual_co2_pc",17.677109
+"35","Australia","AUS",2007,20830832,"Oceania","annual_co2_pc",35354.218
 "36","Australia","AUS",2007,20830832,"Oceania","GDP_pc",44109.668
-"37","Australia","AUS",2008,21247876,"Oceania","annual_co2_pc",17.124224
+"37","Australia","AUS",2008,21247876,"Oceania","annual_co2_pc",34248.448
 "38","Australia","AUS",2008,21247876,"Oceania","GDP_pc",44777.273
-"39","Australia","AUS",2009,21660898,"Oceania","annual_co2_pc",18.224241
+"39","Australia","AUS",2009,21660898,"Oceania","annual_co2_pc",36448.482
 "40","Australia","AUS",2009,21660898,"Oceania","GDP_pc",44684.402
-"41","Australia","AUS",2010,22019166,"Oceania","annual_co2_pc",17.97907
+"41","Australia","AUS",2010,22019166,"Oceania","annual_co2_pc",35958.14
 "42","Australia","AUS",2010,22019166,"Oceania","GDP_pc",44965.395
-"43","Australia","AUS",2011,22357032,"Oceania","annual_co2_pc",17.635864
+"43","Australia","AUS",2011,22357032,"Oceania","annual_co2_pc",35271.728
 "44","Australia","AUS",2011,22357032,"Oceania","GDP_pc",45405.367
-"45","Australia","AUS",2012,22729272,"Oceania","annual_co2_pc",17.68057
+"45","Australia","AUS",2012,22729272,"Oceania","annual_co2_pc",35361.14
 "46","Australia","AUS",2012,22729272,"Oceania","GDP_pc",46360.605
-"47","Australia","AUS",2013,23111788,"Oceania","annual_co2_pc",16.465807
+"47","Australia","AUS",2013,23111788,"Oceania","annual_co2_pc",32931.614
 "48","Australia","AUS",2013,23111788,"Oceania","GDP_pc",46744.625
-"49","Australia","AUS",2014,23469578,"Oceania","annual_co2_pc",16.255693
+"49","Australia","AUS",2014,23469578,"Oceania","annual_co2_pc",32511.386
 "50","Australia","AUS",2014,23469578,"Oceania","GDP_pc",47240.273
-"51","Australia","AUS",2015,23820240,"Oceania","annual_co2_pc",16.051287
+"51","Australia","AUS",2015,23820240,"Oceania","annual_co2_pc",32102.574
 "52","Australia","AUS",2015,23820240,"Oceania","GDP_pc",47567.68
-"53","Australia","AUS",2016,24195706,"Oceania","annual_co2_pc",15.392174
+"53","Australia","AUS",2016,24195706,"Oceania","annual_co2_pc",30784.348
 "54","Australia","AUS",2016,24195706,"Oceania","GDP_pc",48109.203
-"55","Australia","AUS",2017,24590336,"Oceania","annual_co2_pc",15.369246
+"55","Australia","AUS",2017,24590336,"Oceania","annual_co2_pc",30738.492
 "56","Australia","AUS",2017,24590336,"Oceania","GDP_pc",48400.246
-"57","Australia","AUS",2018,24979228,"Oceania","annual_co2_pc",14.629854
+"57","Australia","AUS",2018,24979228,"Oceania","annual_co2_pc",29259.708
 "58","Australia","AUS",2018,24979228,"Oceania","GDP_pc",49052.816
-"59","Australia","AUS",2019,25357168,"Oceania","annual_co2_pc",14.309601
+"59","Australia","AUS",2019,25357168,"Oceania","annual_co2_pc",28619.202
 "60","Australia","AUS",2019,25357168,"Oceania","GDP_pc",49379.094
-"61","Australia","AUS",2020,25670052,"Oceania","annual_co2_pc",13.811205
+"61","Australia","AUS",2020,25670052,"Oceania","annual_co2_pc",27622.41
 "62","Australia","AUS",2020,25670052,"Oceania","GDP_pc",48747.85
 "63","Australia","AUS",2021,25921094,"Oceania","annual_co2_pc",NA
 "64","Australia","AUS",2021,25921094,"Oceania","GDP_pc",49774.34
@@ -71,67 +71,67 @@
 "70","Australia","AUS",1988,16525901,"Oceania","GDP_pc",NA
 "71","Australia","AUS",1989,16796586,"Oceania","annual_co2_pc",NA
 "72","Australia","AUS",1989,16796586,"Oceania","GDP_pc",NA
-"73","China","CHN",1990,1153704192,"Asia","annual_co2_pc",2.011824
+"73","China","CHN",1990,1153704192,"Asia","annual_co2_pc",4023.648
 "74","China","CHN",1990,1153704192,"Asia","GDP_pc",1423.8964
-"75","China","CHN",1991,1170626176,"Asia","annual_co2_pc",2.051064
+"75","China","CHN",1991,1170626176,"Asia","annual_co2_pc",4102.128
 "76","China","CHN",1991,1170626176,"Asia","GDP_pc",1534.7053
-"77","China","CHN",1992,1183813376,"Asia","annual_co2_pc",2.1771772
+"77","China","CHN",1992,1183813376,"Asia","annual_co2_pc",4354.3544
 "78","China","CHN",1992,1183813376,"Asia","GDP_pc",1731.6572
-"79","China","CHN",1993,1195855616,"Asia","annual_co2_pc",2.3065274
+"79","China","CHN",1993,1195855616,"Asia","annual_co2_pc",4613.0548
 "80","China","CHN",1993,1195855616,"Asia","GDP_pc",1949.5343
-"81","China","CHN",1994,1207286656,"Asia","annual_co2_pc",2.2763624
+"81","China","CHN",1994,1207286656,"Asia","annual_co2_pc",4552.7248
 "82","China","CHN",1994,1207286656,"Asia","GDP_pc",2178.924
-"83","China","CHN",1995,1218144384,"Asia","annual_co2_pc",2.4563484
+"83","China","CHN",1995,1218144384,"Asia","annual_co2_pc",4912.6968
 "84","China","CHN",1995,1218144384,"Asia","GDP_pc",2391.477
-"85","China","CHN",1996,1228298880,"Asia","annual_co2_pc",2.5417502
+"85","China","CHN",1996,1228298880,"Asia","annual_co2_pc",5083.5004
 "86","China","CHN",1996,1228298880,"Asia","GDP_pc",2601.3635
-"87","China","CHN",1997,1237801472,"Asia","annual_co2_pc",2.4682472
+"87","China","CHN",1997,1237801472,"Asia","annual_co2_pc",4936.4944
 "88","China","CHN",1997,1237801472,"Asia","GDP_pc",2812.7112
-"89","China","CHN",1998,1246836096,"Asia","annual_co2_pc",2.3717072
+"89","China","CHN",1998,1246836096,"Asia","annual_co2_pc",4743.4144
 "90","China","CHN",1998,1246836096,"Asia","GDP_pc",3004.4272
-"91","China","CHN",1999,1255433216,"Asia","annual_co2_pc",2.5227354
+"91","China","CHN",1999,1255433216,"Asia","annual_co2_pc",5045.4708
 "92","China","CHN",1999,1255433216,"Asia","GDP_pc",3206.73
-"93","China","CHN",2000,1264099072,"Asia","annual_co2_pc",2.5759513
+"93","China","CHN",2000,1264099072,"Asia","annual_co2_pc",5151.9026
 "94","China","CHN",2000,1264099072,"Asia","GDP_pc",3451.6792
-"95","China","CHN",2001,1272739584,"Asia","annual_co2_pc",2.6342318
+"95","China","CHN",2001,1272739584,"Asia","annual_co2_pc",5268.4636
 "96","China","CHN",2001,1272739584,"Asia","GDP_pc",3712.3381
-"97","China","CHN",2002,1280926080,"Asia","annual_co2_pc",2.8557465
+"97","China","CHN",2002,1280926080,"Asia","annual_co2_pc",5711.493
 "98","China","CHN",2002,1280926080,"Asia","GDP_pc",4024.3557
-"99","China","CHN",2003,1288873344,"Asia","annual_co2_pc",3.1555004
+"99","China","CHN",2003,1288873344,"Asia","annual_co2_pc",6311.0008
 "100","China","CHN",2003,1288873344,"Asia","GDP_pc",4400.825
-"101","China","CHN",2004,1296816768,"Asia","annual_co2_pc",3.3323631
+"101","China","CHN",2004,1296816768,"Asia","annual_co2_pc",6664.7262
 "102","China","CHN",2004,1296816768,"Asia","GDP_pc",4817.212
-"103","China","CHN",2005,1304887552,"Asia","annual_co2_pc",3.6132238
+"103","China","CHN",2005,1304887552,"Asia","annual_co2_pc",7226.4476
 "104","China","CHN",2005,1304887552,"Asia","GDP_pc",5334.6465
-"105","China","CHN",2006,1313086592,"Asia","annual_co2_pc",3.908266
+"105","China","CHN",2006,1313086592,"Asia","annual_co2_pc",7816.532
 "106","China","CHN",2006,1313086592,"Asia","GDP_pc",5979.7817
-"107","China","CHN",2007,1321513216,"Asia","annual_co2_pc",4.1968794
+"107","China","CHN",2007,1321513216,"Asia","annual_co2_pc",8393.7588
 "108","China","CHN",2007,1321513216,"Asia","GDP_pc",6795.174
-"109","China","CHN",2008,1330167168,"Asia","annual_co2_pc",4.488403
+"109","China","CHN",2008,1330167168,"Asia","annual_co2_pc",8976.806
 "110","China","CHN",2008,1330167168,"Asia","GDP_pc",7412.8745
-"111","China","CHN",2009,1339125632,"Asia","annual_co2_pc",5.0217624
+"111","China","CHN",2009,1339125632,"Asia","annual_co2_pc",10043.5248
 "112","China","CHN",2009,1339125632,"Asia","GDP_pc",8069.3545
-"113","China","CHN",2010,1348191360,"Asia","annual_co2_pc",5.444733
+"113","China","CHN",2010,1348191360,"Asia","annual_co2_pc",10889.466
 "114","China","CHN",2010,1348191360,"Asia","GDP_pc",8884.588
-"115","China","CHN",2011,1357095424,"Asia","annual_co2_pc",5.9984584
+"115","China","CHN",2011,1357095424,"Asia","annual_co2_pc",11996.9168
 "116","China","CHN",2011,1357095424,"Asia","GDP_pc",9680.098
-"117","China","CHN",2012,1366560768,"Asia","annual_co2_pc",6.223094
+"117","China","CHN",2012,1366560768,"Asia","annual_co2_pc",12446.188
 "118","China","CHN",2012,1366560768,"Asia","GDP_pc",10370.727
-"119","China","CHN",2013,1376100352,"Asia","annual_co2_pc",6.3457317
+"119","China","CHN",2013,1376100352,"Asia","annual_co2_pc",12691.4634
 "120","China","CHN",2013,1376100352,"Asia","GDP_pc",11101.938
-"121","China","CHN",2014,1385189632,"Asia","annual_co2_pc",6.370864
+"121","China","CHN",2014,1385189632,"Asia","annual_co2_pc",12741.728
 "122","China","CHN",2014,1385189632,"Asia","GDP_pc",11851.404
-"123","China","CHN",2015,1393715456,"Asia","annual_co2_pc",6.3680625
+"123","China","CHN",2015,1393715456,"Asia","annual_co2_pc",12736.125
 "124","China","CHN",2015,1393715456,"Asia","GDP_pc",12612.352
-"125","China","CHN",2016,1401889664,"Asia","annual_co2_pc",6.3292365
+"125","China","CHN",2016,1401889664,"Asia","annual_co2_pc",12658.473
 "126","China","CHN",2016,1401889664,"Asia","GDP_pc",13399.138
-"127","China","CHN",2017,1410275968,"Asia","annual_co2_pc",6.4882283
+"127","China","CHN",2017,1410275968,"Asia","annual_co2_pc",12976.4566
 "128","China","CHN",2017,1410275968,"Asia","GDP_pc",14243.532
-"129","China","CHN",2018,1417069440,"Asia","annual_co2_pc",6.7933064
+"129","China","CHN",2018,1417069440,"Asia","annual_co2_pc",13586.6128
 "130","China","CHN",2018,1417069440,"Asia","GDP_pc",15133.996
-"131","China","CHN",2019,1421864064,"Asia","annual_co2_pc",7.0043054
+"131","China","CHN",2019,1421864064,"Asia","annual_co2_pc",14008.6108
 "132","China","CHN",2019,1421864064,"Asia","GDP_pc",15977.764
-"133","China","CHN",2020,1424929792,"Asia","annual_co2_pc",7.041331
+"133","China","CHN",2020,1424929792,"Asia","annual_co2_pc",14082.662
 "134","China","CHN",2020,1424929792,"Asia","GDP_pc",16296.779
 "135","China","CHN",2021,1425893504,"Asia","annual_co2_pc",NA
 "136","China","CHN",2021,1425893504,"Asia","GDP_pc",17602.695
@@ -143,67 +143,67 @@
 "142","China","CHN",1988,1115889792,"Asia","GDP_pc",NA
 "143","China","CHN",1989,1134414720,"Asia","annual_co2_pc",NA
 "144","China","CHN",1989,1134414720,"Asia","GDP_pc",NA
-"145","Germany","DEU",1990,79370192,"Europe","annual_co2_pc",15.016723
+"145","Germany","DEU",1990,79370192,"Europe","annual_co2_pc",30033.446
 "146","Germany","DEU",1990,79370192,"Europe","GDP_pc",36699.48
-"147","Germany","DEU",1991,79801984,"Europe","annual_co2_pc",14.304148
+"147","Germany","DEU",1991,79801984,"Europe","annual_co2_pc",28608.296
 "148","Germany","DEU",1991,79801984,"Europe","GDP_pc",38294.156
-"149","Germany","DEU",1992,80205024,"Europe","annual_co2_pc",15.013348
+"149","Germany","DEU",1992,80205024,"Europe","annual_co2_pc",30026.696
 "150","Germany","DEU",1992,80205024,"Europe","GDP_pc",38734.938
-"151","Germany","DEU",1993,80573496,"Europe","annual_co2_pc",14.365218
+"151","Germany","DEU",1993,80573496,"Europe","annual_co2_pc",28730.436
 "152","Germany","DEU",1993,80573496,"Europe","GDP_pc",38105.23
-"153","Germany","DEU",1994,80882120,"Europe","annual_co2_pc",13.985097
+"153","Germany","DEU",1994,80882120,"Europe","annual_co2_pc",27970.194
 "154","Germany","DEU",1994,80882120,"Europe","GDP_pc",38881.57
-"155","Germany","DEU",1995,81123264,"Europe","annual_co2_pc",14.024795
+"155","Germany","DEU",1995,81123264,"Europe","annual_co2_pc",28049.59
 "156","Germany","DEU",1995,81123264,"Europe","GDP_pc",39366.09
-"157","Germany","DEU",1996,81300864,"Europe","annual_co2_pc",13.792063
+"157","Germany","DEU",1996,81300864,"Europe","annual_co2_pc",27584.126
 "158","Germany","DEU",1996,81300864,"Europe","GDP_pc",39568.6
-"159","Germany","DEU",1997,81436096,"Europe","annual_co2_pc",13.213906
+"159","Germany","DEU",1997,81436096,"Europe","annual_co2_pc",26427.812
 "160","Germany","DEU",1997,81436096,"Europe","GDP_pc",40218.848
-"161","Germany","DEU",1998,81524384,"Europe","annual_co2_pc",13.229395
+"161","Germany","DEU",1998,81524384,"Europe","annual_co2_pc",26458.79
 "162","Germany","DEU",1998,81524384,"Europe","GDP_pc",41022.613
-"163","Germany","DEU",1999,81556968,"Europe","annual_co2_pc",13.339716
+"163","Germany","DEU",1999,81556968,"Europe","annual_co2_pc",26679.432
 "164","Germany","DEU",1999,81556968,"Europe","GDP_pc",41769.812
-"165","Germany","DEU",2000,81551680,"Europe","annual_co2_pc",13.276514
+"165","Germany","DEU",2000,81551680,"Europe","annual_co2_pc",26553.028
 "166","Germany","DEU",2000,81551680,"Europe","GDP_pc",42928.18
-"167","Germany","DEU",2001,81514568,"Europe","annual_co2_pc",13.260297
+"167","Germany","DEU",2001,81514568,"Europe","annual_co2_pc",26520.594
 "168","Germany","DEU",2001,81514568,"Europe","GDP_pc",43576.637
-"169","Germany","DEU",2002,81443424,"Europe","annual_co2_pc",12.618451
+"169","Germany","DEU",2002,81443424,"Europe","annual_co2_pc",25236.902
 "170","Germany","DEU",2002,81443424,"Europe","GDP_pc",43417.31
-"171","Germany","DEU",2003,81346808,"Europe","annual_co2_pc",13.125658
+"171","Germany","DEU",2003,81346808,"Europe","annual_co2_pc",26251.316
 "172","Germany","DEU",2003,81346808,"Europe","GDP_pc",43089.473
-"173","Germany","DEU",2004,81266672,"Europe","annual_co2_pc",12.937435
+"173","Germany","DEU",2004,81266672,"Europe","annual_co2_pc",25874.87
 "174","Germany","DEU",2004,81266672,"Europe","GDP_pc",43605.277
-"175","Germany","DEU",2005,81212168,"Europe","annual_co2_pc",12.921379
+"175","Germany","DEU",2005,81212168,"Europe","annual_co2_pc",25842.758
 "176","Germany","DEU",2005,81212168,"Europe","GDP_pc",43949.29
-"177","Germany","DEU",2006,81177816,"Europe","annual_co2_pc",12.847875
+"177","Germany","DEU",2006,81177816,"Europe","annual_co2_pc",25695.75
 "178","Germany","DEU",2006,81177816,"Europe","GDP_pc",45678.082
-"179","Germany","DEU",2007,81183832,"Europe","annual_co2_pc",12.836312
+"179","Germany","DEU",2007,81183832,"Europe","annual_co2_pc",25672.624
 "180","Germany","DEU",2007,81183832,"Europe","GDP_pc",47100.61
-"181","Germany","DEU",2008,81217488,"Europe","annual_co2_pc",12.814981
+"181","Germany","DEU",2008,81217488,"Europe","annual_co2_pc",25629.962
 "182","Germany","DEU",2008,81217488,"Europe","GDP_pc",47643.223
-"183","Germany","DEU",2009,81260624,"Europe","annual_co2_pc",11.997946
+"183","Germany","DEU",2009,81260624,"Europe","annual_co2_pc",23995.892
 "184","Germany","DEU",2009,81260624,"Europe","GDP_pc",45044.49
-"185","Germany","DEU",2010,81325088,"Europe","annual_co2_pc",12.598794
+"185","Germany","DEU",2010,81325088,"Europe","annual_co2_pc",25197.588
 "186","Germany","DEU",2010,81325088,"Europe","GDP_pc",46999.24
-"187","Germany","DEU",2011,81423384,"Europe","annual_co2_pc",12.080902
+"187","Germany","DEU",2011,81423384,"Europe","annual_co2_pc",24161.804
 "188","Germany","DEU",2011,81423384,"Europe","GDP_pc",49757.926
-"189","Germany","DEU",2012,81545568,"Europe","annual_co2_pc",11.26619
+"189","Germany","DEU",2012,81545568,"Europe","annual_co2_pc",22532.38
 "190","Germany","DEU",2012,81545568,"Europe","GDP_pc",49872.45
-"191","Germany","DEU",2013,81680592,"Europe","annual_co2_pc",11.367278
+"191","Germany","DEU",2013,81680592,"Europe","annual_co2_pc",22734.556
 "192","Germany","DEU",2013,81680592,"Europe","GDP_pc",49954.17
-"193","Germany","DEU",2014,81858824,"Europe","annual_co2_pc",11.07061
+"193","Germany","DEU",2014,81858824,"Europe","annual_co2_pc",22141.22
 "194","Germany","DEU",2014,81858824,"Europe","GDP_pc",50845.527
-"195","Germany","DEU",2015,82073232,"Europe","annual_co2_pc",10.88889
+"195","Germany","DEU",2015,82073232,"Europe","annual_co2_pc",21777.78
 "196","Germany","DEU",2015,82073232,"Europe","GDP_pc",51159.297
-"197","Germany","DEU",2016,82331432,"Europe","annual_co2_pc",11.070989
+"197","Germany","DEU",2016,82331432,"Europe","annual_co2_pc",22141.978
 "198","Germany","DEU",2016,82331432,"Europe","GDP_pc",51879.67
-"199","Germany","DEU",2017,82624368,"Europe","annual_co2_pc",10.887465
+"199","Germany","DEU",2017,82624368,"Europe","annual_co2_pc",21774.93
 "200","Germany","DEU",2017,82624368,"Europe","GDP_pc",53071.457
-"201","Germany","DEU",2018,82896696,"Europe","annual_co2_pc",10.6732645
+"201","Germany","DEU",2018,82896696,"Europe","annual_co2_pc",21346.529
 "202","Germany","DEU",2018,82896696,"Europe","GDP_pc",53431.395
-"203","Germany","DEU",2019,83148144,"Europe","annual_co2_pc",10.136722
+"203","Germany","DEU",2019,83148144,"Europe","annual_co2_pc",20273.444
 "204","Germany","DEU",2019,83148144,"Europe","GDP_pc",53874.316
-"205","Germany","DEU",2020,83328992,"Europe","annual_co2_pc",9.2343855
+"205","Germany","DEU",2020,83328992,"Europe","annual_co2_pc",18468.771
 "206","Germany","DEU",2020,83328992,"Europe","GDP_pc",51840.33
 "207","Germany","DEU",2021,83408560,"Europe","annual_co2_pc",NA
 "208","Germany","DEU",2021,83408560,"Europe","GDP_pc",53179.656
@@ -215,67 +215,67 @@
 "214","Germany","DEU",1988,78477528,"Europe","GDP_pc",NA
 "215","Germany","DEU",1989,78916440,"Europe","annual_co2_pc",NA
 "216","Germany","DEU",1989,78916440,"Europe","GDP_pc",NA
-"217","India","IND",1990,870452160,"Asia","annual_co2_pc",0.6608514
+"217","India","IND",1990,870452160,"Asia","annual_co2_pc",1321.7028
 "218","India","IND",1990,870452160,"Asia","GDP_pc",1819.0216
-"219","India","IND",1991,888941760,"Asia","annual_co2_pc",0.6711661
+"219","India","IND",1991,888941760,"Asia","annual_co2_pc",1342.3322
 "220","India","IND",1991,888941760,"Asia","GDP_pc",1800.0109
-"221","India","IND",1992,907574080,"Asia","annual_co2_pc",0.7122037
+"221","India","IND",1992,907574080,"Asia","annual_co2_pc",1424.4074
 "222","India","IND",1992,907574080,"Asia","GDP_pc",1859.7148
-"223","India","IND",1993,926351296,"Asia","annual_co2_pc",0.70351976
+"223","India","IND",1993,926351296,"Asia","annual_co2_pc",1407.03952
 "224","India","IND",1993,926351296,"Asia","GDP_pc",1908.5782
-"225","India","IND",1994,945261952,"Asia","annual_co2_pc",0.7245047
+"225","India","IND",1994,945261952,"Asia","annual_co2_pc",1449.0094
 "226","India","IND",1994,945261952,"Asia","GDP_pc",1994.944
-"227","India","IND",1995,964279104,"Asia","annual_co2_pc",0.7460731
+"227","India","IND",1995,964279104,"Asia","annual_co2_pc",1492.1462
 "228","India","IND",1995,964279104,"Asia","GDP_pc",2103.727
-"229","India","IND",1996,983281216,"Asia","annual_co2_pc",0.78176886
+"229","India","IND",1996,983281216,"Asia","annual_co2_pc",1563.53772
 "230","India","IND",1996,983281216,"Asia","GDP_pc",2218.8245
-"231","India","IND",1997,1002335232,"Asia","annual_co2_pc",0.80206245
+"231","India","IND",1997,1002335232,"Asia","annual_co2_pc",1604.1249
 "232","India","IND",1997,1002335232,"Asia","GDP_pc",2264.7957
-"233","India","IND",1998,1021434560,"Asia","annual_co2_pc",0.80307645
+"233","India","IND",1998,1021434560,"Asia","annual_co2_pc",1606.1529
 "234","India","IND",1998,1021434560,"Asia","GDP_pc",2359.8926
-"235","India","IND",1999,1040500032,"Asia","annual_co2_pc",0.8680128
+"235","India","IND",1999,1040500032,"Asia","annual_co2_pc",1736.0256
 "236","India","IND",1999,1040500032,"Asia","GDP_pc",2521.5767
-"237","India","IND",2000,1059633664,"Asia","annual_co2_pc",0.85465384
+"237","India","IND",2000,1059633664,"Asia","annual_co2_pc",1709.30768
 "238","India","IND",2000,1059633664,"Asia","GDP_pc",2571.1497
-"239","India","IND",2001,1078970880,"Asia","annual_co2_pc",0.8463197
+"239","India","IND",2001,1078970880,"Asia","annual_co2_pc",1692.6394
 "240","India","IND",2001,1078970880,"Asia","GDP_pc",2646.8782
-"241","India","IND",2002,1098313088,"Asia","annual_co2_pc",0.8451153
+"241","India","IND",2002,1098313088,"Asia","annual_co2_pc",1690.2306
 "242","India","IND",2002,1098313088,"Asia","GDP_pc",2699.1782
-"243","India","IND",2003,1117415168,"Asia","annual_co2_pc",0.877988
+"243","India","IND",2003,1117415168,"Asia","annual_co2_pc",1755.976
 "244","India","IND",2003,1117415168,"Asia","GDP_pc",2861.5747
-"245","India","IND",2004,1136264576,"Asia","annual_co2_pc",0.9112559
+"245","India","IND",2004,1136264576,"Asia","annual_co2_pc",1822.5118
 "246","India","IND",2004,1136264576,"Asia","GDP_pc",3037.0637
-"247","India","IND",2005,1154638720,"Asia","annual_co2_pc",0.9489077
+"247","India","IND",2005,1154638720,"Asia","annual_co2_pc",1897.8154
 "248","India","IND",2005,1154638720,"Asia","GDP_pc",3225.5444
-"249","India","IND",2006,1172373760,"Asia","annual_co2_pc",0.98239994
+"249","India","IND",2006,1172373760,"Asia","annual_co2_pc",1964.79988
 "250","India","IND",2006,1172373760,"Asia","GDP_pc",3432.8193
-"251","India","IND",2007,1189691776,"Asia","annual_co2_pc",1.0665008
+"251","India","IND",2007,1189691776,"Asia","annual_co2_pc",2133.0016
 "252","India","IND",2007,1189691776,"Asia","GDP_pc",3642.0024
-"253","India","IND",2008,1206734848,"Asia","annual_co2_pc",1.1276596
+"253","India","IND",2008,1206734848,"Asia","annual_co2_pc",2255.3192
 "254","India","IND",2008,1206734848,"Asia","GDP_pc",3701.3955
-"255","India","IND",2009,1223640192,"Asia","annual_co2_pc",1.2469307
+"255","India","IND",2009,1223640192,"Asia","annual_co2_pc",2493.8614
 "256","India","IND",2009,1223640192,"Asia","GDP_pc",3937.2375
-"257","India","IND",2010,1240613632,"Asia","annual_co2_pc",1.2716058
+"257","India","IND",2010,1240613632,"Asia","annual_co2_pc",2543.2116
 "258","India","IND",2010,1240613632,"Asia","GDP_pc",4213.363
-"259","India","IND",2011,1257621248,"Asia","annual_co2_pc",1.3058882
+"259","India","IND",2011,1257621248,"Asia","annual_co2_pc",2611.7764
 "260","India","IND",2011,1257621248,"Asia","GDP_pc",4374.2324
-"261","India","IND",2012,1274487168,"Asia","annual_co2_pc",1.428358
+"261","India","IND",2012,1274487168,"Asia","annual_co2_pc",2856.716
 "262","India","IND",2012,1274487168,"Asia","GDP_pc",4551.8623
-"263","India","IND",2013,1291132032,"Asia","annual_co2_pc",1.4062512
+"263","India","IND",2013,1291132032,"Asia","annual_co2_pc",2812.5024
 "264","India","IND",2013,1291132032,"Asia","GDP_pc",4780.12
-"265","India","IND",2014,1307246464,"Asia","annual_co2_pc",1.5241907
+"265","India","IND",2014,1307246464,"Asia","annual_co2_pc",3048.3814
 "266","India","IND",2014,1307246464,"Asia","GDP_pc",5071.047
-"267","India","IND",2015,1322866560,"Asia","annual_co2_pc",1.6070377
+"267","India","IND",2015,1322866560,"Asia","annual_co2_pc",3214.0754
 "268","India","IND",2015,1322866560,"Asia","GDP_pc",5411.8755
-"269","India","IND",2016,1338636288,"Asia","annual_co2_pc",1.6501642
+"269","India","IND",2016,1338636288,"Asia","annual_co2_pc",3300.3284
 "270","India","IND",2016,1338636288,"Asia","GDP_pc",5789.678
-"271","India","IND",2017,1354195712,"Asia","annual_co2_pc",1.6903577
+"271","India","IND",2017,1354195712,"Asia","annual_co2_pc",3380.7154
 "272","India","IND",2017,1354195712,"Asia","GDP_pc",6112.0664
-"273","India","IND",2018,1369003264,"Asia","annual_co2_pc",1.7762579
+"273","India","IND",2018,1369003264,"Asia","annual_co2_pc",3552.5158
 "274","India","IND",2018,1369003264,"Asia","GDP_pc",6436.1533
-"275","India","IND",2019,1383112064,"Asia","annual_co2_pc",1.7840297
+"275","India","IND",2019,1383112064,"Asia","annual_co2_pc",3568.0594
 "276","India","IND",2019,1383112064,"Asia","GDP_pc",6608.624
-"277","India","IND",2020,1396387072,"Asia","annual_co2_pc",1.6305512
+"277","India","IND",2020,1396387072,"Asia","annual_co2_pc",3261.1024
 "278","India","IND",2020,1396387072,"Asia","GDP_pc",6114.0317
 "279","India","IND",2021,1407563904,"Asia","annual_co2_pc",NA
 "280","India","IND",2021,1407563904,"Asia","GDP_pc",6592.042
@@ -287,67 +287,67 @@
 "286","India","IND",1988,833729664,"Asia","GDP_pc",NA
 "287","India","IND",1989,852012672,"Asia","annual_co2_pc",NA
 "288","India","IND",1989,852012672,"Asia","GDP_pc",NA
-"289","Russia","RUS",1990,148005696,"Europe","annual_co2_pc",13.794909
+"289","Russia","RUS",1990,148005696,"Europe","annual_co2_pc",27589.818
 "290","Russia","RUS",1990,148005696,"Europe","GDP_pc",21482.748
-"291","Russia","RUS",1991,148455408,"Europe","annual_co2_pc",13.99988
+"291","Russia","RUS",1991,148455408,"Europe","annual_co2_pc",27999.76
 "292","Russia","RUS",1991,148455408,"Europe","GDP_pc",20340.133
-"293","Russia","RUS",1992,148725600,"Europe","annual_co2_pc",5.2366757
+"293","Russia","RUS",1992,148725600,"Europe","annual_co2_pc",10473.3514
 "294","Russia","RUS",1992,148725600,"Europe","GDP_pc",17367.64
-"295","Russia","RUS",1993,148897280,"Europe","annual_co2_pc",7.485521
+"295","Russia","RUS",1993,148897280,"Europe","annual_co2_pc",14971.042
 "296","Russia","RUS",1993,148897280,"Europe","GDP_pc",15870.605
-"297","Russia","RUS",1994,148829120,"Europe","annual_co2_pc",7.9099026
+"297","Russia","RUS",1994,148829120,"Europe","annual_co2_pc",15819.8052
 "298","Russia","RUS",1994,148829120,"Europe","GDP_pc",13880.465
-"299","Russia","RUS",1995,148557456,"Europe","annual_co2_pc",7.871611
+"299","Russia","RUS",1995,148557456,"Europe","annual_co2_pc",15743.222
 "300","Russia","RUS",1995,148557456,"Europe","GDP_pc",13308.205
-"301","Russia","RUS",1996,148233408,"Europe","annual_co2_pc",8.465579
+"301","Russia","RUS",1996,148233408,"Europe","annual_co2_pc",16931.158
 "302","Russia","RUS",1996,148233408,"Europe","GDP_pc",12827.116
-"303","Russia","RUS",1997,147939968,"Europe","annual_co2_pc",7.967262
+"303","Russia","RUS",1997,147939968,"Europe","annual_co2_pc",15934.524
 "304","Russia","RUS",1997,147939968,"Europe","GDP_pc",13028.208
-"305","Russia","RUS",1998,147672720,"Europe","annual_co2_pc",7.150222
+"305","Russia","RUS",1998,147672720,"Europe","annual_co2_pc",14300.444
 "306","Russia","RUS",1998,147672720,"Europe","GDP_pc",12358.152
-"307","Russia","RUS",1999,147336384,"Europe","annual_co2_pc",6.8614244
+"307","Russia","RUS",1999,147336384,"Europe","annual_co2_pc",13722.8488
 "308","Russia","RUS",1999,147336384,"Europe","GDP_pc",13189.794
-"309","Russia","RUS",2000,146844848,"Europe","annual_co2_pc",6.781502
+"309","Russia","RUS",2000,146844848,"Europe","annual_co2_pc",13563.004
 "310","Russia","RUS",2000,146844848,"Europe","GDP_pc",14569.937
-"311","Russia","RUS",2001,146235520,"Europe","annual_co2_pc",7.6043386
+"311","Russia","RUS",2001,146235520,"Europe","annual_co2_pc",15208.6772
 "312","Russia","RUS",2001,146235520,"Europe","GDP_pc",15378.09
-"313","Russia","RUS",2002,145590144,"Europe","annual_co2_pc",7.6801577
+"313","Russia","RUS",2002,145590144,"Europe","annual_co2_pc",15360.3154
 "314","Russia","RUS",2002,145590144,"Europe","GDP_pc",16175.098
-"315","Russia","RUS",2003,144946720,"Europe","annual_co2_pc",8.006207
+"315","Russia","RUS",2003,144946720,"Europe","annual_co2_pc",16012.414
 "316","Russia","RUS",2003,144946720,"Europe","GDP_pc",17434.809
-"317","Russia","RUS",2004,144353648,"Europe","annual_co2_pc",8.198897
+"317","Russia","RUS",2004,144353648,"Europe","annual_co2_pc",16397.794
 "318","Russia","RUS",2004,144353648,"Europe","GDP_pc",18765.52
-"319","Russia","RUS",2005,143800048,"Europe","annual_co2_pc",8.3172035
+"319","Russia","RUS",2005,143800048,"Europe","annual_co2_pc",16634.407
 "320","Russia","RUS",2005,143800048,"Europe","GDP_pc",20042.814
-"321","Russia","RUS",2006,143338672,"Europe","annual_co2_pc",8.639575
+"321","Russia","RUS",2006,143338672,"Europe","annual_co2_pc",17279.15
 "322","Russia","RUS",2006,143338672,"Europe","GDP_pc",21757.465
-"323","Russia","RUS",2007,143117680,"Europe","annual_co2_pc",9.15128
+"323","Russia","RUS",2007,143117680,"Europe","annual_co2_pc",18302.56
 "324","Russia","RUS",2007,143117680,"Europe","GDP_pc",23647.266
-"325","Russia","RUS",2008,143086544,"Europe","annual_co2_pc",9.315643
+"325","Russia","RUS",2008,143086544,"Europe","annual_co2_pc",18631.286
 "326","Russia","RUS",2008,143086544,"Europe","GDP_pc",24887.854
-"327","Russia","RUS",2009,143163648,"Europe","annual_co2_pc",8.957042
+"327","Russia","RUS",2009,143163648,"Europe","annual_co2_pc",17914.084
 "328","Russia","RUS",2009,143163648,"Europe","GDP_pc",22939.693
-"329","Russia","RUS",2010,143242592,"Europe","annual_co2_pc",9.47317
+"329","Russia","RUS",2010,143242592,"Europe","annual_co2_pc",18946.34
 "330","Russia","RUS",2010,143242592,"Europe","GDP_pc",23961.22
-"331","Russia","RUS",2011,143364544,"Europe","annual_co2_pc",9.903425
+"331","Russia","RUS",2011,143364544,"Europe","annual_co2_pc",19806.85
 "332","Russia","RUS",2011,143364544,"Europe","GDP_pc",24972.078
-"333","Russia","RUS",2012,143629360,"Europe","annual_co2_pc",10.214987
+"333","Russia","RUS",2012,143629360,"Europe","annual_co2_pc",20429.974
 "334","Russia","RUS",2012,143629360,"Europe","GDP_pc",25933.293
-"335","Russia","RUS",2013,143956864,"Europe","annual_co2_pc",9.916256
+"335","Russia","RUS",2013,143956864,"Europe","annual_co2_pc",19832.512
 "336","Russia","RUS",2013,143956864,"Europe","GDP_pc",26332.396
-"337","Russia","RUS",2014,144285072,"Europe","annual_co2_pc",9.642815
+"337","Russia","RUS",2014,144285072,"Europe","annual_co2_pc",19285.63
 "338","Russia","RUS",2014,144285072,"Europe","GDP_pc",26057.156
-"339","Russia","RUS",2015,144668384,"Europe","annual_co2_pc",9.107773
+"339","Russia","RUS",2015,144668384,"Europe","annual_co2_pc",18215.546
 "340","Russia","RUS",2015,144668384,"Europe","GDP_pc",25488.096
-"341","Russia","RUS",2016,145109152,"Europe","annual_co2_pc",9.368515
+"341","Russia","RUS",2016,145109152,"Europe","annual_co2_pc",18737.03
 "342","Russia","RUS",2016,145109152,"Europe","GDP_pc",25490.709
-"343","Russia","RUS",2017,145452544,"Europe","annual_co2_pc",9.583283
+"343","Russia","RUS",2017,145452544,"Europe","annual_co2_pc",19166.566
 "344","Russia","RUS",2017,145452544,"Europe","GDP_pc",25926.443
-"345","Russia","RUS",2018,145652288,"Europe","annual_co2_pc",9.3166
+"345","Russia","RUS",2018,145652288,"Europe","annual_co2_pc",18633.2
 "346","Russia","RUS",2018,145652288,"Europe","GDP_pc",26656.41
-"347","Russia","RUS",2019,145742288,"Europe","annual_co2_pc",9.468638
+"347","Russia","RUS",2019,145742288,"Europe","annual_co2_pc",18937.276
 "348","Russia","RUS",2019,145742288,"Europe","GDP_pc",27254.574
-"349","Russia","RUS",2020,145617328,"Europe","annual_co2_pc",9.340569
+"349","Russia","RUS",2020,145617328,"Europe","annual_co2_pc",18681.138
 "350","Russia","RUS",2020,145617328,"Europe","GDP_pc",26583.797
 "351","Russia","RUS",2021,145102752,"Europe","annual_co2_pc",NA
 "352","Russia","RUS",2021,145102752,"Europe","GDP_pc",27960.102
@@ -359,67 +359,67 @@
 "358","Russia","RUS",1988,146464384,"Europe","GDP_pc",NA
 "359","Russia","RUS",1989,147341504,"Europe","annual_co2_pc",NA
 "360","Russia","RUS",1989,147341504,"Europe","GDP_pc",NA
-"361","United States","USA",1990,248083728,"North America","annual_co2_pc",20.347502
+"361","United States","USA",1990,248083728,"North America","annual_co2_pc",40695.004
 "362","United States","USA",1990,248083728,"North America","GDP_pc",40456.242
-"363","United States","USA",1991,251560192,"North America","annual_co2_pc",19.72527
+"363","United States","USA",1991,251560192,"North America","annual_co2_pc",39450.54
 "364","United States","USA",1991,251560192,"North America","GDP_pc",39876.016
-"365","United States","USA",1992,255175328,"North America","annual_co2_pc",20.175217
+"365","United States","USA",1992,255175328,"North America","annual_co2_pc",40350.434
 "366","United States","USA",1992,255175328,"North America","GDP_pc",40712.062
-"367","United States","USA",1993,258779760,"North America","annual_co2_pc",20.126003
+"367","United States","USA",1993,258779760,"North America","annual_co2_pc",40252.006
 "368","United States","USA",1993,258779760,"North America","GDP_pc",41284.355
-"369","United States","USA",1994,262273584,"North America","annual_co2_pc",20.2478
+"369","United States","USA",1994,262273584,"North America","annual_co2_pc",40495.6
 "370","United States","USA",1994,262273584,"North America","GDP_pc",42424.168
-"371","United States","USA",1995,265660560,"North America","annual_co2_pc",20.21765
+"371","United States","USA",1995,265660560,"North America","annual_co2_pc",40435.3
 "372","United States","USA",1995,265660560,"North America","GDP_pc",43047.26
-"373","United States","USA",1996,268984352,"North America","annual_co2_pc",20.590729
+"373","United States","USA",1996,268984352,"North America","annual_co2_pc",41181.458
 "374","United States","USA",1996,268984352,"North America","GDP_pc",44154.547
-"375","United States","USA",1997,272395424,"North America","annual_co2_pc",20.717155
+"375","United States","USA",1997,272395424,"North America","annual_co2_pc",41434.31
 "376","United States","USA",1997,272395424,"North America","GDP_pc",45566.26
-"377","United States","USA",1998,275835008,"North America","annual_co2_pc",21.054504
+"377","United States","USA",1998,275835008,"North America","annual_co2_pc",42109.008
 "378","United States","USA",1998,275835008,"North America","GDP_pc",47056.51
-"379","United States","USA",1999,279181568,"North America","annual_co2_pc",21.440773
+"379","United States","USA",1999,279181568,"North America","annual_co2_pc",42881.546
 "380","United States","USA",1999,279181568,"North America","GDP_pc",48749.598
-"381","United States","USA",2000,282398560,"North America","annual_co2_pc",22.11325
+"381","United States","USA",2000,282398560,"North America","annual_co2_pc",44226.5
 "382","United States","USA",2000,282398560,"North America","GDP_pc",50175.74
-"383","United States","USA",2001,285470496,"North America","annual_co2_pc",21.609848
+"383","United States","USA",2001,285470496,"North America","annual_co2_pc",43219.696
 "384","United States","USA",2001,285470496,"North America","GDP_pc",50155.707
-"385","United States","USA",2002,288350240,"North America","annual_co2_pc",21.833733
+"385","United States","USA",2002,288350240,"North America","annual_co2_pc",43667.466
 "386","United States","USA",2002,288350240,"North America","GDP_pc",50535.273
-"387","United States","USA",2003,291109824,"North America","annual_co2_pc",22.287739
+"387","United States","USA",2003,291109824,"North America","annual_co2_pc",44575.478
 "388","United States","USA",2003,291109824,"North America","GDP_pc",51503.773
-"389","United States","USA",2004,293947872,"North America","annual_co2_pc",22.531967
+"389","United States","USA",2004,293947872,"North America","annual_co2_pc",45063.934
 "390","United States","USA",2004,293947872,"North America","GDP_pc",52995.242
-"391","United States","USA",2005,296842656,"North America","annual_co2_pc",22.669197
+"391","United States","USA",2005,296842656,"North America","annual_co2_pc",45338.394
 "392","United States","USA",2005,296842656,"North America","GDP_pc",54338.027
-"393","United States","USA",2006,299753088,"North America","annual_co2_pc",22.407478
+"393","United States","USA",2006,299753088,"North America","annual_co2_pc",44814.956
 "394","United States","USA",2006,299753088,"North America","GDP_pc",55314.203
-"395","United States","USA",2007,302743392,"North America","annual_co2_pc",21.971758
+"395","United States","USA",2007,302743392,"North America","annual_co2_pc",43943.516
 "396","United States","USA",2007,302743392,"North America","GDP_pc",55892.2
-"397","United States","USA",2008,305694912,"North America","annual_co2_pc",20.698751
+"397","United States","USA",2008,305694912,"North America","annual_co2_pc",41397.502
 "398","United States","USA",2008,305694912,"North America","GDP_pc",55433.676
-"399","United States","USA",2009,308512032,"North America","annual_co2_pc",18.750208
+"399","United States","USA",2009,308512032,"North America","annual_co2_pc",37500.416
 "400","United States","USA",2009,308512032,"North America","GDP_pc",53521.207
-"401","United States","USA",2010,311182848,"North America","annual_co2_pc",19.188433
+"401","United States","USA",2010,311182848,"North America","annual_co2_pc",38376.866
 "402","United States","USA",2010,311182848,"North America","GDP_pc",54516.855
-"403","United States","USA",2011,313876608,"North America","annual_co2_pc",18.551447
+"403","United States","USA",2011,313876608,"North America","annual_co2_pc",37102.894
 "404","United States","USA",2011,313876608,"North America","GDP_pc",54960.906
-"405","United States","USA",2012,316651328,"North America","annual_co2_pc",17.862911
+"405","United States","USA",2012,316651328,"North America","annual_co2_pc",35725.822
 "406","United States","USA",2012,316651328,"North America","GDP_pc",55803.51
-"407","United States","USA",2013,319375168,"North America","annual_co2_pc",17.982372
+"407","United States","USA",2013,319375168,"North America","annual_co2_pc",35964.744
 "408","United States","USA",2013,319375168,"North America","GDP_pc",56438.945
-"409","United States","USA",2014,322033952,"North America","annual_co2_pc",18.141993
+"409","United States","USA",2014,322033952,"North America","annual_co2_pc",36283.986
 "410","United States","USA",2014,322033952,"North America","GDP_pc",57308.32
-"411","United States","USA",2015,324607776,"North America","annual_co2_pc",17.852444
+"411","United States","USA",2015,324607776,"North America","annual_co2_pc",35704.888
 "412","United States","USA",2015,324607776,"North America","GDP_pc",58427.55
-"413","United States","USA",2016,327210208,"North America","annual_co2_pc",17.309807
+"413","United States","USA",2016,327210208,"North America","annual_co2_pc",34619.614
 "414","United States","USA",2016,327210208,"North America","GDP_pc",58972.902
-"415","United States","USA",2017,329791232,"North America","annual_co2_pc",17.087513
+"415","United States","USA",2017,329791232,"North America","annual_co2_pc",34175.026
 "416","United States","USA",2017,329791232,"North America","GDP_pc",59914.777
-"417","United States","USA",2018,332140032,"North America","annual_co2_pc",17.476597
+"417","United States","USA",2018,332140032,"North America","annual_co2_pc",34953.194
 "418","United States","USA",2018,332140032,"North America","GDP_pc",61355.65
-"419","United States","USA",2019,334319680,"North America","annual_co2_pc",17.027067
+"419","United States","USA",2019,334319680,"North America","annual_co2_pc",34054.134
 "420","United States","USA",2019,334319680,"North America","GDP_pc",62478.254
-"421","United States","USA",2020,335942016,"North America","annual_co2_pc",15.471116
+"421","United States","USA",2020,335942016,"North America","annual_co2_pc",30942.232
 "422","United States","USA",2020,335942016,"North America","GDP_pc",60167.855
 "423","United States","USA",2021,336997632,"North America","annual_co2_pc",NA
 "424","United States","USA",2021,336997632,"North America","GDP_pc",63669.71

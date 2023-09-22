@@ -22,10 +22,18 @@ co2_gdppc <- read.csv("data/consumption-co2-per-capita-vs-gdppc.csv") |>
   rename("GDP_pc" = "GDP.per.capita..PPP..constant.2017.international...") |> 
   rename("population" = "Population..historical.estimates.") |> 
   rename("annual_co2_pc" = "Annual.consumption.based.CO..emissions..per.capita.")
-
 not_in <- unique(co2_gdppc[!(co2_gdppc$Entity %in% valid_countries),]$Entity)
 co2_gdppc <- co2_gdppc[co2_gdppc$Entity %in% valid_countries,]
+
 write.csv(co2_gdppc, "data/co2_gdppc.csv")
+
+co2_gdppc_multiples <- co2_gdppc |> 
+  filter(Entity %in% c("Australia", "China", "India", "Russia", "United States", "Germany")) |> 
+  mutate(annual_co2_pc = annual_co2_pc * 2000)
+  pivot_longer(c(annual_co2_pc, GDP_pc), names_to="type", values_to="vals")
+  # pivot_wider(names_from=Entity, values_from=c(annual_co2_pc, GDP_pc))
+
+write.csv(co2_gdppc_multiples, "data/co2_gdppc_multiples.csv")
 
 ######## SHARE OF SOLAR ELECTRICITY
 solar_share <- read.csv("data/share-electricity-solar.csv") |> 
