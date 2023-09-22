@@ -145,7 +145,7 @@
   
     "config": {
       "background": "#ffffff",
-      "font": "MyFont",
+      "font": "Roboto",
       "legend": {
         "titleFontSize": 14,
         "labelFontSize": 12
