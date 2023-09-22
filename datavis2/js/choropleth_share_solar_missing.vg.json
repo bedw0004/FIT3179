@@ -32,7 +32,13 @@
         "mark": {"type": "geoshape", "fill": null, "stroke": "#feedde"}
       },
 
-      {
+      {"transform": [
+    {"filter": "datum.Year == Year_select"},
+    {"filter": "datum.population != 'NA'"},
+    {"filter": "datum.GDP_pc != 'NA'"},
+    {"filter": "datum.annual_co2_pc != 'NA'"},
+    {"filter": "datum.annual_co2_pc < 30"}
+  ],
         "data": {
           "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ne_110m.topojson",
           "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}

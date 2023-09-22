@@ -28,9 +28,9 @@ co2_gdppc <- co2_gdppc[co2_gdppc$Entity %in% valid_countries,]
 write.csv(co2_gdppc, "data/co2_gdppc.csv")
 
 co2_gdppc_multiples <- co2_gdppc |> 
-  filter(Entity %in% c("Australia", "China", "India", "Russia", "United States", "Germany")) |> 
-  mutate(annual_co2_pc = annual_co2_pc * 2000) |> 
-  pivot_longer(c(annual_co2_pc, GDP_pc), names_to="type", values_to="vals")
+  filter(Entity %in% c("Australia", "China", "India", "Russia", "United States", "Germany")) 
+  # mutate(annual_co2_pc = annual_co2_pc * 2000) |> 
+  # pivot_longer(c(annual_co2_pc, GDP_pc), names_to="type", values_to="vals")
   # pivot_wider(names_from=Entity, values_from=c(annual_co2_pc, GDP_pc))
 
 write.csv(co2_gdppc_multiples, "data/co2_gdppc_multiples.csv")
