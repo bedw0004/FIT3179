@@ -1,26 +1,49 @@
-#choropleth_map {
-	top:50px;
-	bottom: 50px; 
-	left: 50px;
-	right: 50px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#choropleth_map_heading {
-	padding-left: 35px;
-	padding-top: 10px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-@font-face {
-	font-family: MyFont;
-	src: url(fonts/Roboto/Roboto-Light.ttf);
+.pure-g {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+    margin-bottom: 40px;
 }
 
 
 h1 {
-	font-family: MyFont;
+	font-family: 'Roboto', sans-serif;
 	color: black;
+	font-weight: 900;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-weight: 400;
+}
+
+body {
+    background-color: #d8f7fd4b;
+}
+
+p {
+	font-family: 'Roboto';
+}
+
+.description-right {
+    padding-left: 20px;
+}
+
+.description-left {
+    padding-right: 20px;
+}
+
+#choropleth_map {
+	/* top:10px;
+	bottom: 50px; 
+	left: 50px;
+	right: 50px; */
+	width: 100%;
+	height: 500px;
+}
+
+#energy_dot_plot {
+	width: 100%;
+	height: 500px;
 }

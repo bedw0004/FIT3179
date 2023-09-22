@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
-  "height": 500,
+  "width": "container",
+  "height": "container",
   "title": "CO₂ emissions per capita vs. GDP per capita",
   "data": {
     "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/co2_gdppc.csv"
@@ -19,6 +19,7 @@
       }
     }
   ],
+  
 
   "transform": [
     {"filter": "datum.Year == Year_select"},
@@ -33,14 +34,14 @@
       "field": "GDP_pc",
       "type": "quantitative",
       "title": "GDP per capita (International $)",
-      "axis": {"tickCount": 2},
+      "axis": {"tickCount": 2, "gridOpacity": 0.4},
       "scale": {"type": "log", "domain": [400, 200000]}
     },
     "y": {
       "field": "annual_co2_pc",
       "title": "Annual CO2 consumption based emissions per capita (tonnes)",
       "type": "quantitative",
-      "axis": {"tickCount": 4},
+      "axis": {"tickCount": 4, "gridOpacity": 0.4},
       "scale": {"type": "linear", "domain": [0, 30]}
     }
   },
@@ -108,15 +109,51 @@
         "align": "right",
         "baseline": "middle",
         "dx": -18,
-        "fontSize": 11.5
+        "fontSize": 11.5,
+        "fontWeight": "bold"
       },
       "transform": [
-        {"filter": "datum['Entity'] == 'China' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Russia'|| datum['Entity'] == 'India' ||  datum['Entity'] == 'United States'"}
+        {"filter": "(datum['Entity'] == 'China' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Russia'|| datum['Entity'] == 'India' ||  datum['Entity'] == 'United States')"
+        }
       ],
       "encoding": {
         "text": {"field": "Entity", "type": "nominal"},
-        "color": {"value": "black"}
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania"
+            ],
+            "range": [
+              "#e41a1c",
+              "#377eb8",
+              "#4daf4a",
+              "#E6D554",
+              "#ff7f00",
+              "#984ea3"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {"param": "continent_highlight", "value": 0.9},
+          "value": 0.1
+        }
       }
     }
-  ]
+  ],
+
+  "config": {
+    "background": "#ffffff",
+    "font": "Roboto",
+    "legend": {
+      "titleFontSize": 14,
+      "labelFontSize": 12
+    }
+  }
 }
