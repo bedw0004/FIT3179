@@ -1,0 +1,120 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "projection": {"type": "equalEarth"},
+    "params": [
+    {
+      "name": "Year_select",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1985,
+        "max": 2022,
+        "step": 1,
+        "name": "Year: "
+      }
+    }],  
+  
+    "layer":[
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/oceans.topojson",
+          "format": {"type": "topojson", "feature": "oceans"}
+        },
+        "mark": {"type": "geoshape", "fill": "#a3deec"}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ne_110m.topojson",
+          "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+        },
+        "mark": {"type": "geoshape", "fill": null, "stroke": "#feedde"}
+      },
+
+      {"transform": [
+    {"filter": "datum.Year == Year_select"},
+    {"filter": "datum.population != 'NA'"},
+    {"filter": "datum.GDP_pc != 'NA'"},
+    {"filter": "datum.annual_co2_pc != 'NA'"},
+    {"filter": "datum.annual_co2_pc < 30"}
+  ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ne_110m.topojson",
+          "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+        },
+        "transform": [
+          {"calculate": "'Data is not available in ' + datum.properties.NAME + ' for this year'", "as": "note"}
+        ],
+        "mark": {
+          "type": "geoshape", 
+          "fill": "#e8e8e8", 
+          "stroke": "white",
+          "strokeWidth": 0.6, 
+          "strokeOpacity": 0.8
+        },
+        "encoding": {"tooltip": {"field": "note"}}
+      },
+      
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/share_elec_low_carbon.csv"
+        },
+        "transform": [
+            {"filter": "datum.Year == Year_select"},
+            {
+                "lookup": "Code",
+                "from": {
+                    "data": {
+                    "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ne_110m_admin_0_countries.topojson",
+                    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+                    },
+                    "key": "properties.ISO_A3_EH"
+                },
+                "as": "geo"
+            },
+            {
+              "calculate": "datum.low_carbon_perc/100",
+              "as": "solar_prop"
+            }
+        ],
+        "mark": {
+          "type": "geoshape", 
+          "stroke": "black", 
+          "strokeWidth": 0.4, 
+          "strokeOpacity": 0.5
+        },
+        "encoding": {
+            "shape": {
+              "field": "geo",
+              "type": "geojson"
+            },
+            "color": {
+                "field": "low_carbon_perc",
+                "type": "quantitative",
+                "title": "Percentage",
+                "scale": {
+                    "type": "threshold",
+                    "domain": [ 10, 20, 30, 40, 50, 60, 70, 80],
+                    "range": ["#fff5eb","#fee6ce","#fdd0a2","#fdae6b","#fd8d3c","#f16913","#d94801","#a63603","#7f2704"]
+                }
+            },
+            "tooltip": [
+                {"field": "Year", "type": "quantitative"},
+                {"field": "geo.properties.NAME", "type": "nominal", "title": "Country"},
+                {"field": "solar_prop", "type": "quantitative", "title": "Percentage of solar electricity", "format": "0.1%"}
+            ]
+        }
+      }
+    ],
+  
+    "config": {
+      "background": "#ffffff",
+      "font": "Roboto",
+      "legend": {
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      }
+    }
+  }
+  

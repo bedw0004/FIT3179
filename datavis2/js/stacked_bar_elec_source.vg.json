@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": { "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/elec_prod_by_source.csv"},
+    "width": 450,
+    "height": {"step": 17},
+  
+    "params": [
+      {
+        "name": "Year_select",
+        "value": 2022,
+        "bind": {
+          "input": "range",
+          "min": 1990,
+          "max": 2022,
+          "step": 1,
+          "name": "Year: "
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.Year == Year_select"}
+    ],
+    
+    "encoding": {
+      "y": {"field": "Entity"}
+    },
+    "layer": [{
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "aggregate": "sum", "field": "energy_prop",
+          "title": "energy",
+          "stack":  "normalize"
+        },
+        "color": {
+          "field": "source",
+          "scale": {"scheme": "brownbluegreen"}
+        }
+      }
+    }, 
+    {
+      "mark": {"type": "text", "color": "white"},
+      "encoding": {
+        "x": {
+          "aggregate": "sum", "field": "energy_twh",
+          "title": "energy",
+          "stack":  "normalize",
+          "bandPosition": 0.5
+        },
+        "text": {
+          "aggregate": "sum", "field": "energy_prop",
+          "title": "energy proportion", "format": ".1%"
+        },
+        "detail": {
+          "field": "source"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['sum_energy_prop'] > 0.1",
+            "value": 0.9
+          },
+          "value": 0
+        }
+      }
+    }]
+  }
+  
