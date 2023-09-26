@@ -43,16 +43,23 @@ newnames <- c("other_renewables", "bioenergy", "solar", "wind", "hydro", "nuclea
 elec_prod_by_source <- elec_prod_by_source |> rename_at(vars(oldnames), ~ newnames) |> 
   filter(Entity %in% c("World", "Australia", "Brazil", "China", "India", "Russia", "United States", "Germany", "France", "United Kingdom", "Norway", "Canada", "Sweden", "Japan", "South Africa"))
 
-elec_prod_by_source <- elec_prod_by_source |> 
+elec_prod_by_source_rank <- elec_prod_by_source |> 
   pivot_longer(cols=other_renewables:coal, names_to="source", values_to = "energy_twh") |> 
   mutate_all(~replace(., is.na(.), 0)) |> 
   group_by(Year) |> 
   arrange(desc(energy_twh), .by_group = TRUE) |> 
   mutate(rank = row_number())
 
-elec_prod_source_rank <- elec_prod_by_source |> filter(Entity == "World")
+elec_prod_source_rank <- elec_prod_by_source_rank |> filter(Entity == "World")
 
 write.csv(elec_prod_source_rank, "data/elec_prod_source_rank.csv")
+
+elec_prod_by_source <- elec_prod_by_source |> 
+  mutate_all(~replace(., is.na(.), 0)) |> 
+  mutate(renewables = other_renewables + bioenergy + solar + wind + hydro,
+         fossil_fuels = coal + oil + gas) |> 
+  select(-other_renewables, -bioenergy, -solar, -wind, -hydro, -coal, -oil, -gas) |> 
+  pivot_longer(cols=nuclear:fossil_fuels, names_to="source", values_to = "energy_twh")
 
 write.csv(elec_prod_by_source, "data/elec_prod_by_source.csv")
 
