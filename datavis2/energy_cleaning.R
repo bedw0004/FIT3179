@@ -35,6 +35,25 @@ co2_gdppc_multiples <- co2_gdppc |>
 
 write.csv(co2_gdppc_multiples, "data/co2_gdppc_multiples.csv")
 
+######## ENERGY PRODUCTION BY SOURCE
+elec_prod_by_source <- read.csv("data/electricity_prod_source_stacked.csv")
+
+elec_prod_by_source_world <- elec_prod_by_source |> filter(Entity == "World")
+oldnames <- colnames(elec_prod_by_source_world)[4:12]
+newnames <- c("other_renewables", "bioenergy", "solar", "wind", "hydro", "nuclear", "oil", "gas", "coal")
+elec_prod_by_source_world <- elec_prod_by_source_world |> rename_at(vars(oldnames), ~ newnames)
+write.csv(elec_prod_by_source_world, "data/elec_prod_source_world.csv")
+
+elec_prod_source_rank <- elec_prod_by_source_world |> 
+  pivot_longer(cols=other_renewables:coal, names_to="source", values_to = "energy_twh") |> 
+  mutate_all(~replace(., is.na(.), 0)) |> 
+  group_by(Year) |> 
+  arrange(desc(energy_twh), .by_group = TRUE) |> 
+  mutate(rank = row_number())
+
+write.csv(elec_prod_source_rank, "data/elec_prod_source_rank.csv")
+  
+
 ######## SHARE OF SOLAR ELECTRICITY
 solar_share <- read.csv("data/share-electricity-solar.csv") |> 
   rename(`solar_perc` = `Solar....electricity.`) |> 
