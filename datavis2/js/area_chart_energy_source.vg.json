@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600, "height": 400,
+    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/energy_consump_source_rank.csv"},
+    "mark": "area",
+    "encoding": {
+      "x": {
+        "timeUnit": "yearmonth", "field": "Year",
+        "axis": {"format": "%Y"}
+      },
+      "y": {
+        "aggregate": "sum", "field": "energy_twh"
+      },
+      "color": {
+        "field": "source",
+        "scale": {"scheme": "category10"},
+        "sort": [
+          "other_renewables", "solar", "wind", "nuclear", "hydro", "gas", "oil", "coal", "bioenergy"
+        ]
+      },
+      "order": {"field": "color_source_sort_index", "type": "ordinal", "sort": "descending"}
+    }
+  }
+  

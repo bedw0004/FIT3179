@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600, "height": 400,
+    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/energy_consump_source_rank.csv"},
+    "mark": "area",
+    "encoding": {
+        "x": {
+        "timeUnit": "yearmonth", "field": "Year",
+        "axis": {"format": "%Y"}
+        },
+        "y": {
+        "aggregate": "sum", "field": "energy_twh"
+        },
+        "color": {
+        "field": "source",
+        "scale": {"scheme": "category10"}
+        },
+        "order": {"field": "order", "type": "ordinal", "sort": "descending"}
+    }
+}
+    
