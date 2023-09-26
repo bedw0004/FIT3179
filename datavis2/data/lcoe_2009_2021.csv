@@ -1,0 +1,17 @@
+"","source","year","lcoe"
+"1","solar_pv","2009",359
+"2","solar_pv","2021",36
+"3","gas_peaking","2009",275
+"4","gas_peaking","2021",173
+"5","solar_thermal","2009",168
+"6","solar_thermal","2021",141
+"7","wind","2009",135
+"8","wind","2021",38
+"9","nuclear","2009",123
+"10","nuclear","2021",167
+"11","coal","2009",111
+"12","coal","2021",108
+"13","gas_combined_cylce","2009",83
+"14","gas_combined_cylce","2021",60
+"15","geothermal","2009",76
+"16","geothermal","2021",75
