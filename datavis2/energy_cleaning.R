@@ -151,4 +151,8 @@ slope_lcoe <- data.frame(
   "source" = c("solar_pv", "gas_peaking", "solar_thermal", "wind", "nuclear", "coal", "gas_combined_cylce", "geothermal"),
   "lcoe_2009" = c(359, 275, 168, 135, 123, 111, 83, 76),
   "lcoe_2021" = c(36, 173, 141, 38, 167, 108, 60, 75)
-  )
+  ) |> 
+  rename(`2009` = lcoe_2009, `2021` = lcoe_2021) |> 
+  pivot_longer(cols = c(`2009`, `2021`), names_to = "year", values_to = "lcoe")
+
+write.csv(slope_lcoe, "data/lcoe_2009_2021.csv")

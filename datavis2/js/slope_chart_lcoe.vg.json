@@ -1,0 +1,61 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/lcoe_2009_2021.csv"},
+    
+    "width": 300,
+    "height": 500,
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "ordinal",
+        "scale": {"padding": 0},
+        "title": null
+      },
+      "y": {
+        "field": "lcoe",
+        "type": "quantitative",
+        "axis": null
+      },
+      "color": {
+        "field": "source", 
+        "type": "nominal", 
+        "scale": {"scheme": "category10"},
+        "legend": null
+      }
+    },
+  
+    "transform": [{"filter": "datum.source != 'gas_peaking'"}],
+  
+    "layer": [
+      {
+        "mark": {"type": "line", "strokeWidth": 3}
+      },
+      {
+        "encoding": {
+          "x": {"field": "year"},
+          "y": {"aggregate": {"argmax": "year"}, "field": "lcoe"}
+        },
+        "layer": [
+          {
+            "mark": {"type": "circle"}
+          }, 
+          {
+            "mark": {"type": "text", "align": "left", "dx": 10},
+            "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
+          }, 
+          {
+            "mark": {"type": "text", "align": "left", "dx": 40, "dy": 0},
+            "encoding": {"text": {"field":"source", "type": "nominal"}}
+          }
+        ]
+      }
+    ],
+    "config": {
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
+    }
+  }
+  
