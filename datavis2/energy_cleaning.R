@@ -75,6 +75,24 @@ energy_consump_source_rank <- energy_consump_by_source |>
 
 write.csv(energy_consump_source_rank, "data/energy_consump_source_rank.csv")
 
+
+######## RENEWABLE ENERGY GENERATION
+renewable_generation <- read.csv("data/renewable-energy-gen.csv") |> 
+  filter(Entity == "World")
+
+oldnames <- colnames(renewable_generation)[4:7]
+newnames <- c("other_renewables", "solar", "wind", "hydro")
+renewable_generation <- renewable_generation |> 
+  rename_at(vars(oldnames), ~ newnames) |> 
+  pivot_longer(cols=other_renewables:hydro, names_to="source", values_to = "energy_twh") |> 
+  mutate_all(~replace(., is.na(.), 0)) |> 
+  group_by(Year) |> 
+  arrange(desc(energy_twh), .by_group = TRUE) |> 
+  mutate(rank = row_number())
+
+write.csv(renewable_generation, "data/renewable_gen_world.csv")
+
+
 ######## SHARE OF SOLAR ELECTRICITY
 solar_share <- read.csv("data/share-electricity-solar.csv") |> 
   rename(`solar_perc` = `Solar....electricity.`) |> 
