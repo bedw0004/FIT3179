@@ -35,7 +35,7 @@ co2_gdppc_multiples <- co2_gdppc |>
 
 write.csv(co2_gdppc_multiples, "data/co2_gdppc_multiples.csv")
 
-######## ENERGY PRODUCTION BY SOURCE
+######## ELECTRICITY PRODUCTION BY SOURCE
 elec_prod_by_source <- read.csv("data/electricity_prod_source_stacked.csv")
 
 elec_prod_by_source_world <- elec_prod_by_source |> filter(Entity == "World")
@@ -52,7 +52,28 @@ elec_prod_source_rank <- elec_prod_by_source_world |>
   mutate(rank = row_number())
 
 write.csv(elec_prod_source_rank, "data/elec_prod_source_rank.csv")
-  
+
+######## ENERGY CONSUMPTION BY SOURCE
+energy_consump_by_source <- read.csv("data/energy_consumption_source.csv")
+
+oldnames <- colnames(energy_consump_by_source)[4:13]
+newnames <- c("other_renewables", "biofuels", "solar", "wind", "hydro", "nuclear", "gas", "oil", "coal", "traditional_biomass")
+energy_consump_by_source <- energy_consump_by_source |> 
+  filter(Year > 1899) |> 
+  rename_at(vars(oldnames), ~ newnames) |> 
+  mutate(bioenergy = biofuels + traditional_biomass) |> 
+  select(-biofuels, -traditional_biomass)
+
+write.csv(energy_consump_by_source, "data/energy_consump_source_world.csv")
+
+energy_consump_source_rank <- energy_consump_by_source |> 
+  pivot_longer(cols=other_renewables:bioenergy, names_to="source", values_to = "energy_twh") |> 
+  mutate_all(~replace(., is.na(.), 0)) |> 
+  group_by(Year) |> 
+  arrange(desc(energy_twh), .by_group = TRUE) |> 
+  mutate(rank = row_number())
+
+write.csv(energy_consump_source_rank, "data/energy_consump_source_rank.csv")
 
 ######## SHARE OF SOLAR ELECTRICITY
 solar_share <- read.csv("data/share-electricity-solar.csv") |> 
