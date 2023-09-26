@@ -38,20 +38,23 @@ write.csv(co2_gdppc_multiples, "data/co2_gdppc_multiples.csv")
 ######## ELECTRICITY PRODUCTION BY SOURCE
 elec_prod_by_source <- read.csv("data/electricity_prod_source_stacked.csv")
 
-elec_prod_by_source_world <- elec_prod_by_source |> filter(Entity == "World")
-oldnames <- colnames(elec_prod_by_source_world)[4:12]
+oldnames <- colnames(elec_prod_by_source)[4:12]
 newnames <- c("other_renewables", "bioenergy", "solar", "wind", "hydro", "nuclear", "oil", "gas", "coal")
-elec_prod_by_source_world <- elec_prod_by_source_world |> rename_at(vars(oldnames), ~ newnames)
-write.csv(elec_prod_by_source_world, "data/elec_prod_source_world.csv")
+elec_prod_by_source <- elec_prod_by_source |> rename_at(vars(oldnames), ~ newnames) |> 
+  filter(Entity %in% c("World", "Australia", "Brazil", "China", "India", "Russia", "United States", "Germany", "France", "United Kingdom", "Norway", "Canada", "Sweden", "Japan", "South Africa"))
 
-elec_prod_source_rank <- elec_prod_by_source_world |> 
+elec_prod_by_source <- elec_prod_by_source |> 
   pivot_longer(cols=other_renewables:coal, names_to="source", values_to = "energy_twh") |> 
   mutate_all(~replace(., is.na(.), 0)) |> 
   group_by(Year) |> 
   arrange(desc(energy_twh), .by_group = TRUE) |> 
   mutate(rank = row_number())
 
+elec_prod_source_rank <- elec_prod_by_source |> filter(Entity == "World")
+
 write.csv(elec_prod_source_rank, "data/elec_prod_source_rank.csv")
+
+write.csv(elec_prod_by_source, "data/elec_prod_by_source.csv")
 
 ######## ENERGY CONSUMPTION BY SOURCE
 energy_consump_by_source <- read.csv("data/energy_consumption_source.csv")
