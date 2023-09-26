@@ -144,3 +144,11 @@ low_carbon_share_filtered <- low_carbon_share |>
   filter(Entity %in% interesting_countries)
 
 write.csv(low_carbon_share_filtered, "data/share_elec_low_carbon_filtered.csv")
+
+
+# SLOPE CHART - LEVELIZED COST OF ENERGY
+slope_lcoe <- data.frame(
+  "source" = c("solar_pv", "gas_peaking", "solar_thermal", "wind", "nuclear", "coal", "gas_combined_cylce", "geothermal"),
+  "lcoe_2009" = c(359, 275, 168, 135, 123, 111, 83, 76),
+  "lcoe_2021" = c(36, 173, 141, 38, 167, 108, 60, 75)
+  )

@@ -1,0 +1,87 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/share_elec_low_carbon_filtered.csv"},
+    "width": 500,
+    "height": 500,
+  
+    "transform": [
+      {"filter": "datum.low_carbon_perc != 'NA'"},
+      {"filter": {"param": "country_selection"}}
+    ],
+  
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal", "title": "Year"},
+      "y": {"field": "low_carbon_perc", "type": "quantitative", "title": "Low carbon %"},
+      "color": {
+        "condition": {
+          "param": "hover",
+          "field":"Entity",
+          "type":"nominal",
+          "legend": null
+        },
+        "value": "black"
+      },
+      "opacity": {
+        "condition": {
+          "param": "hover",
+          "value": 1
+        },
+        "value": 0.1
+      }
+    },
+  
+    "layer": [
+      {
+        "description": "transparent layer to make it easier to trigger selection",
+        "params": [{
+          "name": "hover",
+          "value": [{"Entity": "Australia"}],
+          "select": {
+            "type": "point",
+            "fields": ["Entity"],
+            "on": "mouseover"
+          }
+        }],
+        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      },
+      {
+        "params": [
+          {
+            "name": "country_selection",
+            "value": null,
+            "bind": {
+              "input": "select",
+              "options": [
+                null, "World", "Australia", "Brazil", "China", "India", "Russia", "United States", "Germany", "France", "United Kingdom", "Norway", "Canada", "Sweden", "Japan", "South Africa"
+              ],
+              "labels": [
+                "Show all", "World", "Australia", "Brazil", "China", "India", "Russia", "United States", "Germany", "France", "United Kingdom", "Norway", "Canada", "Sweden", "Japan", "South Africa"
+              ],
+              "name": "Country Selection: "
+            },
+            "select": {"type": "point", "fields": ["Entity"]}
+          }
+        ],
+        "mark": "line"
+      }, 
+      {
+        "encoding": {
+          "x": {"aggregate": "max", "field": "Year"},
+          "y": {"aggregate": {"argmax": "Year"}, "field": "low_carbon_perc"}
+        },
+        "transform": [{"filter": {"param": "country_selection"}}],
+        "layer": [
+          {
+            "mark": {"type": "circle"}
+          }, 
+          {
+            "mark": {"type": "text", "align": "left", "dx": 4},
+            "encoding": {"text": {"field":"Entity", "type": "nominal"}}
+          }
+        ]
+      }
+    ],
+    "config": {"view": {"stroke": null}}
+  }
+  
