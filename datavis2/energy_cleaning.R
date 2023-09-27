@@ -173,4 +173,4 @@ write.csv(nuclear_primary_energy, "data/nuclear_primary_energy.csv")
 nuclear_primary_energy_filtered <- nuclear_primary_energy |> 
   filter(Entity %in% interesting_countries) 
 
-write.csv(nuclear_primary_energy, "data/nuclear_primary_energy_filtered.csv")
+write.csv(nuclear_primary_energy_filtered, "data/nuclear_primary_energy_filtered.csv")
