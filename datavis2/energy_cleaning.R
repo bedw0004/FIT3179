@@ -174,3 +174,10 @@ nuclear_primary_energy_filtered <- nuclear_primary_energy |>
   filter(Entity %in% interesting_countries) 
 
 write.csv(nuclear_primary_energy_filtered, "data/nuclear_primary_energy_filtered.csv")
+
+
+
+# GHG EMISSIONS BY SECTOR
+ghg_by_sector <- read.csv("data/ghg-emissions-by-sector.csv") |> 
+  filter(Entity %in% interesting_countries) |> 
+  pivot_longer(cols=Agriculture:AviationAndShipping, names_to="sector", values_to="emissions")
