@@ -18,41 +18,180 @@
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Montserrat:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Josefin+Sans&family=Montserrat:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
 
-  <div class="pure-g">
-    <div class="pure-u-1-1">
-      <h1>Net Zero: our path to a renewable energy future</h1>
-      <p>THE WORLD NEEDS TO REACH NET ZERO...</p>
+  <div class="title_block">
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Net Zero: a renewable energy future</h1>
+      </div>
     </div>
-  </div>
-
-  <div class="pure-g">
-    <div class="pure-u-1-2">
-      <h2>The world's energy problem</h2>
-      <div id="energy_dot_plot"></div>
-    </div>
-    <div class="pure-u-1-2">
-      <div class="description description-right">
-        <h2>Two Columns Layout</h2>
-        <p>The first column contains text and the second column contains a visualisation.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
+  
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <p id="intro_text_left">
+          The consequences of <b>climate change</b> are becoming increasingly evident and <b>severe</b>.<br><br>
+          The world's energy requirements are causing rising temperatures, extreme weather events, and the melting of polar ice caps.
+          To avoid the worst outcomes, the world <b>needs to act now</b>, but we aren't. 
+        </p>
+      </div>
+      <div class="pure-u-1-2">
+        <p id="intro_text_right">
+          So what does the data say about the <b>current</b> state of affairs in the <b>energy sector</b>?<br><br>
+          And is there any <b>evidence</b> to support the <b>current climate inaction</b>?
+        </p>
       </div>
     </div>
   </div>
 
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <h2>The energy problem</h2>
+    </div>
+  </div>
+    
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>Consumption-based CO₂ emissions per capita vs. GDP per capita</h3>
+      <div id="energy_dot_plot"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description description-right" id="plot_desc">
+        <p>
+          This plot highlights the <b>twin energy problem</b>.<br><br>
+          <b>The first</b>: developing countries with <b>low carbon emissions lack access to energy</b>. This is seen in the <b>left-hand</b> side of the scatter plot.
+          <br><br><b>The second</b>: richer countries produce excessive greenhouse gas emissions. This is seen in the <b>right-hand</b> side of the scatter plot.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>CO₂ emissions per capita vs. GDP per capita (developing vs. developed countries)</h3>
+      <div id="co2_multiples"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description description-right">
+        <h3>FIX FORMATTING OR MAKE THIS A DROP DOWN SELECTION - FIX TEXT ASSOCIATED</h3>
+        <p>
+          Interacting with this chart you can see the <b>downward trend</b> of <b>CO2 emissions per capita</b> in the countries with <b>higher GDP per capita</b> (Australia, Germany, UK and the US).<br><br>
+          While in developing countries, with <b>lower GDP per capita</b>, the emissions curve is <b>flattening</b>, but is <b>not decreasing</b>. 
+          This suggests that richer countries need to help developing nations to transition their energy habits if the world is to have any hope of meeting its emissions targets.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <h2>The current energy breakdown</h2>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>Energy consumption by source</h3>
+      <div id="area_energy_source"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description description-right" id="plot_desc">
+        <p>
+          <b>Fossil fuels</b> make up a <b>majority</b> of the <b>energy consumption</b> worldwide. <br><br>
+          <b>Oil</b> is consumed massively by the transport industry in road vehicles and on the air and sea.<br><br>
+          Electricity production is another huge consumer of energy.
+          This is where coal has the trump card
+          In recent years <b>solar</b> and <b>wind</b> have been steadily increasing in their share.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>Electricity production by source</h3>
+      <div id="area_elec_source"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <h3>Country breakdown of electricity production by source</h3>
+      <div id="stacked_bar_elec_source"></div>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>Energy breakdown per country</h3>
+      <h3>CREATE TREE MAP THAT BREAKS DOWN EACH COUNTRY INTO FOSSIL FUELS, NUCLEAR AND RENEWABLES WITH DROP DOWN SELECTION</h3>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description description-right" id="plot_desc">
+        <p>
+          There is still far too much brown in this plot.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <h2>Renewable is better, full stop</h2>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>Renewable sources in the energy mix</h3>
+      <div id="area_renewables"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description description-right" id="plot_desc">
+        <p>
+          It is easy to see why solar and wind power plants have increased in the world's energy mix in the last few years.<br><br>
+          New solar and wind energy plants are by far the cheapest to install, a no brainer for new investment.<br><br>
+          And, renewable energy and nuclear power plants are by far the safest and cleanest source of energy.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>Price of electricity from new power plants</h3>
+      <div id="slope_chart_lcoe"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <h3>The safest and cleanest sources of energy</h3>
+      <div id="butterfly_chart_deaths_ghg"></div>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <h2>The role models</h2>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>Share of electricity production from low carbon sources</h3>
+      <div id="choropleth_map_low_carbon"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <h3>Share of electricity production from low carbon sources</h3>
+      <div id="line_lowcarbon"></div>
+    </div>
+  </div>
 
   <div class="pure-g">
     <div class="pure-u-1-2">
       <div class="description description-left">
-        <h2>Two Columns Layout</h2>
+        <h3>Two Columns Layout</h3>
         <p>The first column contains text and the second column contains a visualisation.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -60,12 +199,10 @@
       </div>
     </div>
     <div class="pure-u-1-2">
-      <h2 id="choropleth_map_heading">Share of electricity production from solar</h2>
-      <div id="choropleth_map"></div>
+      <h3>Share of electricity production from solar</h3>
+      <div id="choropleth_map_solar"></div>
     </div>
   </div>
-
-
 
   <div class="pure-g">
     <div class="pure-u-1-1 small-font">
@@ -76,14 +213,58 @@
 
 
   <script type="text/javascript">
-
-    var spec = "js/choropleth_share_solar_missing.vg.json";
-    vegaEmbed('#choropleth_map', spec, {"actions": false}).then(function(result) {
+    var spec1 = "js/co2_gdppc.vg.json"
+    vegaEmbed('#energy_dot_plot', spec1, {"actions": false}).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    var spec2 = "js/co2_gdppc.vg.json"
-    vegaEmbed('#energy_dot_plot', spec2, {"actions": false}).then(function(result) {
+    var spec2 = "js/co2_multiples.vg.json"
+    vegaEmbed('#co2_multiples', spec2, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec3 = "js/area_chart_energy_source.vg.json";
+    vegaEmbed('#area_energy_source', spec3, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec4 = "js/area_chart_elec_source.vg.json";
+    vegaEmbed('#area_elec_source', spec4, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec5 = "js/stacked_bar_elec_source.vg.json";
+    vegaEmbed('#stacked_bar_elec_source', spec5, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec6_c = "js/area_chart_renewables.vg.json";
+    vegaEmbed('#area_renewables', spec6_c, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec6_a = "js/slope_chart_lcoe.vg.json";
+    vegaEmbed('#slope_chart_lcoe', spec6_a, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    var spec6_b = "js/butterfly_chart_deaths_ghg.vg.json";
+    vegaEmbed('#butterfly_chart_deaths_ghg', spec6_b, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec7 = "js/choropleth_share_low_carbon.vg.json";
+    vegaEmbed('#choropleth_map_low_carbon', spec7, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec8 = "js/line_chart_lowcarbon.vg.json";
+    vegaEmbed('#line_lowcarbon', spec8, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec9 = "js/choropleth_share_solar_missing.vg.json";
+    vegaEmbed('#choropleth_map_solar', spec9, {"actions": false}).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>

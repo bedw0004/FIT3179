@@ -1,10 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/co2_gdppc.csv"},
-  "columns": 4,
   "concat": [
     {
-      "title": {"text": "Australia", "color": "#f803cf"},
+      "width": 120,
+      "height": 120,
+      "title": {"text": "Australia", "color": "#0000009f"},
       "transform": [{"filter": "datum.Entity == 'Australia'"}],
       "layer": [
         {
@@ -18,7 +19,7 @@
               "field": "annual_co2_pc", "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.2, "titleColor": "#5f6aca",
-                "title": "Annual CO2 consumption (tonnes)"
+                "title": "Emissions per capita (tonnes)"
               },
               "scale": {"type": "linear", "domain": [0, 30]}
             },
@@ -47,7 +48,9 @@
       "resolve": {"scale": {"y": "independent"}}
     },
     {
-      "title": {"text": "Germany", "color": "#f803cf"},
+      "width": 120,
+      "height": 120,
+      "title": {"text": "Germany", "color": "#0000009f"},
       "transform": [{"filter": "datum.Entity == 'Germany'"}],
       "layer": [
         {
@@ -61,7 +64,7 @@
               "field": "annual_co2_pc", "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.2, "titleColor": "#5f6aca",
-                "title": "Annual CO2 consumption (tonnes)"
+                "title": "Emissions per capita (tonnes)"
               },
               "scale": {"type": "linear", "domain": [0, 30]}
             },
@@ -90,7 +93,9 @@
       "resolve": {"scale": {"y": "independent"}}
     },
     {
-      "title": {"text": "UK", "color": "#f803cf"},
+      "width": 120,
+      "height": 120,
+      "title": {"text": "UK", "color": "#0000009f"},
       "transform": [{"filter": "datum.Entity == 'United Kingdom'"}],
       "layer": [
         {
@@ -104,7 +109,7 @@
               "field": "annual_co2_pc", "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.2, "titleColor": "#5f6aca",
-                "title": "Annual CO2 consumption (tonnes)"
+                "title": "Emissions per capita (tonnes)"
               },
               "scale": {"type": "linear", "domain": [0, 30]}
             },
@@ -133,7 +138,9 @@
       "resolve": {"scale": {"y": "independent"}}
     },
     {
-      "title": {"text": "United States", "color": "#f803cf"},
+      "width": 120,
+      "height": 120,
+      "title": {"text": "United States", "color": "#0000009f"},
       "transform": [{"filter": "datum.Entity == 'United States'"}],
       "layer": [
         {
@@ -147,7 +154,7 @@
               "field": "annual_co2_pc", "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.2, "titleColor": "#5f6aca",
-                "title": "Annual CO2 consumption (tonnes)"
+                "title": "Emissions per capita (tonnes)"
               },
               "scale": {"type": "linear", "domain": [0, 30]}
             },
@@ -176,7 +183,9 @@
       "resolve": {"scale": {"y": "independent"}}
     },
     {
-      "title": {"text": "China", "color": "#f803cf"},
+      "width": 120,
+      "height": 120,
+      "title": {"text": "China", "color": "#0000009f"},
       "transform": [{"filter": "datum.Entity == 'China'"}],
       "layer": [
         {
@@ -190,7 +199,7 @@
               "field": "annual_co2_pc", "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.2, "titleColor": "#5f6aca",
-                "title": "Annual CO2 consumption (tonnes)"
+                "title": "Emissions per capita (tonnes)"
               },
               "scale": {"type": "linear", "domain": [0, 30]}
             },
@@ -219,7 +228,9 @@
       "resolve": {"scale": {"y": "independent"}}
     },
     {
-      "title": {"text": "India", "color": "#f803cf"},
+      "width": 120,
+      "height": 120,
+      "title": {"text": "India", "color": "#0000009f"},
       "transform": [{"filter": "datum.Entity == 'India'"}],
       "layer": [
         {
@@ -233,7 +244,7 @@
               "field": "annual_co2_pc", "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.2, "titleColor": "#5f6aca",
-                "title": "Annual CO2 consumption (tonnes)"
+                "title": "Emissions per capita (tonnes)"
               },
               "scale": {"type": "linear", "domain": [0, 30]}
             },
@@ -262,7 +273,9 @@
       "resolve": {"scale": {"y": "independent"}}
     },
     {
-      "title": {"text": "Indonesia", "color": "#f803cf"},
+      "width": 120,
+      "height": 120,
+      "title": {"text": "Indonesia", "color": "#0000009f"},
       "transform": [{"filter": "datum.Entity == 'Indonesia'"}],
       "layer": [
         {
@@ -276,7 +289,7 @@
               "field": "annual_co2_pc", "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.2, "titleColor": "#5f6aca",
-                "title": "Annual CO2 consumption (tonnes)"
+                "title": "Emissions per capita (tonnes)"
               },
               "scale": {"type": "linear", "domain": [0, 30]}
             },
@@ -305,7 +318,9 @@
       "resolve": {"scale": {"y": "independent"}}
     },
     {
-      "title": {"text": "Russia", "color": "#f803cf"},
+      "width": 120,
+      "height": 120,
+      "title": {"text": "Russia", "color": "#0000009f"},
       "transform": [{"filter": "datum.Entity == 'Russia'"}],
       "layer": [
         {
@@ -319,7 +334,7 @@
               "field": "annual_co2_pc", "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.2, "titleColor": "#5f6aca",
-                "title": "Annual CO2 consumption (tonnes)"
+                "title": "Emissions per capita (tonnes)"
               },
               "scale": {"type": "linear", "domain": [0, 30]}
             },
@@ -347,5 +362,20 @@
       ],
       "resolve": {"scale": {"y": "independent"}}
     }
-  ]
+  ],
+
+  "config": {
+    "background": "transparent",
+    "font": "Roboto",
+    "legend": {
+      "titleFontSize": 12,
+      "labelFontSize": 12
+    },
+    "concat": {"columns": 3},
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
 }

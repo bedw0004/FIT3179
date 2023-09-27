@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/lcoe_2009_2021.csv"},
   
-  "width": 300,
-  "height": 500,
+  "width": 400,
+  "height": "container",
   "encoding": {
     "x": {
       "field": "year",
@@ -19,7 +19,7 @@
     "color": {
       "field": "source", 
       "type": "nominal", 
-      "scale": {"scheme": "category10"},
+      "scale": {"scheme": "set2"},
       "legend": null
     }
   },
@@ -44,11 +44,11 @@
           "mark": {"type": "circle"}
         }, 
         {
-          "mark": {"type": "text", "align": "left", "dx": 10},
+          "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 14},
           "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
         }, 
         {
-          "mark": {"type": "text", "align": "left", "dx": 37, "dy": 0},
+          "mark": {"type": "text", "align": "left", "dx": 44, "dy": 0, "fontSize": 14},
           "encoding": {"text": {"field":"labels", "type": "nominal"}}
         }
       ]
@@ -64,11 +64,11 @@
           "mark": {"type": "circle"}
         }, 
         {
-          "mark": {"type": "text", "align": "left", "dx": 10, "dy": 10},
+          "mark": {"type": "text", "align": "left", "dx": 10, "dy": 10, "fontSize": 14},
           "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
         }, 
         {
-          "mark": {"type": "text", "align": "left", "dx": 37, "dy": 10},
+          "mark": {"type": "text", "align": "left", "dx": 44, "dy": 10, "fontSize": 14},
           "encoding": {
             "text": {"field":"labels", "type": "nominal"}
           }
@@ -86,17 +86,24 @@
           "mark": {"type": "circle"}
         }, 
         {
-          "mark": {"type": "text", "align": "right", "dx": -10},
+          "mark": {"type": "text", "align": "right", "dx": -10, "fontSize": 14},
           "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
         }
       ]
     }
   ],
   "config": {
-    "style": {
-      "cell": {
-        "stroke": "transparent"
+      "background": "transparent",
+      "font": "Roboto",
+      "axis": {"grid": false},
+      "legend": {
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      },
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
       }
-    }
   }
 }

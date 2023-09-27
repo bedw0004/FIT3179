@@ -9,13 +9,34 @@
         "axis": {"format": "%Y"}
         },
         "y": {
-        "aggregate": "sum", "field": "energy_twh"
+        "aggregate": "sum", "field": "energy_twh", "title": "Energy (TWh)"
         },
         "color": {
-        "field": "source",
-        "scale": {"scheme": "category10"}
+            "field": "source",
+            "scale": {
+                "scheme": "category10"
+            }
         },
-        "order": {"field": "order", "type": "ordinal", "sort": "descending"}
+        "order": {"field": "order", "type": "ordinal", "sort": "ascending"},
+        "tooltip": [
+          {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
+          {"field": "source", "type": "nominal", "title": "Energy source"}, 
+          {"aggregate": "sum", "field": "energy_twh", "title": "Energy (TWh)", "type": "quantitative", "format": ",.2f"}
+        ]
+    },
+    "config": {
+        "background": "transparent",
+        "font": "Roboto",
+        "axis": {"grid": false},
+        "legend": {
+          "titleFontSize": 14,
+          "labelFontSize": 12
+        },
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
     }
 }
     

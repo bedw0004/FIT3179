@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": { "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/elec_prod_by_source.csv"},
-    "width": 450,
-    "height": {"step": 17},
+    "width": "container",
+    "height": "container",
   
     "params": [
       {
@@ -22,46 +22,63 @@
     ],
     
     "encoding": {
-      "y": {"field": "Entity"}
+      "y": {"field": "Entity", "title": null}
     },
-    "layer": [{
-      "mark": "bar",
-      "encoding": {
-        "x": {
-          "aggregate": "sum", "field": "energy_prop",
-          "title": "energy",
-          "stack":  "normalize"
-        },
-        "color": {
-          "field": "source",
-          "scale": {"scheme": "brownbluegreen"}
-        }
-      }
-    }, 
-    {
-      "mark": {"type": "text", "color": "white"},
-      "encoding": {
-        "x": {
-          "aggregate": "sum", "field": "energy_twh",
-          "title": "energy",
-          "stack":  "normalize",
-          "bandPosition": 0.5
-        },
-        "text": {
-          "aggregate": "sum", "field": "energy_prop",
-          "title": "energy proportion", "format": ".1%"
-        },
-        "detail": {
-          "field": "source"
-        },
-        "opacity": {
-          "condition": {
-            "test": "datum['sum_energy_prop'] > 0.1",
-            "value": 0.9
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": 
+        {
+          "x": {
+            "aggregate": "sum", "field": "energy_prop",
+            "title": "Percentage of electricity by source",
+            "stack":  "normalize"
           },
-          "value": 0
+          "color": {
+            "field": "source",
+            "scale": {"scheme": "brownbluegreen"},
+            "legend": {"title": "Source", "labelExpr": "{'fossil_fuels': 'Fossil fuels', 'renewables': 'Renewables', 'nuclear': 'Nuclear'}[datum.label]"}
+          }
+        }
+      }, 
+      {
+        "mark": {"type": "text", "color": "white"},
+        "encoding": {
+          "x": {
+            "aggregate": "sum", "field": "energy_twh",
+            "stack":  "normalize",
+            "bandPosition": 0.5
+          },
+          "text": {
+            "aggregate": "sum", "field": "energy_prop",
+            "title": "energy proportion", "format": ".1%"
+          },
+          "detail": {
+            "field": "source"
+          },
+          "opacity": {
+            "condition": {
+              "test": "datum['sum_energy_prop'] > 0.1",
+              "value": 0.9
+            },
+            "value": 0
+          }
         }
       }
-    }]
+    ],
+    "config": {
+        "background": "transparent",
+        "font": "Roboto",
+        "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13},
+        "legend": {
+          "titleFontSize": 14,
+          "labelFontSize": 12
+        },
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+    }
   }
   

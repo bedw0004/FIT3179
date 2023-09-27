@@ -4,10 +4,11 @@
     "spacing": 3,
     "hconcat": [
       {
+        "height": {"step": 50},
         "transform": [{
           "filter": {"field": "metric", "equal": "deaths_per_twh"}
         }],
-        "title": "Deaths per twh energy",
+        "title": {"text": "Deaths per TWh of electricity", "align": "right"},
         "layer": [
           {
             "mark": "bar"
@@ -41,17 +42,20 @@
           },
           "color": {
             "field": "source",
-            "scale": {"scheme": "category10"},
+            "scale": {"scheme": "set2"},
             "legend": null
           }
         }
       }, 
       {
-        "width": 20,
+        "width": 50,
+        "height": {"step": 50},
         "view": {"stroke": null},
         "mark": {
           "type": "text",
-          "align": "center"
+          "align": "center",
+          "fontSize": 14,
+          "fontWeight": "bold"
         },
         "encoding": {
           "y": {
@@ -63,16 +67,17 @@
           "text": {"field": "source", "type": "nominal"},
           "color": {
             "field": "source",
-            "scale": {"scheme": "category10"},
+            "scale": {"scheme": "set2"},
             "legend": null
           }
         }
       }, 
       {
+        "height": {"step": 50},
         "transform": [{
           "filter": {"field": "metric", "equal": "ghg_emissions_tonnes_per_gwh"}
         }],
-        "title": "Greenhouse gas emissions",
+        "title": {"text": "Greenhouse gas emissions (tonnes per GWh)", "align": "left"},
         "layer": [
           {
             "mark": "bar"
@@ -111,8 +116,19 @@
       }
     ],
     "config": {
-      "view": {"stroke": null},
-      "axis": {"grid": false}
+        "background": "transparent",
+        "font": "Roboto",
+        "view": {"stroke": null},
+        "axis": {"grid": false},
+        "legend": {
+          "titleFontSize": 14,
+          "labelFontSize": 12
+        },
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
     }
   }
   

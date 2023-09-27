@@ -1,12 +1,23 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/nuclear_primary_energy_filtered.csv"},
+    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/share_elec_low_carbon_filtered.csv"},
     "width": 500,
     "height": 500,
-    "transform": [{"filter": "datum.Entity != 'Australia' && datum.Entity != 'Norway' && datum.Entity != 'Brazil' && datum.Entity != 'India' && datum.Entity != 'South Africa' && datum.Entity != 'China'"}],
+  
+    "transform": [
+      {"filter": "datum.low_carbon_perc != 'NA'"},
+      {"filter": {"param": "country_selection"}}
+    ],
+  
     "encoding": {
       "x": {"field": "Year", "type": "temporal", "title": "Year"},
-      "y": {"field": "nuclear_perc", "type": "quantitative", "title": "% primary energy from nuclear"},
+      "y": {
+        "field": "low_carbon_perc", 
+        "type": "quantitative", 
+        "title": "% primary energy from low carbon sources",
+        "scale": {"domain": [0, 100]}
+      },
       "color": {
         "condition": {
           "param": "click",
@@ -30,6 +41,7 @@
         "value": 0.2
       }
     },
+  
     "layer": [
       {
         "mark": {"type": "line", "point": true}
@@ -37,7 +49,7 @@
       {
         "encoding": {
           "x": {"aggregate": "max", "field": "Year"},
-          "y": {"aggregate": {"argmax": "Year"}, "field": "nuclear_perc"}
+          "y": {"aggregate": {"argmax": "Year"}, "field": "low_carbon_perc"}
         },
         "layer": [
           {
@@ -62,11 +74,26 @@
                   "fields": ["Entity"],
                   "on": "click"
                 }
+              },
+              {
+                "name": "country_selection",
+                "value": null,
+                "bind": {
+                  "input": "select",
+                  "options": [
+                    null, "World", "Australia", "Brazil", "China", "India", "Russia", "United States", "Germany", "France", "United Kingdom", "Norway", "Canada", "Sweden", "Japan", "South Africa"
+                  ],
+                  "labels": [
+                    "Show all", "World", "Australia", "Brazil", "China", "India", "Russia", "United States", "Germany", "France", "United Kingdom", "Norway", "Canada", "Sweden", "Japan", "South Africa"
+                  ],
+                  "name": "Country Selection: "
+                },
+                "select": {"type": "point", "fields": ["Entity"]}
               }
             ],
             "mark": {"type": "text", "align": "left", "dx": 6},
             "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-          }
+            }
         ]
       }
     ],

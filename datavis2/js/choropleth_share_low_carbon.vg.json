@@ -107,14 +107,19 @@
         }
       }
     ],
-  
     "config": {
-      "background": "#ffffff",
-      "font": "Roboto",
-      "legend": {
-        "titleFontSize": 14,
-        "labelFontSize": 12
-      }
+        "background": "transparent",
+        "font": "Roboto",
+        "axis": {"grid": false},
+        "legend": {
+          "titleFontSize": 14,
+          "labelFontSize": 12
+        },
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
     }
   }
   

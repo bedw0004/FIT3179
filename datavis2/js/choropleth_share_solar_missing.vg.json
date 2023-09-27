@@ -109,7 +109,7 @@
     ],
   
     "config": {
-      "background": "#ffffff",
+      "background": "transparent",
       "font": "Roboto",
       "legend": {
         "titleFontSize": 14,

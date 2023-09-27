@@ -1,0 +1,55 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "height": 250,
+    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ghg_emissions_by_sector.csv"},
+    "mark": "rect",
+    "params": [
+      {
+        "name": "year_select",
+        "value": 2019,
+        "bind": {
+          "input": "range",
+          "min": 1990,
+          "max": 2019,
+          "step": 1,
+          "name": "Year: "
+        }
+      }
+    ], 
+    "transform": [
+      {"filter": "datum.Entity != 'World'"},
+      {"filter": "datum.Year == year_select"}
+    ],
+    "encoding": {
+      "y": {"field": "sector", "type": "nominal"},
+      "x": {"field": "Entity", "type": "ordinal", "axis": {"labelAngle": -45}},
+      "color": {
+        "aggregate": "mean", 
+        "field": "emissions_per_capita",
+        "legend": {
+          "orient": "bottom"
+        },
+        "scale": {"domain": [-5, 10]}
+      },
+      "tooltip": [
+        {"aggregate": "mean","field": "emissions_per_capita","format": ".2f"}
+      ]
+    },
+    "config": {
+      "background": "transparent",
+      "axis": {
+        "domain": false,
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      },
+      "title": {
+        "fontSize": 16
+      },
+      "legend": {
+        "titleFontSize": 13,
+        "labelFontSize": 11
+      }
+    }
+  }
+  

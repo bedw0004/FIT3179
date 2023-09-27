@@ -1,24 +1,51 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600, "height": 400,
+    "width": "container", 
+    "height": "container",
     "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/energy_consump_source_rank.csv"},
+    "transform": [
+      {"calculate": "{'other_renewables': 'Other renewables', 'solar': 'Solar', 'wind': 'Wind', 'nuclear': 'Nuclear', 'hydro': 'Hydropower', 'gas': 'Gas', 'oil': 'Oil', 'coal': 'Coal', 'bioenergy': 'Bioenergy'}[datum.source]", "as": "labels"}
+    ],
     "mark": "area",
     "encoding": {
       "x": {
         "timeUnit": "yearmonth", "field": "Year",
-        "axis": {"format": "%Y"}
+        "axis": {"format": "%Y"}, "title": "Year"
       },
       "y": {
-        "aggregate": "sum", "field": "energy_twh"
+        "aggregate": "sum", "field": "energy_twh", "title": "Energy (TWh)"
       },
       "color": {
         "field": "source",
-        "scale": {"scheme": "category10"},
+        "scale": {"scheme": "set2"},
         "sort": [
           "other_renewables", "solar", "wind", "nuclear", "hydro", "gas", "oil", "coal", "bioenergy"
-        ]
+        ],
+        "legend": {
+          "title": "Source",
+          "labelExpr": "{'other_renewables': 'Other renewables', 'solar': 'Solar', 'wind': 'Wind', 'nuclear': 'Nuclear', 'hydro': 'Hydropower', 'gas': 'Gas', 'oil': 'Oil', 'coal': 'Coal', 'bioenergy': 'Bioenergy'}[datum.label]"
+        }
       },
-      "order": {"field": "color_source_sort_index", "type": "ordinal", "sort": "descending"}
+      "order": {"field": "color_source_sort_index", "type": "ordinal", "sort": "descending"},
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
+        {"field": "labels", "type": "nominal", "title": "Energy source"}, 
+        {"aggregate": "sum", "field": "energy_twh", "title": "Energy (TWh)", "type": "quantitative", "format": ",.2f"}
+      ]
+    },
+    "config": {
+        "background": "transparent",
+        "font": "Roboto",
+        "axis": {"grid": false},
+        "legend": {
+          "titleFontSize": 14,
+          "labelFontSize": 12
+        },
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
     }
   }
   

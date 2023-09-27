@@ -1,16 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/nuclear_primary_energy_filtered.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ghg_emissions_by_sector.csv"},
     "width": 500,
     "height": 500,
-    "transform": [{"filter": "datum.Entity != 'Australia' && datum.Entity != 'Norway' && datum.Entity != 'Brazil' && datum.Entity != 'India' && datum.Entity != 'South Africa' && datum.Entity != 'China'"}],
+    "transform": [{"filter": "datum.Entity == 'World'"}],
     "encoding": {
       "x": {"field": "Year", "type": "temporal", "title": "Year"},
-      "y": {"field": "nuclear_perc", "type": "quantitative", "title": "% primary energy from nuclear"},
+      "y": {"field": "emissions", "type": "quantitative"},
       "color": {
         "condition": {
           "param": "click",
-          "field": "Entity",
+          "field": "sector",
           "type": "nominal",
           "legend": null
         },
@@ -37,7 +37,7 @@
       {
         "encoding": {
           "x": {"aggregate": "max", "field": "Year"},
-          "y": {"aggregate": {"argmax": "Year"}, "field": "nuclear_perc"}
+          "y": {"aggregate": {"argmax": "Year"}, "field": "emissions"}
         },
         "layer": [
           {
@@ -47,43 +47,27 @@
             "params": [
               {
                 "name": "hover",
-                "value": [{"Entity": "World"}],
                 "select": {
                   "type": "point",
-                  "fields": ["Entity"],
+                  "fields": ["sector"],
                   "on": "mouseover"
                 }
               },
               {
                 "name": "click",
-                "value": [{"Entity": "World"}],
                 "select": {
                   "type": "point",
-                  "fields": ["Entity"],
+                  "fields": ["sector"],
                   "on": "click"
                 }
               }
             ],
             "mark": {"type": "text", "align": "left", "dx": 6},
-            "encoding": {"text": {"field":"Entity", "type": "nominal"}}
+            "encoding": {"text": {"field":"sector", "type": "nominal"}}
           }
         ]
       }
     ],
-    "config": {
-        "background": "transparent",
-        "font": "Roboto",
-        "view": {"stroke": null},
-        "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13},
-        "legend": {
-          "titleFontSize": 14,
-          "labelFontSize": 12
-        },
-        "style": {
-          "cell": {
-            "stroke": "transparent"
-          }
-        }
-    }
+    "config": {"view": {"stroke": null}}
   }
   
