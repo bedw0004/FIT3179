@@ -1,61 +1,102 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/lcoe_2009_2021.csv"},
-    
-    "width": 300,
-    "height": 500,
-    "encoding": {
-      "x": {
-        "field": "year",
-        "type": "ordinal",
-        "scale": {"padding": 0},
-        "title": null
-      },
-      "y": {
-        "field": "lcoe",
-        "type": "quantitative",
-        "axis": null
-      },
-      "color": {
-        "field": "source", 
-        "type": "nominal", 
-        "scale": {"scheme": "category10"},
-        "legend": null
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/lcoe_2009_2021.csv"},
+  
+  "width": 300,
+  "height": 500,
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "scale": {"padding": 0},
+      "title": null
     },
-  
-    "transform": [{"filter": "datum.source != 'gas_peaking'"}],
-  
-    "layer": [
-      {
-        "mark": {"type": "line", "strokeWidth": 3}
+    "y": {
+      "field": "lcoe",
+      "type": "quantitative",
+      "axis": null
+    },
+    "color": {
+      "field": "source", 
+      "type": "nominal", 
+      "scale": {"scheme": "category10"},
+      "legend": null
+    }
+  },
+
+  "transform": [
+    {"filter": "datum.source != 'gas_peaking'"},
+    {"calculate": "{'solar_pv': 'Solar PV', 'nuclear': 'Nuclear', 'gas_peaking': 'Gas peaking', 'solar_thermal': 'Solar thermal', 'coal': 'Coal', 'geothermal': 'Geothermal', 'wind': 'Wind', 'gas_combined_cylce': 'Gas combined cycle'}[datum.source]", "as": "labels"}
+  ],
+
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 3}
+    },
+    {
+      "transform": [{"filter": "datum.source != 'solar_pv' && datum.year == 2021"}],
+      "encoding": {
+        "x": {"aggregate": "max", "field": "year"},
+        "y": {"aggregate": {"argmax": "year"}, "field": "lcoe"}
       },
-      {
-        "encoding": {
-          "x": {"field": "year"},
-          "y": {"aggregate": {"argmax": "year"}, "field": "lcoe"}
-        },
-        "layer": [
-          {
-            "mark": {"type": "circle"}
-          }, 
-          {
-            "mark": {"type": "text", "align": "left", "dx": 10},
-            "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
-          }, 
-          {
-            "mark": {"type": "text", "align": "left", "dx": 40, "dy": 0},
-            "encoding": {"text": {"field":"source", "type": "nominal"}}
-          }
-        ]
-      }
-    ],
-    "config": {
-      "style": {
-        "cell": {
-          "stroke": "transparent"
+      "layer": [
+        {
+          "mark": {"type": "circle"}
+        }, 
+        {
+          "mark": {"type": "text", "align": "left", "dx": 10},
+          "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
+        }, 
+        {
+          "mark": {"type": "text", "align": "left", "dx": 37, "dy": 0},
+          "encoding": {"text": {"field":"labels", "type": "nominal"}}
         }
+      ]
+    },
+    {
+      "transform": [{"filter": "datum.source == 'solar_pv' && datum.year == 2021"}],
+      "encoding": {
+        "x": {"aggregate": "max", "field": "year"},
+        "y": {"aggregate": {"argmax": "year"}, "field": "lcoe"}
+      },
+      "layer": [
+        {
+          "mark": {"type": "circle"}
+        }, 
+        {
+          "mark": {"type": "text", "align": "left", "dx": 10, "dy": 10},
+          "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
+        }, 
+        {
+          "mark": {"type": "text", "align": "left", "dx": 37, "dy": 10},
+          "encoding": {
+            "text": {"field":"labels", "type": "nominal"}
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": "datum.year == 2009"}],
+      "encoding": {
+        "x": {"aggregate": "max", "field": "year"},
+        "y": {"aggregate": {"argmax": "year"}, "field": "lcoe"}
+      },
+      "layer": [
+        {
+          "mark": {"type": "circle"}
+        }, 
+        {
+          "mark": {"type": "text", "align": "right", "dx": -10},
+          "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
+        }
+      ]
+    }
+  ],
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
       }
     }
   }
-  
+}

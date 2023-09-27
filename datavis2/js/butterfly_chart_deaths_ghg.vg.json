@@ -1,0 +1,118 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": { "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/death_ghg_energy_source.csv"},
+    "spacing": 3,
+    "hconcat": [
+      {
+        "transform": [{
+          "filter": {"field": "metric", "equal": "deaths_per_twh"}
+        }],
+        "title": "Deaths per twh energy",
+        "layer": [
+          {
+            "mark": "bar"
+          },
+          {
+            "mark": {
+              "type": "text",
+              "align": "right",
+              "dx": -5
+            },
+            "encoding": {
+              "text": {
+                "field": "value", 
+                "type": "quantitative",
+                "format": ".1f"
+              }
+            }
+          }
+        ],
+        "encoding": {
+          "y": {
+            "field": "source", 
+            "axis": null, 
+            "sort": {"op": "sum", "field": "value", "order": "descending"}
+          },
+          "x": {
+            "aggregate": "sum", 
+            "field": "value",
+            "axis": null,
+            "sort": "descending"
+          },
+          "color": {
+            "field": "source",
+            "scale": {"scheme": "category10"},
+            "legend": null
+          }
+        }
+      }, 
+      {
+        "width": 20,
+        "view": {"stroke": null},
+        "mark": {
+          "type": "text",
+          "align": "center"
+        },
+        "encoding": {
+          "y": {
+            "field": "source", 
+            "type": "nominal", 
+            "axis": null, 
+            "sort": {"op": "sum", "field": "value", "order": "descending"}
+          },
+          "text": {"field": "source", "type": "nominal"},
+          "color": {
+            "field": "source",
+            "scale": {"scheme": "category10"},
+            "legend": null
+          }
+        }
+      }, 
+      {
+        "transform": [{
+          "filter": {"field": "metric", "equal": "ghg_emissions_tonnes_per_gwh"}
+        }],
+        "title": "Greenhouse gas emissions",
+        "layer": [
+          {
+            "mark": "bar"
+          },
+          {
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "dx": 5
+            },
+            "encoding": {
+              "text": {
+                "field": "value", 
+                "type": "quantitative",
+                "format": ".0f"
+              }
+            }
+          }
+        ],
+        "encoding": {
+          "y": {
+            "field": "source", 
+            "title": null,
+            "axis": null, 
+            "sort": {"op": "sum", "field": "value", "order": "descending"}
+          },
+          "x": {
+            "aggregate": "sum", "field": "value",
+            "axis": null
+          },
+          "color": {
+            "field": "source",
+            "legend": null
+          }
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"grid": false}
+    }
+  }
+  

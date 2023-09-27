@@ -156,3 +156,21 @@ slope_lcoe <- data.frame(
   pivot_longer(cols = c(`2009`, `2021`), names_to = "year", values_to = "lcoe")
 
 write.csv(slope_lcoe, "data/lcoe_2009_2021.csv")
+
+
+# NUCLEAR DOWNFALL
+nuclear_primary_energy <- read.csv("data/nuclear-primary-energy.csv") |> 
+  pivot_wider(names_from=Year, values_from=nuclear_perc) |> 
+  pivot_longer(cols=`1965`:`2022`, names_to="Year", values_to="nuclear_perc")|> 
+  group_by(Entity) |> 
+  arrange(Year) |> 
+  fill(nuclear_perc, .direction='down') |> 
+  ungroup() |> 
+  drop_na()
+
+write.csv(nuclear_primary_energy, "data/nuclear_primary_energy.csv")
+
+nuclear_primary_energy_filtered <- nuclear_primary_energy |> 
+  filter(Entity %in% interesting_countries) 
+
+write.csv(nuclear_primary_energy, "data/nuclear_primary_energy_filtered.csv")
