@@ -180,4 +180,10 @@ write.csv(nuclear_primary_energy_filtered, "data/nuclear_primary_energy_filtered
 # GHG EMISSIONS BY SECTOR
 ghg_by_sector <- read.csv("data/ghg-emissions-by-sector.csv") |> 
   filter(Entity %in% interesting_countries) |> 
-  pivot_longer(cols=Agriculture:AviationAndShipping, names_to="sector", values_to="emissions")
+  pivot_longer(cols=Agriculture:AviationAndShipping, names_to="sector", values_to="emissions") 
+
+ghg_by_sector <- ghg_by_sector |> 
+  left_join(energy |> select(iso_code, year, population), by = c("Code" = "iso_code", "Year" = "year")) |> 
+  mutate(emissions_per_capita = emissions / population)
+
+write.csv(ghg_by_sector, "data/ghg_emissions_by_sector.csv")
