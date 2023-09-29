@@ -1,0 +1,80 @@
+body {
+    /* padding-top: 100px;
+	padding-right: 200px;
+	padding-left: 200px;
+	padding-bottom: 50px; */
+	width: 1400px;
+	margin: auto;
+  	padding: 50px;
+}
+
+body *{
+	font-family: 'Roboto', sans-serif;
+}
+
+.pure-g {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	color: black;
+}
+
+#co2_gdp_dot_plot {
+	height: 400px;
+	width: 100%;
+}
+
+#co2_multiples {
+	height: 400px;
+	width: 100%;
+}
+
+label {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt;
+}
+
+input[type="range"] {
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none; 
+	/* creating a custom design */
+	width: 90%;
+	cursor: pointer;
+	outline: none;
+	border-radius: 10px;
+	/*  overflow: hidden;  remove this line*/
+	
+	/* New additions */
+	height: 8px;
+	background: #edeff06c;
+
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none; 
+	/* creating a custom design */
+	height: 25px;
+	width: 10px;
+	background-color: #44535f;
+	border: none;
+  	transition: .2s ease-in-out;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+	height: 25px;
+	width: 10px;
+	background-color: #44535f;
+	border: none;
+	transition: .2s ease-in-out;
+}

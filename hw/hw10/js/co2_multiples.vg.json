@@ -1,0 +1,291 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/co2_gdppc.csv"},
+  "concat": [
+    {
+      "width": 120,
+      "height": 120,
+      "title": {"text": "Australia", "color": "#000000"},
+      "transform": [{"filter": "datum.Entity == 'Australia'"}],
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "annual_co2_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#0E402D",
+                "title": "Emissions (p.c., tonnes)"
+              },
+              "scale": {"type": "linear", "domain": [0, 30]}
+            },
+            "color": {"value": "#0E402D"}
+          }
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "GDP_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#FE5448",
+                "title": "GDP per capita ($)"
+              },
+              "scale": {"type": "linear", "domain": [0, 80000]}
+            },
+            "color": {"value": "#FE5448"}
+          }
+        }
+      ],
+      "resolve": {"scale": {"y": "independent"}}
+    },
+    {
+      "width": 120,
+      "height": 120,
+      "title": {"text": "Germany", "color": "#000000"},
+      "transform": [{"filter": "datum.Entity == 'Germany'"}],
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "annual_co2_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#0E402D",
+                "title": "Emissions (p.c., tonnes)"
+              },
+              "scale": {"type": "linear", "domain": [0, 30]}
+            },
+            "color": {"value": "#0E402D"}
+          }
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "GDP_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#FE5448",
+                "title": "GDP per capita ($)"
+              },
+              "scale": {"type": "linear", "domain": [0, 80000]}
+            },
+            "color": {"value": "#FE5448"}
+          }
+        }
+      ],
+      "resolve": {"scale": {"y": "independent"}}
+    },
+    {
+      "width": 120,
+      "height": 120,
+      "title": {"text": "UK", "color": "#000000"},
+      "transform": [{"filter": "datum.Entity == 'United Kingdom'"}],
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "annual_co2_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#0E402D",
+                "title": "Emissions (p.c., tonnes)"
+              },
+              "scale": {"type": "linear", "domain": [0, 30]}
+            },
+            "color": {"value": "#0E402D"}
+          }
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "GDP_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#FE5448",
+                "title": "GDP per capita ($)"
+              },
+              "scale": {"type": "linear", "domain": [0, 80000]}
+            },
+            "color": {"value": "#FE5448"}
+          }
+        }
+      ],
+      "resolve": {"scale": {"y": "independent"}}
+    },
+    {
+      "width": 120,
+      "height": 120,
+      "title": {"text": "United States", "color": "#000000"},
+      "transform": [{"filter": "datum.Entity == 'United States'"}],
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "annual_co2_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#0E402D",
+                "title": "Emissions (p.c., tonnes)"
+              },
+              "scale": {"type": "linear", "domain": [0, 30]}
+            },
+            "color": {"value": "#0E402D"}
+          }
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "GDP_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#FE5448",
+                "title": "GDP per capita ($)"
+              },
+              "scale": {"type": "linear", "domain": [0, 80000]}
+            },
+            "color": {"value": "#FE5448"}
+          }
+        }
+      ],
+      "resolve": {"scale": {"y": "independent"}}
+    },
+    {
+      "width": 120,
+      "height": 120,
+      "title": {"text": "China", "color": "#000000"},
+      "transform": [{"filter": "datum.Entity == 'China'"}],
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "annual_co2_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#0E402D",
+                "title": "Emissions (p.c., tonnes)"
+              },
+              "scale": {"type": "linear", "domain": [0, 30]}
+            },
+            "color": {"value": "#0E402D"}
+          }
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "GDP_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#FE5448",
+                "title": "GDP per capita ($)"
+              },
+              "scale": {"type": "linear", "domain": [0, 80000]}
+            },
+            "color": {"value": "#FE5448"}
+          }
+        }
+      ],
+      "resolve": {"scale": {"y": "independent"}}
+    },
+    {
+      "width": 120,
+      "height": 120,
+      "title": {"text": "India", "color": "#000000"},
+      "transform": [{"filter": "datum.Entity == 'India'"}],
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "annual_co2_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#0E402D",
+                "title": "Emissions (p.c., tonnes)"
+              },
+              "scale": {"type": "linear", "domain": [0, 30]}
+            },
+            "color": {"value": "#0E402D"}
+          }
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Year", "type": "temporal",
+              "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+              "field": "GDP_pc", "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.2, "titleColor": "#FE5448",
+                "title": "GDP per capita ($)"
+              },
+              "scale": {"type": "linear", "domain": [0, 80000]}
+            },
+            "color": {"value": "#FE5448"}
+          }
+        }
+      ],
+      "resolve": {"scale": {"y": "independent"}}
+    }
+  ],
+
+  "config": {
+    "background": "transparent",
+    "font": "Roboto",
+    "legend": {
+      "titleFontSize": 12,
+      "labelFontSize": 12
+    },
+    "concat": {"columns": 3},
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Montserrat:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h1>Consumption-based CO₂ emissions per capita vs. GDP per capita</h1>
+      <div id="co2_gdp_dot_plot"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <h1>How does each country stack up?</h1>
+      <div id="co2_multiples"></div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  var spec = "js/co2_gdppc.vg.json";
+  vegaEmbed('#co2_gdp_dot_plot', spec, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec2 = "js/co2_multiples.vg.json";
+  vegaEmbed('#co2_multiples', spec2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+</body>
+</html>
