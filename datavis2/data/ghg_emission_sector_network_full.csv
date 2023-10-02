@@ -27,9 +27,10 @@ Deforestation,2.2,Land-Use
 Cropland,1.5,Land-Use
 Landfills,1.9,Waste
 Wastewater,1.3,Waste
-Transport,16.2,
-Buildings,17.5,
-Industry,29.4,
-Land-Use,20.1,
-Waste,3.2,
-Energy,13.6,
+Transport,16.2,Emissions
+Buildings,17.5,Emissions
+Industry,29.4,Emissions
+Land-Use,20.1,Emissions
+Waste,3.2,Emissions
+Energy,13.6,Emissions
+Emissions,100,
