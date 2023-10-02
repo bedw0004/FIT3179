@@ -3,7 +3,7 @@ body {
 	padding-right: 200px;
 	padding-left: 200px;
 	padding-bottom: 50px; */
-	width: 1200px;
+	width: 1000px;
 	margin: auto;
   	padding: 50px;
 }
@@ -22,7 +22,7 @@ h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #44535f;
 	font-weight: 900;
-	font-size: 48pt;
+	font-size: 42pt;
 	text-align: center;
 	white-space: nowrap;
 }
@@ -39,8 +39,9 @@ h2 {
 	font-weight: 900;
 	border-bottom: 3px solid #44535f;
 	width: 100%;
-	font-size: 32pt;
+	font-size: 30pt;
 	display: block;
+	/* text-transform: uppercase; */
 }
 
 h3 {
@@ -58,6 +59,14 @@ p {
 	font-family: 'Roboto';
 	color: #5e6c79;
 	font-size: 14pt;
+}
+
+.section {
+    border-style: solid;
+	border-radius: 20px;
+	border-color: #44535f;
+	margin-bottom: 15px;
+	background-color: #EBF5F5;
 }
 
 .description-right {
@@ -80,9 +89,45 @@ p {
 	padding-left: 40px;
 }
 
+
+#energy_parent {
+	position: relative;
+	z-index: 1;
+}
+
 #energy_dot_plot {
 	width: 100%;
 	height: 500px;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	margin-bottom: 65px;
+}
+
+#energy_overlay {
+	width: 100%;
+	height: 500px;
+	display: block;
+	/* background-color:#44535f4d; */
+	margin-bottom: 60px;
+	opacity: 0.4;
+	/* position: absolute; */
+}
+
+.developing_countries {
+	color: #eea9df;
+}
+
+.developed_countries {
+	color: #57a743;
+}
+
+.annual_co2_pc {
+	color: #5f6aca;
+}
+
+.GDP_pc {
+	color: #2E2F2F;
 }
 
 #plot_desc {
