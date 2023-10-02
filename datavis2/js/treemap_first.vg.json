@@ -1,0 +1,142 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "width": 500,
+    "height": 500,
+    "padding": 5,
+  
+    "signals": [
+    ],
+  
+    "data": [
+      {
+        "name": "sectors",
+        "url":
+          "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ghg_emission_sector_network_full.csv",
+        "format": {"type": "csv", "parse": "auto"},
+        "transform": [
+          { 
+            "type": "stratify", 
+            "key": "id", 
+            "parentKey": "parent" 
+          },
+          {
+            "type": "treemap",
+            "field": "ghg_emissions_perc",
+            "sort": {"field": "ghg_emissions_perc"},
+            "method": "binary",
+            "paddingInner": 1,
+            "size": [{ "signal": "width" }, { "signal": "height" }]
+          }
+        ]
+      },
+      { 
+        "name": "nodes",
+        "source": "sectors",
+        "transform": [
+          { "type": "filter", "expr": "datum.children && datum.id != 'Emissions'" }
+        ]
+      },
+      {
+        "name": "leaves",
+        "source": "sectors",
+        "transform": [{ "type": "filter", "expr": "!datum.children" }]
+      },
+      {
+        "name": "labels",
+        "source": "sectors",
+        "transform": [{ "type": "filter", "expr": "!datum.children && datum.ghg_emissions_perc > 5" }]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": { "data": "leaves", "field": "parent" },
+        "range": { "scheme": "category10" }
+      }
+    ],
+  
+    "marks": [
+      {
+        "type": "rect",
+        "from": {"data": "nodes"},
+        "encode": {
+          "enter": {
+            "fill": {"scale": "color", "field": "id"},
+            "size": {"field": "ghg_emissions_perc"}
+          },
+          "update": {
+            "x": {"field": "x0"},
+            "y": {"field": "y0"},
+            "x2": {"field": "x1"},
+            "y2": {"field": "y1"}
+          }
+        }
+      },
+      {
+        "type": "rect",
+        "from": {"data": "leaves"},
+        "encode": {
+          "enter": {
+            "stroke": {"value": "#fff"}
+          },
+          "update": {
+            "x": {"field": "x0"},
+            "y": {"field": "y0"},
+            "x2": {"field": "x1"},
+            "y2": {"field": "y1"},
+            "fill": {"value": "transparent"},
+            "tooltip": {
+              "signal": "{title: 'Sector: ' + datum.parent, 'Sub-sector: ': datum.id, 'Percentage of total emissions': datum.ghg_emissions_perc + '%'}"
+            }
+          },
+          "hover": {
+            "fill": {"value": "red"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "from": {"data": "nodes"},
+        "interactive": false,
+        "encode": {
+          "enter": {
+            "font": {"value": "Helvetica Neue, Arial"},
+            "fontSize": {"value": 16},
+            "fontWeight": {"value": "bold"},
+            "align": {"value": "center"},
+            "baseline": {"value": "middle"},
+            "fill": {"value": "#000"},
+            "text": {"field": "id"}
+          },
+          "update": {
+            "x": {"signal": "0.5 * (datum.x0 + datum.x1)"},
+            "y": {"signal": "-10 + 0.5 * (datum.y0 + datum.y1)"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "from": {
+          "data": "labels"
+        },
+        "interactive": false,
+        "encode": {
+          "enter": {
+            "font": {"value": "Helvetica Neue, Arial"},
+            "fontSize": {"value": 8},
+            "fontWeight": {"value": "normal"},
+            "align": {"value": "center"},
+            "baseline": {"value": "bottom"},
+            "fill": {"value": "#ffffff"},
+            "text": {"signal": "split(datum.id, ' ')"}
+          },
+          "update": {
+            "x": {"signal": "0.5 * (datum.x0 + datum.x1)"},
+            "y": {"signal": "0.5 * (datum.y0 + datum.y1)"}
+          }
+        }
+      }
+    ]
+  }

@@ -1,36 +1,36 @@
-id,ghg_emissions_perc,parent
-Road,11.9,Transport
-Aviation,1.9,Transport
-Rail,0.4,Transport
-Pipeline,0.3,Transport
-Ship,1.7,Transport
-Residential,10.9,Buildings
-Commercial,6.6,Buildings
-Iron & Steel,7.2,Industry
-Metals,0.7,Industry
-Machinery,0.5,Industry
-Food & tobacco,1,Industry
-Paper & printing,0.6,Industry
-Chemical & petrochemical,5.8,Industry
-Other industry,6.9,Industry
-Digital technology,3.7,Industry
-Agricultural machinery,1.7,Land-Use
-"Biomass, nuclear & hydro losses",7.8,Energy
-Coal mining leaks & losses,1.9,Energy
-Oil & natural gas leaks & losses,3.9,Energy
-Cement,3,Industry
-Livestock & manure,5.8,Land-Use
-Rice growing,1.3,Land-Use
-Fertilizers,4.1,Land-Use
-Crop burning,3.5,Land-Use
-Deforestation,2.2,Land-Use
-Cropland,1.5,Land-Use
-Landfills,1.9,Waste
-Wastewater,1.3,Waste
-Transport,16.2,Emissions
-Buildings,17.5,Emissions
-Industry,29.4,Emissions
-Land-Use,20.1,Emissions
-Waste,3.2,Emissions
-Energy,13.6,Emissions
-Emissions,100,
+id,ghg_emissions_perc,parent,sector
+Road,11.9,Transport,Transport
+Aviation,1.9,Transport,Transport
+Rail,0.4,Transport,Transport
+Pipeline,0.3,Transport,Transport
+Ship,1.7,Transport,Transport
+Residential,10.9,Buildings,Buildings
+Commercial,6.6,Buildings,Buildings
+Iron & Steel,7.2,Industry,Industry
+Metals,0.7,Industry,Industry
+Machinery,0.5,Industry,Industry
+Food,1,Industry,Industry
+Paper,0.6,Industry,Industry
+Chemicals,5.8,Industry,Industry
+Other industry,6.9,Industry,Industry
+Digital tech,3.7,Industry,Industry
+Agriculture,1.7,Land-Use,Land-Use
+Other,7.8,Energy,Energy
+Coal,1.9,Energy,Energy
+Oil,3.9,Energy,Energy
+Cement,3,Industry,Industry
+Livestock,5.8,Land-Use,Land-Use
+Rice growing,1.3,Land-Use,Land-Use
+Fertilizers,4.1,Land-Use,Land-Use
+Crop burning,3.5,Land-Use,Land-Use
+Deforestation,2.2,Land-Use,Land-Use
+Cropland,1.5,Land-Use,Land-Use
+Landfills,1.9,Waste,Waste
+Wastewater,1.3,Waste,Waste
+Transport,16.2,Emissions,
+Buildings,17.5,Emissions,
+Industry,29.4,Emissions,
+Land-Use,20.1,Emissions,
+Waste,3.2,Emissions,
+Energy,13.6,Emissions,
+Emissions,100,,
