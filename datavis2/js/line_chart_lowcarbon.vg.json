@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
     "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/share_elec_low_carbon_filtered.csv"},
-    "width": 500,
-    "height": 500,
+    "width": "container",
+    "height": "container",
   
     "transform": [
       {"filter": "datum.low_carbon_perc != 'NA'"},

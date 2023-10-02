@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/lcoe_2009_2021.csv"},
   
-  "width": 400,
+  "width": "container",
   "height": "container",
   "encoding": {
     "x": {
@@ -25,7 +25,7 @@
   },
 
   "transform": [
-    {"filter": "datum.source != 'gas_peaking'"},
+    {"filter": "datum.source != 'gas_peaking' && datum.source != 'solar_thermal'"},
     {"calculate": "{'solar_pv': 'Solar PV', 'nuclear': 'Nuclear', 'gas_peaking': 'Gas peaking', 'solar_thermal': 'Solar thermal', 'coal': 'Coal', 'geothermal': 'Geothermal', 'wind': 'Wind', 'gas_combined_cylce': 'Gas combined cycle'}[datum.source]", "as": "labels"}
   ],
 

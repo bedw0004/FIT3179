@@ -114,6 +114,23 @@
   </div>
 
   <div class="pure-g">
+    <div class="pure-u-1-1">
+      <h3>Electricity production by source</h3>
+      <img id="elec_rank_svg" src = "js/elec_rank2.svg"/>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <h3>Electricity production by source</h3>
+      <div id="bump_area_elec_source"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <h3>Country breakdown of electricity production by source</h3>
+    </div>
+  </div>
+
+  <div class="pure-g">
     <div class="pure-u-1-2">
       <h3>Electricity production by source</h3>
       <div id="area_elec_source"></div>
@@ -178,13 +195,25 @@
   </div>
 
   <div class="pure-g">
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-1">
       <h3>Share of electricity production from low carbon sources</h3>
       <div id="choropleth_map_low_carbon"></div>
     </div>
+  </div>
+
+  <div class="pure-g">
     <div class="pure-u-1-2">
       <h3>Share of electricity production from low carbon sources</h3>
       <div id="line_lowcarbon"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description description-left">
+        <h3>Two Columns Layout</h3>
+        <p>The first column contains text and the second column contains a visualisation.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
+      </div>
     </div>
   </div>
 
@@ -230,6 +259,11 @@
 
     var spec4 = "js/area_chart_elec_source.vg.json";
     vegaEmbed('#area_elec_source', spec4, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec44 = "js/bump_area_chart_elec_source.vg.json";
+    vegaEmbed('#bump_area_elec_source', spec44, {"actions": false}).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 

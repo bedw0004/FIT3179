@@ -1,0 +1,29 @@
+sub_sector,ghg_emissions_perc,sector
+Road,11.9,Transport
+Aviation,1.9,Transport
+Rail,0.4,Transport
+Pipeline,0.3,Transport
+Ship,1.7,Transport
+Residential,10.9,Buildings
+Commercial,6.6,Buildings
+Iron & Steel,7.2,Industry
+Metals,0.7,Industry
+Machinery,0.5,Industry
+Food & tobacco,1,Industry
+Paper & printing,0.6,Industry
+Chemical & petrochemical,5.8,Industry
+Other industry,6.9,Industry
+Digital technology,3.7,Industry
+Agricultural machinery,1.7,Land-Use
+"Biomass, nuclear & hydro losses",7.8,Energy
+Coal mining leaks & losses,1.9,Energy
+Oil & natural gas leaks & losses,3.9,Energy
+Cement,3,Industry
+Livestock & manure,5.8,Land-Use
+Rice growing,1.3,Land-Use
+Fertilizers,4.1,Land-Use
+Crop burning,3.5,Land-Use
+Deforestation,2.2,Land-Use
+Cropland,1.5,Land-Use
+Landfills,1.9,Waste
+Wastewater,1.3,Waste

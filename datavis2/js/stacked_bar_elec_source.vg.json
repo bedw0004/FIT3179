@@ -36,7 +36,13 @@
           },
           "color": {
             "field": "source",
-            "scale": {"scheme": "brownbluegreen"},
+            "scale": {
+              "range": [
+                "#D5AE69",
+                "#0E402D",
+                "#6EBCB3"
+              ]
+            },
             "legend": {"title": "Source", "labelExpr": "{'fossil_fuels': 'Fossil fuels', 'renewables': 'Renewables', 'nuclear': 'Nuclear'}[datum.label]"}
           }
         }
