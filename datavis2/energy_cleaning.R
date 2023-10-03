@@ -173,8 +173,11 @@ low_carbon_share <- read.csv("data/share-electricity-low-carbon.csv") |>
 
 write.csv(low_carbon_share, "data/share_elec_low_carbon.csv")
 
+filter_countries <- c("World", "Australia", "India", "France", "United Kingdom", 
+                      "Norway", "South Africa", "Finland", "Vietnam")
+
 low_carbon_share_filtered <- low_carbon_share |> 
-  filter(Entity %in% interesting_countries)
+  filter(Entity %in% filter_countries)
 
 write.csv(low_carbon_share_filtered, "data/share_elec_low_carbon_filtered.csv")
 

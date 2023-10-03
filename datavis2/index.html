@@ -314,7 +314,7 @@
 
     <div class="pure-g">
       <div class="pure-u-1-2">
-        <h3>Share of electricity production from low carbon sources</h3>
+        <h3>How does this breakdown per country over the years?</h3>
         <div id="line_lowcarbon"></div>
       </div>
       <div class="pure-u-1-2">
@@ -403,11 +403,6 @@
 
     var spec8 = "js/line_chart_lowcarbon.vg.json";
     vegaEmbed('#line_lowcarbon', spec8, {"actions": false}).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-
-    var spec9 = "js/choropleth_share_solar_missing.vg.json";
-    vegaEmbed('#choropleth_map_solar', spec9, {"actions": false}).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
