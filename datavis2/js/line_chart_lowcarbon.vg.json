@@ -1,116 +1,157 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
-    "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/share_elec_low_carbon_filtered.csv"},
-    "width": "container",
-    "height": "container",
-  
-    "transform": [
-      {"filter": "datum.low_carbon_perc != 'NA'"},
-      {"filter": {"param": "country_selection"}}
-    ],
-  
-    "encoding": {
-      "x": {"field": "Year", "type": "temporal", "title": "Year"},
-      "y": {
-        "field": "low_carbon_perc", 
-        "type": "quantitative", 
-        "title": "% primary energy from low carbon sources",
-        "scale": {"domain": [0, 100]}
-      },
-      "color": {
-        "condition": {
-          "param": "click",
-          "field": "Entity",
-          "type": "nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": [
-          {
-            "param": "click",
-            "value": 1
-          },
-          {
-            "param": "hover",
-            "value": 0.4
-          }
-        ],
-        "value": 0.2
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+  "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/share_elec_low_carbon_filtered.csv"},
+  "width": "container",
+  "height": "container",
+
+  "transform": [
+    {"filter": "datum.low_carbon_perc != 'NA'"},
+    {"filter": {"param": "country_selection"}},
+    {
+      "calculate": "datum.low_carbon_perc/100",
+      "as": "low_carbon_prop"
+    }
+  ],
+
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title": "Year"},
+    "y": {
+      "field": "low_carbon_prop", 
+      "type": "quantitative", 
+      "title": "Energy from low carbon sources",
+      "axis": {"format": ".0%"},
+      "scale": {"domain": [0, 1]}
     },
-  
-    "layer": [
-      {
-        "mark": {"type": "line", "point": true}
-      }, 
-      {
-        "encoding": {
-          "x": {"aggregate": "max", "field": "Year"},
-          "y": {"aggregate": {"argmax": "Year"}, "field": "low_carbon_perc"}
-        },
-        "layer": [
-          {
-            "mark": {"type": "circle"}
-          }, 
-          {
-            "params": [
-              {
-                "name": "hover",
-                "value": [{"Entity": "World"}],
-                "select": {
-                  "type": "point",
-                  "fields": ["Entity"],
-                  "on": "mouseover"
-                }
-              },
-              {
-                "name": "click",
-                "value": [{"Entity": "World"}],
-                "select": {
-                  "type": "point",
-                  "fields": ["Entity"],
-                  "on": "click"
-                }
-              },
-              {
-                "name": "country_selection",
-                "value": null,
-                "bind": {
-                  "input": "select",
-                  "options": [
-                    null, "World", "Australia", "Brazil", "China", "India", "Russia", "United States", "Germany", "France", "United Kingdom", "Norway", "Canada", "Sweden", "Japan", "South Africa"
-                  ],
-                  "labels": [
-                    "Show all", "World", "Australia", "Brazil", "China", "India", "Russia", "United States", "Germany", "France", "United Kingdom", "Norway", "Canada", "Sweden", "Japan", "South Africa"
-                  ],
-                  "name": "Country Selection: "
-                },
-                "select": {"type": "point", "fields": ["Entity"]}
-              }
-            ],
-            "mark": {"type": "text", "align": "left", "dx": 6},
-            "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-            }
+    "color": {
+      "field": "Entity",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Norway",
+          "France",
+          "Greenland",
+          "United Kingdom",
+          "Vietnam",
+          "World",
+          "Australia",
+          "India",
+          "South Africa"
+        ],
+        "range": [
+          "#FE5F55",
+          "#3185FC",
+          "#8D3BBA",
+          "#0AAE59",
+          "#A599B5",
+          "#eea9df",
+          "#79491D",
+          "#363537",
+          "#C99740"
         ]
       }
-    ],
-    "config": {
-        "background": "transparent",
-        "font": "Roboto",
-        "view": {"stroke": null},
-        "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13},
-        "legend": {
-          "titleFontSize": 14,
-          "labelFontSize": 12
+    },
+    "opacity": {
+      "condition": [
+        {
+          "param": "click",
+          "value": 1
         },
-        "style": {
-          "cell": {
-            "stroke": "transparent"
-          }
+        {
+          "param": "hover",
+          "value": 0.5
         }
+      ],
+      "value": 0.4
     }
+  },
+
+  "layer": [
+    {
+      "mark": {"type": "line", "point": true}
+    }, 
+    {
+      "encoding": {
+        "x": {"aggregate": "max", "field": "Year"},
+        "y": {"aggregate": {"argmax": "Year"}, "field": "low_carbon_prop"}
+      },
+      "layer": [
+        {
+          "mark": {"type": "circle"}
+        }, 
+        {
+          "params": [
+            {
+              "name": "hover",
+              "value": [{"Entity": "World"}],
+              "select": {
+                "type": "point",
+                "fields": ["Entity"],
+                "on": "mouseover"
+              }
+            },
+            {
+              "name": "click",
+              "value": null,
+              "select": {
+                "type": "point",
+                "fields": ["Entity"],
+                "on": "click"
+              }
+            },
+            {
+              "name": "country_selection",
+              "value": null,
+              "bind": {
+                "input": "select",
+                "options": [
+                  null,
+                  "World",
+                  "Australia",
+                  "Greenland",
+                  "France",
+                  "India",
+                  "Norway",
+                  "South Africa",
+                  "United Kingdom",
+                  "Vietnam"
+                ],
+                "labels": [
+                  "Show all",
+                  "World",
+                  "Australia",
+                  "Greenland",
+                  "France",
+                  "India",
+                  "Norway",
+                  "South Africa",
+                  "United Kingdom",
+                  "Vietnam"
+                ],
+                "name": "Country Selection: "
+              },
+              "select": {"type": "point", "fields": ["Entity"]}
+            }
+          ],
+          "mark": {"type": "text", "align": "left", "dx": 6},
+          "encoding": {"text": {"field":"Entity", "type": "nominal"}}
+          }
+      ]
+    }
+  ],
+  "config": {
+      "background": "transparent",
+      "font": "Roboto",
+      "view": {"stroke": null},
+      "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13},
+      "legend": {
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      },
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
   }
-  
+}
