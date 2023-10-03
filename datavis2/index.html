@@ -138,8 +138,7 @@
           <p>
             The majority of the world's emissions come from <span class="industry">industry</span>. 
             With byproducts from mining and chemical processes and gigantic servers running for digital companies, it's no surprise that <span class="industry">industry</span> makes up <span class="industry">29.4%</span> of our emissions.
-            <br><br>
-            
+            <br>
           </p>
         </div>
       </div>
@@ -154,18 +153,29 @@
     </div>
 
     <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h3>What sources form the world's electricity production?</h3>
+        <div id="bump_area_chart_world"></div>
+      </div>
+    </div>
+
+    <div class="pure-g">
       <div class="pure-u-1-2">
-        <h3>Energy consumption by source</h3>
-        <div id="area_energy_source"></div>
+        <div id="intro_text_left">
+          <p>
+            Electricity production is a huge consumer of energy and cause of CO₂ emissions.<br><br>
+            <span class="coal">Coal</span> is clearly the biggest player, with <span class="coal">over 1/3</span> of the world's total electricity consistently coming from <span class="coal">coal</span> power plants in the last 30 years. 
+            <br><br>
+            The <span class="gas">rise of gas</span> has come with advances in gas power plants that allow for the quick ramping up and down in pace with energy grid requirements.
+          </p>
+        </div>
       </div>
       <div class="pure-u-1-2">
-        <div class="description description-right" id="plot_desc">
+        <div id="intro_text_right">
           <p>
-            <b>Fossil fuels</b> make up a <b>majority</b> of the <b>energy consumption</b> worldwide. <br><br>
-            <b>Oil</b> is consumed massively by the transport industry in road vehicles and on the air and sea.<br><br>
-            Electricity production is another huge consumer of energy.
-            This is where coal has the trump card
-            In recent years <b>solar</b> and <b>wind</b> have been steadily increasing in their share.
+            On the renewable front, <span class="solar">solar</span> and <span class="wind">wind</span> have steadily <b>increased</b> their share in recent years. From virtually non-existent in the 90s, to over <b>12%</b> of the world's share in 2022.
+            <br><br>
+            However, due to the increased <b>vilification</b> of <span class="nuclear">nuclear</span>, due to newsworthy risks such as meltdowns in Chernobyl and Fukushima, its share has significantly decreased from <span class="nuclear">17.0%</span> to <span class="nuclear">9.1%</span> over just 30 years.
           </p>
         </div>
       </div>
@@ -173,43 +183,33 @@
 
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h3>Electricity production by source</h3>
-        <img id="elec_rank_svg" src = "js/elec_rank2.svg"/>
-      </div>
-    </div>
-
-    <div class="pure-g">
-      <div class="pure-u-1-2">
-        <h3>Electricity production by source</h3>
-        <div id="bump_area_elec_source"></div>
-      </div>
-      <div class="pure-u-1-2"> 
-      </div>
-    </div>
-
-    <div class="pure-g">
-      <div class="pure-u-1-2">
-        <h3>Electricity production by source</h3>
-        <div id="area_elec_source"></div>
-      </div>
-      <div class="pure-u-1-2">
-        <h3>Country breakdown of electricity production by source</h3>
+        <h3>How are individual countries forming their electricity percentages?</h3>
         <div id="stacked_bar_elec_source"></div>
       </div>
     </div>
 
     <div class="pure-g">
       <div class="pure-u-1-2">
-        
+        <div id="intro_text_left">
+          <p>
+            In recent years it is clear to see the downward trend in <span class="coal">fossil fuel</span> use. 
+            However, these toxic chemicals still make up a <span class="coal">large percentange</span> of the energy mix world wide. 
+            <br><br>
+            In particular, Australia, China, India, Japan, Russia, South Africa and USA all produce around <span class="coal">2/3</span> of their electricity from <span class="coal">fossil fuels</span>.
+          </p>
+        </div>
       </div>
       <div class="pure-u-1-2">
-        <div class="description description-right" id="plot_desc">
+        <div id="intro_text_right">
           <p>
-            There is still far too much brown in this plot.
+            Countries such as <b>Brazil, Norway and Sweden</b> should be the world's <b>role models</b> on the <span class="renewables">renewable energy</span> front.
+            <br><br>
+            It is unfortunate to see again the reduction in <span class="nuclear">nuclear energy</span> production, particularly in <span class="nuclear">France</span>.
           </p>
         </div>
       </div>
     </div>
+    
   </div>
 
   <div class="section">
@@ -221,36 +221,87 @@
 
     <div class="pure-g">
       <div class="pure-u-1-2">
-        <h3>Renewable sources in the energy mix</h3>
+        <h3>Energy production from renewable sources</h3>
         <div id="area_renewables"></div>
       </div>
       <div class="pure-u-1-2">
-        <div class="description description-right" id="plot_desc">
+        <h3>Price of electricity from new power plants ($/MWh)</h3>
+        <div id="slope_chart_lcoe"></div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="intro_text_left">
           <p>
-            It is easy to see why solar and wind power plants have increased in the world's energy mix in the last few years.<br><br>
-            New solar and wind energy plants are by far the cheapest to install, a no brainer for new investment.<br><br>
-            And, renewable energy and nuclear power plants are by far the safest and cleanest source of energy.
+            The relative explosion in both <span class="wind">wind</span> and <span class="solar">solar</span> energy production worldwide
+             can be explained by the dramatic reduction in <b>Levelized Cost of Energy (LCOE)</b> of the two sources.
+             <b>LCOE</b> is a measure produced by Lazard, 2021  that estimates the cost of energy from new power plants built today.
           </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="intro_text_right">
+          <p>
+            Whilst fossil fuel plants such as <span class="coal">coal</span> and <span class="gas">gas</span> have remained stagnant in recent years, 
+            <span class="solar">solar</span> has dropped from $359/MWh in 2009, to just <span class="solar">$36/MWh</span> in 2021
+            and <span class="wind">wind</span> has dropped from $135/MWh in 2009 to just <span class="wind">$38/MWh</span> in 2021.
+          </p>
+          <h3>insert reference</h3>
         </div>
       </div>
     </div>
 
     <div class="pure-g">
-      <div class="pure-u-1-2">
-        <h3>Price of electricity from new power plants</h3>
-        <div id="slope_chart_lcoe"></div>
-      </div>
-      <div class="pure-u-1-2">
-        <h3>The safest and cleanest sources of energy</h3>
-        <div id="butterfly_chart_deaths_ghg"></div>
+      <div class="pure-u-1-1">
+        <h3 id="safer_heading">The safest and cleanest sources of energy</h3>
       </div>
     </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="intro_text_left">
+          <p>
+            Not only are renewable sources now cheaper than fossil fuels, they are also safer!<br><br>
+            In the butterfly chart below, deaths from air pollution and accidents in the supply chain are considered.
+            <br><br>
+            <span class="coal">Coal</span> and <span class="oil">oil</span> are orders of magnitude more dangerous for humans than other sources. With millions that die every year due to health impacts of air pollution.
+          </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="intro_text_right">
+          <p>
+            <span class="nuclear">Nuclear</span> deaths are largely influenced by the two prominent accidents in recent history (Chernobyl and Fukushima).
+            The same goes for <span class="hydro">hydropower</span> with the single Banqiao Dam Failure in 1975 killing approximately 171,000 people.
+            <br><br>
+            Yet again, <span class="solar">solar</span> and <span class="wind">wind</span> energy prove to be the best sources of energy. With the lowest deaths rates and emissions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="butterfly_parent">
+          <p id="butterfly_desc">
+            <span class="solar">Solar</span>, <span class="wind">wind</span> and <span class="nuclear">nuclear</span>'s 
+            prominence should be increased in every countries energy mix.
+          </p>
+          <div id="butterfly_chart_deaths_ghg"></div>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 
   <div class="section">
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h2>The role models</h2>
+        <h2>Who should we learn from to achieve net zero?</h2>
       </div>
     </div>
 
@@ -268,7 +319,7 @@
       </div>
       <div class="pure-u-1-2">
         <div class="description description-left">
-          <h3>Two Columns Layout</h3>
+          <br><br><br><br><br>
           <p>The first column contains text and the second column contains a visualisation.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -277,21 +328,6 @@
       </div>
     </div>
 
-    <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div class="description description-left">
-          <h3>Two Columns Layout</h3>
-          <p>The first column contains text and the second column contains a visualisation.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
-        </div>
-      </div>
-      <div class="pure-u-1-2">
-        <h3>Share of electricity production from solar</h3>
-        <div id="choropleth_map_solar"></div>
-      </div>
-    </div>
   </div>
 
   <div class="section">
@@ -317,6 +353,11 @@
 
     var spec_treemap = "js/treemap_sectors.vg.json"
     vegaEmbed('#treemap_sectors', spec_treemap, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec33 = "js/bump_area_chart_world.vg.json";
+    vegaEmbed('#bump_area_chart_world', spec33, {"actions": false}).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 

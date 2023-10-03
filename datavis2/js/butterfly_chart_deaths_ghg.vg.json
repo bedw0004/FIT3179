@@ -1,134 +1,165 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": { "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/death_ghg_energy_source.csv"},
-    "spacing": 3,
-    "hconcat": [
-      {
-        "height": {"step": 50},
-        "transform": [{
-          "filter": {"field": "metric", "equal": "deaths_per_twh"}
-        }],
-        "title": {"text": "Deaths per TWh of electricity", "align": "right"},
-        "layer": [
-          {
-            "mark": "bar"
-          },
-          {
-            "mark": {
-              "type": "text",
-              "align": "right",
-              "dx": -5
-            },
-            "encoding": {
-              "text": {
-                "field": "value", 
-                "type": "quantitative",
-                "format": ".1f"
-              }
-            }
-          }
-        ],
-        "encoding": {
-          "y": {
-            "field": "source", 
-            "axis": null, 
-            "sort": {"op": "sum", "field": "value", "order": "descending"}
-          },
-          "x": {
-            "aggregate": "sum", 
-            "field": "value",
-            "axis": null,
-            "sort": "descending"
-          },
-          "color": {
-            "field": "source",
-            "scale": {"scheme": "set2"},
-            "legend": null
-          }
-        }
-      }, 
-      {
-        "width": 50,
-        "height": {"step": 50},
-        "view": {"stroke": null},
-        "mark": {
-          "type": "text",
-          "align": "center",
-          "fontSize": 14,
-          "fontWeight": "bold"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": { "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/death_ghg_energy_source.csv"},
+  "spacing": 3,
+  "hconcat": [
+    {
+      "width": 350,
+      "height": {"step": 50},
+      "transform": [{
+        "filter": {"field": "metric", "equal": "deaths_per_twh"}
+      }],
+      "title": {"text": "Deaths per TWh of electricity", "align": "center"},
+      "layer": [
+        {
+          "mark": "bar"
         },
-        "encoding": {
-          "y": {
-            "field": "source", 
-            "type": "nominal", 
-            "axis": null, 
-            "sort": {"op": "sum", "field": "value", "order": "descending"}
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -5
           },
-          "text": {"field": "source", "type": "nominal"},
-          "color": {
-            "field": "source",
-            "scale": {"scheme": "set2"},
-            "legend": null
-          }
-        }
-      }, 
-      {
-        "height": {"step": 50},
-        "transform": [{
-          "filter": {"field": "metric", "equal": "ghg_emissions_tonnes_per_gwh"}
-        }],
-        "title": {"text": "Greenhouse gas emissions (tonnes per GWh)", "align": "left"},
-        "layer": [
-          {
-            "mark": "bar"
-          },
-          {
-            "mark": {
-              "type": "text",
-              "align": "left",
-              "dx": 5
-            },
-            "encoding": {
-              "text": {
-                "field": "value", 
-                "type": "quantitative",
-                "format": ".0f"
-              }
+          "encoding": {
+            "text": {
+              "field": "value", 
+              "type": "quantitative",
+              "format": ".2f"
             }
           }
-        ],
-        "encoding": {
-          "y": {
-            "field": "source", 
-            "title": null,
-            "axis": null, 
-            "sort": {"op": "sum", "field": "value", "order": "descending"}
-          },
-          "x": {
-            "aggregate": "sum", "field": "value",
-            "axis": null
-          },
-          "color": {
-            "field": "source",
-            "legend": null
-          }
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "source", 
+          "axis": null, 
+          "sort": {"field": "color_source_sort_index"}
+        },
+        "x": {
+          "aggregate": "sum", 
+          "field": "value",
+          "axis": null,
+          "sort": "descending"
+        },
+        "color": {
+          "field": "source",
+          "scale": {
+            "domain": [
+                "Coal",
+                "Oil",
+                "Gas",
+                "Biomass",
+                "Hydropower",
+                "Wind",
+                "Nuclear",
+                "Solar"
+            ],
+            "range": [
+                "#79491D",
+                "#363537",
+                "#C99740",
+                "#A599B5",
+                "#3185FC",
+                "#8D3BBA",
+                "#0AAE59",
+                "#E6D554"
+            ]
+          }, 
+          "legend": null,
+          "sort": [
+            "Coal", "Oil", "Gas", "Biomass", "Hydropower", "Wind", "Nuclear", "Solar"
+          ]
         }
       }
-    ],
-    "config": {
-        "background": "transparent",
-        "font": "Roboto",
-        "view": {"stroke": null},
-        "axis": {"grid": false},
-        "legend": {
-          "titleFontSize": 14,
-          "labelFontSize": 12
+    }, 
+    {
+      "width": 60,
+      "height": {"step": 50},
+      "view": {"stroke": null},
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 14,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "y": {
+          "field": "source", 
+          "type": "nominal", 
+          "axis": null, 
+          "sort": {"field": "color_source_sort_index"}
         },
-        "style": {
-          "cell": {
-            "stroke": "transparent"
+        "text": {"field": "source", "type": "nominal"},
+        "color": {
+          "field": "source",
+          "scale": {"scheme": "set2"},
+          "legend": null,
+          "sort": [
+            "Coal", "Oil", "Gas", "Biomass", "Hydropower", "Wind", "Nuclear", "Solar"
+          ]
+        }
+      }
+    }, 
+    {
+      "width": 350,
+      "height": {"step": 50},
+      "transform": [{
+        "filter": {"field": "metric", "equal": "ghg_emissions_tonnes_per_gwh"}
+      }],
+      "title": {"text": "Greenhouse gas emissions (tonnes per GWh)", "align": "center"},
+      "layer": [
+        {
+          "mark": "bar"
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 5
+          },
+          "encoding": {
+            "text": {
+              "field": "value", 
+              "type": "quantitative",
+              "format": ".0f"
+            }
           }
         }
+      ],
+      "encoding": {
+        "y": {
+          "field": "source", 
+          "title": null,
+          "axis": null, 
+          "sort": {"field": "color_source_sort_index"}
+        },
+        "x": {
+          "aggregate": "sum", "field": "value",
+          "axis": null
+        },
+        "color": {
+          "field": "source",
+          "legend": null,
+          "sort": [
+            "Coal", "Oil", "Gas", "Biomass", "Hydropower", "Wind", "Nuclear", "Solar"
+          ]
+        }
+      }
     }
+  ],
+  "config": {
+      "background": "transparent",
+      "font": "Roboto",
+      "view": {"stroke": null},
+      "axis": {"grid": false},
+      "legend": {
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      },
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
   }
-  
+}

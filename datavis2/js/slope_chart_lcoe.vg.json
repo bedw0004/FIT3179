@@ -9,7 +9,8 @@
       "field": "year",
       "type": "ordinal",
       "scale": {"padding": 0},
-      "title": null
+      "title": "_",
+      "axis": {"labelAngle": 0}
     },
     "y": {
       "field": "lcoe",
@@ -19,7 +20,24 @@
     "color": {
       "field": "source", 
       "type": "nominal", 
-      "scale": {"scheme": "set2"},
+      "scale": {
+        "domain": [
+            "coal",
+            "nuclear",
+            "solar_pv",
+            "wind",
+            "geothermal",
+            "gas_combined_cylce"
+        ],
+        "range": [
+            "#79491D",
+            "#0AAE59",
+            "#E6D554",
+            "#8D3BBA",
+            "#A599B5",
+            "#C99740"
+        ]
+      },
       "legend": null
     }
   },
@@ -64,11 +82,11 @@
           "mark": {"type": "circle"}
         }, 
         {
-          "mark": {"type": "text", "align": "left", "dx": 10, "dy": 10, "fontSize": 14},
+          "mark": {"type": "text", "align": "left", "dx": 10, "dy": 15, "fontSize": 14},
           "encoding": {"text": {"field":"lcoe", "type": "quantitative", "format": "$" }}
         }, 
         {
-          "mark": {"type": "text", "align": "left", "dx": 44, "dy": 10, "fontSize": 14},
+          "mark": {"type": "text", "align": "left", "dx": 44, "dy": 15, "fontSize": 14},
           "encoding": {
             "text": {"field":"labels", "type": "nominal"}
           }

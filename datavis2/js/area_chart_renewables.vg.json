@@ -16,7 +16,20 @@
       },
       "color": {
         "field": "source",
-        "scale": {"scheme": "set2"},
+        "scale": {
+          "domain": [
+              "hydro",
+              "solar",
+              "wind",
+              "other_renewables"
+          ],
+          "range": [
+              "#3185FC",
+              "#E6D554",
+              "#8D3BBA",
+              "#A599B5"
+          ]
+        },
         "sort": [
           "other_renewables", "solar", "wind", "hydro"
         ],
@@ -35,8 +48,10 @@
         "axis": {"grid": false},
         "legend": {
           "titleFontSize": 14,
-          "labelFontSize": 12
+          "labelFontSize": 12,
+          "orient": "top-right"
         },
+        
         "style": {
           "cell": {
             "stroke": "transparent"

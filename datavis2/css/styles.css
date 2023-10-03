@@ -160,24 +160,55 @@ p {
 	color: #3185FC;
 }
 
-#elec_rank_svg {
-	width: 100%;
-	/* height: 600px; */
-}
-
-#area_energy_source {
+#bump_area_chart_world {
 	width: 100%;
 	height: 500px;
 }
 
-#area_elec_source {
-	width: 100%;
-	height: 500px;
+.coal {
+	font-weight: bold;
+	color: #79491D;
+}
+
+.gas {
+	font-weight: bold;
+	color: #C99740;
+}
+
+.oil {
+	font-weight: bold;
+	color: #363537;
+}
+
+.solar {
+	font-weight: bold;
+	color: #E6D554;
+}
+
+.wind {
+	font-weight: bold;
+	color: #8D3BBA;
+}
+
+.nuclear {
+	font-weight: bold;
+	color: #0AAE59;
+}
+
+.hydro {
+	font-weight: bold;
+	color: #3185FC;
+}
+
+.renewables {
+	font-weight: bold;
+	color: #5EA0FD;
 }
 
 #stacked_bar_elec_source {
 	width: 100%;
 	height: 500px;
+	margin-bottom: 60px;
 }
 
 #area_renewables {
@@ -190,9 +221,37 @@ p {
 	height: 500px;
 }
 
-#slope_chart_lcoe {
-	align-items: center;
-	height: 500px;
+#safer_heading {
+	margin-bottom: 0px;
+}
+
+#butterfly_parent {
+	position: relative;
+	z-index: 1;
+}
+
+#butterfly_chart_deaths_ghg {
+	width: 100%;
+	height: 400px;
+	padding-left:60px;
+	/* position: absolute; */
+	z-index: 2;
+}
+
+#butterfly_desc {
+	width: 300px;
+	height: auto;
+	display: block;
+	text-align: left;
+	background-color: white;	
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: #44535f;
+	position: absolute;
+	padding-left: 10px;
+	margin-left: 600px;
+	margin-top: 300px;
+	margin-bottom: 40px;
 }
 
 #choropleth_map_low_carbon {
@@ -203,11 +262,7 @@ p {
 #line_lowcarbon {
 	width: 100%;
 	height: 500px;
-}
-
-#choropleth_map_solar {
-	width: 100%;
-	height: 500px;
+	margin-bottom: 50px;
 }
 
 label {
@@ -228,7 +283,7 @@ input[type="range"] {
 	
 	/* New additions */
 	height: 8px;
-	background: #edeff06c;
+	background: #dce2e6d2;
 
 	margin-left: 10px;
 	margin-right: 10px;

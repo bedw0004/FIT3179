@@ -52,6 +52,27 @@ elec_prod_by_source_filtered <- elec_prod_by_source |>
   mutate(other_renewables = other_renewables + bioenergy) |> 
   select(-bioenergy)
 
+# filtered version
+elec_prod_by_source_rank_filt <- elec_prod_by_source_filtered |> 
+  pivot_longer(cols=other_renewables:coal, names_to="source", values_to = "energy_twh") |> 
+  mutate_all(~replace(., is.na(.), 0)) |> 
+  group_by(Year, Entity) |> 
+  arrange(desc(energy_twh), .by_group = TRUE) |> 
+  mutate(rank = row_number()) |> 
+  mutate(energy_prop = energy_twh / sum(energy_twh)) |> 
+  mutate(energy_prop_cum = cumsum(energy_prop)) |> 
+  mutate(energy_prop_pos = energy_prop_cum + (lag(energy_prop_cum) - energy_prop_cum)/2) |> 
+  mutate(energy_prop_pos = coalesce(energy_prop_pos, energy_prop/2)) |> 
+  filter(energy_prop > 0)
+
+write.csv(elec_prod_by_source_rank_filt, "data/elec_prod_source_prop_rank_filt.csv")
+
+elec_prod_source_rank_filt <- elec_prod_by_source_rank_filt |> filter(Entity == "World")
+
+write.csv(elec_prod_source_rank_filt, "data/elec_prod_source_rank_filt.csv")
+
+# non-filtered version
+
 elec_prod_by_source_rank <- elec_prod_by_source |> 
   pivot_longer(cols=other_renewables:coal, names_to="source", values_to = "energy_twh") |> 
   mutate_all(~replace(., is.na(.), 0)) |> 

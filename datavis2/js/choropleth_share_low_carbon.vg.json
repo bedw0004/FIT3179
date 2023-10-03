@@ -75,7 +75,7 @@
             },
             {
               "calculate": "datum.low_carbon_perc/100",
-              "as": "solar_prop"
+              "as": "low_carbon_prop"
             }
         ],
         "mark": {
@@ -102,7 +102,7 @@
             "tooltip": [
                 {"field": "Year", "type": "quantitative"},
                 {"field": "geo.properties.NAME", "type": "nominal", "title": "Country"},
-                {"field": "solar_prop", "type": "quantitative", "title": "Percentage of solar electricity", "format": "0.1%"}
+                {"field": "low_carbon_prop", "type": "quantitative", "title": "Percentage of low carbon electricity", "format": "0.1%"}
             ]
         }
       }

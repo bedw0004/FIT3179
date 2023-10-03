@@ -38,9 +38,9 @@
             "field": "source",
             "scale": {
               "range": [
-                "#D5AE69",
-                "#0E402D",
-                "#6EBCB3"
+                "#79491D",
+                "#0AAE59",
+                "#5EA0FD"
               ]
             },
             "legend": {"title": "Source", "labelExpr": "{'fossil_fuels': 'Fossil fuels', 'renewables': 'Renewables', 'nuclear': 'Nuclear'}[datum.label]"}
@@ -77,8 +77,9 @@
         "font": "Roboto",
         "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13},
         "legend": {
-          "titleFontSize": 14,
-          "labelFontSize": 12
+          "titleFontSize": 20,
+          "titleFontWeight": "bold",
+          "labelFontSize": 16
         },
         "style": {
           "cell": {
