@@ -47,6 +47,11 @@ newnames <- c("other_renewables", "bioenergy", "solar", "wind", "hydro", "nuclea
 elec_prod_by_source <- elec_prod_by_source |> rename_at(vars(oldnames), ~ newnames) |> 
   filter(Entity %in% interesting_countries)
 
+elec_prod_by_source_filtered <- elec_prod_by_source |> 
+  mutate_all(~replace(., is.na(.), 0)) |> 
+  mutate(other_renewables = other_renewables + bioenergy) |> 
+  select(-bioenergy)
+
 elec_prod_by_source_rank <- elec_prod_by_source |> 
   pivot_longer(cols=other_renewables:coal, names_to="source", values_to = "energy_twh") |> 
   mutate_all(~replace(., is.na(.), 0)) |> 
