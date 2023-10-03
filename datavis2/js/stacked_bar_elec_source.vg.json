@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": { "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/elec_prod_by_source.csv"},
+    "data": { "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/stacked_bar_elec_source.csv"},
     "width": "container",
     "height": "container",
   
