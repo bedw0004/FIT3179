@@ -1,0 +1,958 @@
+"","Entity","Code","Year","source","energy_twh","energy_prop"
+"1","Australia","AUS",1990,"nuclear",0,0
+"2","Australia","AUS",1990,"renewables",14.7595,0.0957401953788871
+"3","Australia","AUS",1990,"fossil_fuels",139.4025,0.904259804621113
+"4","Australia","AUS",1991,"nuclear",0,0
+"5","Australia","AUS",1991,"renewables",15.65895,0.0997626814133357
+"6","Australia","AUS",1991,"fossil_fuels",141.30305,0.900237318586664
+"7","Australia","AUS",1992,"nuclear",0,0
+"8","Australia","AUS",1992,"renewables",15.9536,0.0995162542924244
+"9","Australia","AUS",1992,"fossil_fuels",144.3579,0.900483745707576
+"10","Australia","AUS",1993,"nuclear",0,0
+"11","Australia","AUS",1993,"renewables",16.4036,0.0998402298255918
+"12","Australia","AUS",1993,"fossil_fuels",147.8949,0.900159770174408
+"13","Australia","AUS",1994,"nuclear",0,0
+"14","Australia","AUS",1994,"renewables",16.1729,0.095611639235717
+"15","Australia","AUS",1994,"fossil_fuels",152.9791,0.904388360764283
+"16","Australia","AUS",1995,"nuclear",0,0
+"17","Australia","AUS",1995,"renewables",15.65915,0.0899718463615732
+"18","Australia","AUS",1995,"fossil_fuels",158.38585,0.910028153638427
+"19","Australia","AUS",1996,"nuclear",0,0
+"20","Australia","AUS",1996,"renewables",16.0011,0.0894628405294718
+"21","Australia","AUS",1996,"fossil_fuels",162.8564,0.910537159470528
+"22","Australia","AUS",1997,"nuclear",0,0
+"23","Australia","AUS",1997,"renewables",15.99065,0.0852187004543214
+"24","Australia","AUS",1997,"fossil_fuels",171.65185,0.914781299545679
+"25","Australia","AUS",1998,"nuclear",0,0
+"26","Australia","AUS",1998,"renewables",15.8516,0.0800424156736013
+"27","Australia","AUS",1998,"fossil_fuels",182.1884,0.919957584326399
+"28","Australia","AUS",1999,"nuclear",0,0
+"29","Australia","AUS",1999,"renewables",16.3651,0.0796719667390437
+"30","Australia","AUS",1999,"fossil_fuels",189.0409,0.920328033260956
+"31","Australia","AUS",2000,"nuclear",0,0
+"32","Australia","AUS",2000,"renewables",17.11,0.0863443681873234
+"33","Australia","AUS",2000,"fossil_fuels",181.05,0.913655631812677
+"34","Australia","AUS",2001,"nuclear",0,0
+"35","Australia","AUS",2001,"renewables",17.4,0.0821801350776933
+"36","Australia","AUS",2001,"fossil_fuels",194.33,0.917819864922307
+"37","Australia","AUS",2002,"nuclear",0,0
+"38","Australia","AUS",2002,"renewables",17.35,0.0808330227357436
+"39","Australia","AUS",2002,"fossil_fuels",197.29,0.919166977264256
+"40","Australia","AUS",2003,"nuclear",0,0
+"41","Australia","AUS",2003,"renewables",18.5,0.0865983242054019
+"42","Australia","AUS",2003,"fossil_fuels",195.13,0.913401675794598
+"43","Australia","AUS",2004,"nuclear",0,0
+"44","Australia","AUS",2004,"renewables",19.41,0.0870130452324382
+"45","Australia","AUS",2004,"fossil_fuels",203.66,0.912986954767562
+"46","Australia","AUS",2005,"nuclear",0,0
+"47","Australia","AUS",2005,"renewables",19.75,0.0915623551228558
+"48","Australia","AUS",2005,"fossil_fuels",195.95,0.908437644877144
+"49","Australia","AUS",2006,"nuclear",0,0
+"50","Australia","AUS",2006,"renewables",21.19,0.0963576008367059
+"51","Australia","AUS",2006,"fossil_fuels",198.72,0.903642399163294
+"52","Australia","AUS",2007,"nuclear",0,0
+"53","Australia","AUS",2007,"renewables",20.93,0.0911903102126176
+"54","Australia","AUS",2007,"fossil_fuels",208.59,0.908809689787382
+"55","Australia","AUS",2008,"nuclear",0,0
+"56","Australia","AUS",2008,"renewables",18.49,0.0805489000217817
+"57","Australia","AUS",2008,"fossil_fuels",211.06,0.919451099978218
+"58","Australia","AUS",2009,"nuclear",0,0
+"59","Australia","AUS",2009,"renewables",18.32,0.0780437931328278
+"60","Australia","AUS",2009,"fossil_fuels",216.42,0.921956206867172
+"61","Australia","AUS",2010,"nuclear",0,0
+"62","Australia","AUS",2010,"renewables",21.13,0.0904421521208749
+"63","Australia","AUS",2010,"fossil_fuels",212.5,0.909557847879125
+"64","Australia","AUS",2011,"nuclear",0,0
+"65","Australia","AUS",2011,"renewables",27.33,0.1134542737349
+"66","Australia","AUS",2011,"fossil_fuels",213.56,0.8865457262651
+"67","Australia","AUS",2012,"nuclear",0,0
+"68","Australia","AUS",2012,"renewables",26.63,0.114105750278516
+"69","Australia","AUS",2012,"fossil_fuels",206.75,0.885894249721484
+"70","Australia","AUS",2013,"nuclear",0,0
+"71","Australia","AUS",2013,"renewables",34.2,0.148708583355074
+"72","Australia","AUS",2013,"fossil_fuels",195.78,0.851291416644926
+"73","Australia","AUS",2014,"nuclear",0,0
+"74","Australia","AUS",2014,"renewables",36.15,0.149621290509499
+"75","Australia","AUS",2014,"fossil_fuels",205.46,0.850378709490501
+"76","Australia","AUS",2015,"nuclear",0,0
+"77","Australia","AUS",2015,"renewables",33.12,0.143476000693121
+"78","Australia","AUS",2015,"fossil_fuels",197.72,0.856523999306879
+"79","Australia","AUS",2016,"nuclear",0,0
+"80","Australia","AUS",2016,"renewables",38.41,0.156093794448734
+"81","Australia","AUS",2016,"fossil_fuels",207.66,0.843906205551266
+"82","Australia","AUS",2017,"nuclear",0,0
+"83","Australia","AUS",2017,"renewables",40.77,0.163138729942779
+"84","Australia","AUS",2017,"fossil_fuels",209.14,0.836861270057221
+"85","Australia","AUS",2018,"nuclear",0,0
+"86","Australia","AUS",2018,"renewables",42.93,0.171459381739756
+"87","Australia","AUS",2018,"fossil_fuels",207.45,0.828540618260244
+"88","Australia","AUS",2019,"nuclear",0,0
+"89","Australia","AUS",2019,"renewables",53.41,0.213759705435044
+"90","Australia","AUS",2019,"fossil_fuels",196.45,0.786240294564956
+"91","Australia","AUS",2020,"nuclear",0,0
+"92","Australia","AUS",2020,"renewables",63.99,0.255031684667809
+"93","Australia","AUS",2020,"fossil_fuels",186.92,0.744968315332191
+"94","Australia","AUS",2021,"nuclear",0,0
+"95","Australia","AUS",2021,"renewables",71.98,0.291346231684611
+"96","Australia","AUS",2021,"fossil_fuels",175.08,0.708653768315389
+"97","Australia","AUS",2022,"nuclear",0,0
+"98","Australia","AUS",2022,"renewables",81.3,0.323029243483789
+"99","Australia","AUS",2022,"fossil_fuels",170.38,0.676970756516211
+"100","France","FRA",1990,"nuclear",314.08,0.752828379674017
+"101","France","FRA",1990,"renewables",55.78,0.133700862895494
+"102","France","FRA",1990,"fossil_fuels",47.34,0.113470757430489
+"103","France","FRA",1991,"nuclear",331.34,0.733669904346596
+"104","France","FRA",1991,"renewables",59.71,0.132212923246621
+"105","France","FRA",1991,"fossil_fuels",60.569997,0.134117172406783
+"106","France","FRA",1992,"nuclear",338.45,0.735728881352985
+"107","France","FRA",1992,"renewables",71.1,0.154558497456632
+"108","France","FRA",1992,"fossil_fuels",50.47,0.109712621190383
+"109","France","FRA",1993,"nuclear",368.19,0.783950091555593
+"110","France","FRA",1993,"renewables",66.86,0.142358301750202
+"111","France","FRA",1993,"fossil_fuels",34.61,0.0736916066942043
+"112","France","FRA",1994,"nuclear",359.98,0.758491361146228
+"113","France","FRA",1994,"renewables",80.95,0.170564686051412
+"114","France","FRA",1994,"fossil_fuels",33.67,0.0709439528023599
+"115","France","FRA",1995,"nuclear",377.23,0.767976384364821
+"116","France","FRA",1995,"renewables",75.45,0.15360342019544
+"117","France","FRA",1995,"fossil_fuels",38.52,0.0784201954397394
+"118","France","FRA",1996,"nuclear",397.34,0.780383376541755
+"119","France","FRA",1996,"renewables",68.47,0.134476392489591
+"120","France","FRA",1996,"fossil_fuels",43.35,0.0851402309686543
+"121","France","FRA",1997,"nuclear",395.48,0.789444267007346
+"122","France","FRA",1997,"renewables",66.44,0.132625359310125
+"123","France","FRA",1997,"fossil_fuels",39.04,0.0779303736825295
+"124","France","FRA",1998,"nuclear",387.99,0.764889107934943
+"125","France","FRA",1998,"renewables",64.76,0.127668802365697
+"126","France","FRA",1998,"fossil_fuels",54.5,0.107442089699359
+"127","France","FRA",1999,"nuclear",394.24,0.756364752604416
+"128","France","FRA",1999,"renewables",75.4,0.14465782859774
+"129","France","FRA",1999,"fossil_fuels",51.59,0.0989774187978436
+"130","France","FRA",2000,"nuclear",415.16,0.778035982008995
+"131","France","FRA",2000,"renewables",67.83,0.127117691154423
+"132","France","FRA",2000,"fossil_fuels",50.61,0.0948463268365817
+"133","France","FRA",2001,"nuclear",421.08,0.77454244458751
+"134","France","FRA",2001,"renewables",76.09,0.139961372206383
+"135","France","FRA",2001,"fossil_fuels",46.48,0.0854961832061069
+"136","France","FRA",2002,"nuclear",436.76,0.791059914511338
+"137","France","FRA",2002,"renewables",62.69,0.113544157067304
+"138","France","FRA",2002,"fossil_fuels",52.67,0.0953959284213577
+"139","France","FRA",2003,"nuclear",441.07,0.787737533933419
+"140","France","FRA",2003,"renewables",61.47,0.109783540505787
+"141","France","FRA",2003,"fossil_fuels",57.38,0.102478925560794
+"142","France","FRA",2004,"nuclear",448.24,0.790281916112766
+"143","France","FRA",2004,"renewables",62.42,0.110051305558984
+"144","France","FRA",2004,"fossil_fuels",56.53,0.0996667783282498
+"145","France","FRA",2005,"nuclear",451.53,0.792352507633454
+"146","France","FRA",2005,"renewables",54.98,0.0964798371529849
+"147","France","FRA",2005,"fossil_fuels",63.35,0.111167655213561
+"148","France","FRA",2006,"nuclear",450.19,0.792588028169014
+"149","France","FRA",2006,"renewables",60.91,0.107235915492958
+"150","France","FRA",2006,"fossil_fuels",56.9,0.100176056338028
+"151","France","FRA",2007,"nuclear",439.73,0.782145461660234
+"152","France","FRA",2007,"renewables",64.3,0.11437007523879
+"153","France","FRA",2007,"fossil_fuels",58.18,0.103484463100976
+"154","France","FRA",2008,"nuclear",439.45,0.774565964572134
+"155","France","FRA",2008,"renewables",72.33,0.127487441614524
+"156","France","FRA",2008,"fossil_fuels",55.57,0.0979465938133427
+"157","France","FRA",2009,"nuclear",409.74,0.774248408004384
+"158","France","FRA",2009,"renewables",68.15,0.128776856068479
+"159","France","FRA",2009,"fossil_fuels",51.32,0.0969747359271367
+"160","France","FRA",2010,"nuclear",428.52,0.761366664889931
+"161","France","FRA",2010,"renewables",76.68,0.136240072490805
+"162","France","FRA",2010,"fossil_fuels",57.63,0.102393262619263
+"163","France","FRA",2011,"nuclear",442.39,0.779679238632358
+"164","France","FRA",2011,"renewables",66.02,0.116355304899542
+"165","France","FRA",2011,"fossil_fuels",58.99,0.1039654564681
+"166","France","FRA",2012,"nuclear",425.41,0.750176341962333
+"167","France","FRA",2012,"renewables",85.25,0.150331522889187
+"168","France","FRA",2012,"fossil_fuels",56.42,0.0994921351484799
+"169","France","FRA",2013,"nuclear",423.68,0.734981351374794
+"170","France","FRA",2013,"renewables",99.42,0.172469424928441
+"171","France","FRA",2013,"fossil_fuels",53.35,0.0925492236967647
+"172","France","FRA",2014,"nuclear",436.48,0.770907292604956
+"173","France","FRA",2014,"renewables",94.03,0.166074992493686
+"174","France","FRA",2014,"fossil_fuels",35.68,0.0630177149013582
+"175","France","FRA",2015,"nuclear",437.43,0.762179397825481
+"176","France","FRA",2015,"renewables",91.84,0.160022302759967
+"177","France","FRA",2015,"fossil_fuels",44.65,0.0777982994145526
+"178","France","FRA",2016,"nuclear",403.2,0.721739908708494
+"179","France","FRA",2016,"renewables",99,0.177212924013246
+"180","France","FRA",2016,"fossil_fuels",56.45,0.10104716727826
+"181","France","FRA",2017,"nuclear",398.36,0.716371745072651
+"182","France","FRA",2017,"renewables",92.63,0.16657675154654
+"183","France","FRA",2017,"fossil_fuels",65.09,0.117051503380809
+"184","France","FRA",2018,"nuclear",412.94,0.717121372627338
+"185","France","FRA",2018,"renewables",113.62,0.19731517982738
+"186","France","FRA",2018,"fossil_fuels",49.27,0.0855634475452824
+"187","France","FRA",2019,"nuclear",399.01,0.705313582691084
+"188","France","FRA",2019,"renewables",113.21,0.200116665488227
+"189","France","FRA",2019,"fossil_fuels",53.5,0.0945697518206887
+"190","France","FRA",2020,"nuclear",353.83,0.67108582266477
+"191","France","FRA",2020,"renewables",125.28,0.237610241820768
+"192","France","FRA",2020,"fossil_fuels",48.14,0.0913039355144618
+"193","France","FRA",2021,"nuclear",379.36,0.689269232166867
+"194","France","FRA",2021,"renewables",122.36,0.222319124968204
+"195","France","FRA",2021,"fossil_fuels",48.66,0.0884116428649297
+"196","France","FRA",2022,"nuclear",297.2,0.633040811110164
+"197","France","FRA",2022,"renewables",115.22,0.245420465195535
+"198","France","FRA",2022,"fossil_fuels",57.06,0.1215387236943
+"199","Greenland","GRL",2000,"nuclear",0,0
+"200","Greenland","GRL",2000,"renewables",0.17,0.404761904761905
+"201","Greenland","GRL",2000,"fossil_fuels",0.25,0.595238095238095
+"202","Greenland","GRL",2001,"nuclear",0,0
+"203","Greenland","GRL",2001,"renewables",0.16,0.41025641025641
+"204","Greenland","GRL",2001,"fossil_fuels",0.23,0.58974358974359
+"205","Greenland","GRL",2002,"nuclear",0,0
+"206","Greenland","GRL",2002,"renewables",0.18,0.473684210526316
+"207","Greenland","GRL",2002,"fossil_fuels",0.2,0.526315789473684
+"208","Greenland","GRL",2003,"nuclear",0,0
+"209","Greenland","GRL",2003,"renewables",0.18,0.545454545454546
+"210","Greenland","GRL",2003,"fossil_fuels",0.15,0.454545454545455
+"211","Greenland","GRL",2004,"nuclear",0,0
+"212","Greenland","GRL",2004,"renewables",0.19,0.575757575757576
+"213","Greenland","GRL",2004,"fossil_fuels",0.14,0.424242424242424
+"214","Greenland","GRL",2005,"nuclear",0,0
+"215","Greenland","GRL",2005,"renewables",0.2,0.571428571428572
+"216","Greenland","GRL",2005,"fossil_fuels",0.15,0.428571428571429
+"217","Greenland","GRL",2006,"nuclear",0,0
+"218","Greenland","GRL",2006,"renewables",0.2,0.512820512820513
+"219","Greenland","GRL",2006,"fossil_fuels",0.19,0.487179487179487
+"220","Greenland","GRL",2007,"nuclear",0,0
+"221","Greenland","GRL",2007,"renewables",0.2,0.526315789473684
+"222","Greenland","GRL",2007,"fossil_fuels",0.18,0.473684210526316
+"223","Greenland","GRL",2008,"nuclear",0,0
+"224","Greenland","GRL",2008,"renewables",0.2,0.5
+"225","Greenland","GRL",2008,"fossil_fuels",0.2,0.5
+"226","Greenland","GRL",2009,"nuclear",0,0
+"227","Greenland","GRL",2009,"renewables",0.26,0.619047619047619
+"228","Greenland","GRL",2009,"fossil_fuels",0.16,0.380952380952381
+"229","Greenland","GRL",2010,"nuclear",0,0
+"230","Greenland","GRL",2010,"renewables",0.29,0.707317073170732
+"231","Greenland","GRL",2010,"fossil_fuels",0.12,0.292682926829268
+"232","Greenland","GRL",2011,"nuclear",0,0
+"233","Greenland","GRL",2011,"renewables",0.34,0.739130434782609
+"234","Greenland","GRL",2011,"fossil_fuels",0.12,0.260869565217391
+"235","Greenland","GRL",2012,"nuclear",0,0
+"236","Greenland","GRL",2012,"renewables",0.34,0.772727272727273
+"237","Greenland","GRL",2012,"fossil_fuels",0.1,0.227272727272727
+"238","Greenland","GRL",2013,"nuclear",0,0
+"239","Greenland","GRL",2013,"renewables",0.37,0.822222222222222
+"240","Greenland","GRL",2013,"fossil_fuels",0.08,0.177777777777778
+"241","Greenland","GRL",2014,"nuclear",0,0
+"242","Greenland","GRL",2014,"renewables",0.39,0.829787234042553
+"243","Greenland","GRL",2014,"fossil_fuels",0.08,0.170212765957447
+"244","Greenland","GRL",2015,"nuclear",0,0
+"245","Greenland","GRL",2015,"renewables",0.42,0.823529411764706
+"246","Greenland","GRL",2015,"fossil_fuels",0.09,0.176470588235294
+"247","Greenland","GRL",2016,"nuclear",0,0
+"248","Greenland","GRL",2016,"renewables",0.4,0.833333333333333
+"249","Greenland","GRL",2016,"fossil_fuels",0.08,0.166666666666667
+"250","Greenland","GRL",2017,"nuclear",0,0
+"251","Greenland","GRL",2017,"renewables",0.38,0.826086956521739
+"252","Greenland","GRL",2017,"fossil_fuels",0.08,0.173913043478261
+"253","Greenland","GRL",2018,"nuclear",0,0
+"254","Greenland","GRL",2018,"renewables",0.41,0.803921568627451
+"255","Greenland","GRL",2018,"fossil_fuels",0.1,0.196078431372549
+"256","Greenland","GRL",2019,"nuclear",0,0
+"257","Greenland","GRL",2019,"renewables",0.4,0.8
+"258","Greenland","GRL",2019,"fossil_fuels",0.1,0.2
+"259","Greenland","GRL",2020,"nuclear",0,0
+"260","Greenland","GRL",2020,"renewables",0.5,0.847457627118644
+"261","Greenland","GRL",2020,"fossil_fuels",0.09,0.152542372881356
+"262","Greenland","GRL",2021,"nuclear",0,0
+"263","Greenland","GRL",2021,"renewables",0.5,0.833333333333333
+"264","Greenland","GRL",2021,"fossil_fuels",0.1,0.166666666666667
+"265","India","IND",1990,"nuclear",6.3948717,0.0222256195814679
+"266","India","IND",1990,"renewables",66.42736703,0.230870838176053
+"267","India","IND",1990,"fossil_fuels",214.903,0.746903542242479
+"268","India","IND",1991,"nuclear",5.413765,0.0168988692589386
+"269","India","IND",1991,"renewables",74.031794,0.231087534795226
+"270","India","IND",1991,"fossil_fuels",240.917,0.752013595945836
+"271","India","IND",1992,"nuclear",6.4037104,0.0190001952841985
+"272","India","IND",1992,"renewables",70.149215,0.20813695510547
+"273","India","IND",1992,"fossil_fuels",260.481,0.772862849610332
+"274","India","IND",1993,"nuclear",6.2269344,0.0172050786443616
+"275","India","IND",1993,"renewables",70.82727,0.19569641692635
+"276","India","IND",1993,"fossil_fuels",284.87,0.787098504429288
+"277","India","IND",1994,"nuclear",4.9453087,0.0127592322352315
+"278","India","IND",1994,"renewables",80.40339,0.20744620563523
+"279","India","IND",1994,"fossil_fuels",302.238,0.779794562129539
+"280","India","IND",1995,"nuclear",7.6146264,0.0178501979965555
+"281","India","IND",1995,"renewables",76.418356101,0.179139817939608
+"282","India","IND",1995,"fossil_fuels",342.552,0.803009984063837
+"283","India","IND",1996,"nuclear",8.401279,0.0189881185641068
+"284","India","IND",1996,"renewables",69.941980606,0.158079099665085
+"285","India","IND",1996,"fossil_fuels",364.106,0.822932781770808
+"286","India","IND",1997,"nuclear",10.071813,0.0215130669712076
+"287","India","IND",1997,"renewables",71.205066606,0.152091720386804
+"288","India","IND",1997,"fossil_fuels",386.895,0.826395212641989
+"289","India","IND",1998,"nuclear",11.371117,0.0225713280747287
+"290","India","IND",1998,"renewables",84.717790606,0.168162287445833
+"291","India","IND",1998,"fossil_fuels",407.697,0.809266384479438
+"292","India","IND",1999,"nuclear",12.727872,0.0233249457108904
+"293","India","IND",1999,"renewables",83.701510606,0.153390385353063
+"294","India","IND",1999,"fossil_fuels",449.247,0.823284668936046
+"295","India","IND",2000,"nuclear",15.77,0.0275993629569996
+"296","India","IND",2000,"renewables",80.27,0.140481982533821
+"297","India","IND",2000,"fossil_fuels",475.35,0.831918654509179
+"298","India","IND",2001,"nuclear",18.89,0.0322305447968742
+"299","India","IND",2001,"renewables",76.19,0.129997099421591
+"300","India","IND",2001,"fossil_fuels",491.01,0.837772355781535
+"301","India","IND",2002,"nuclear",19.35,0.0317400433042451
+"302","India","IND",2002,"renewables",72.78,0.119381930319533
+"303","India","IND",2002,"fossil_fuels",517.51,0.848878026376222
+"304","India","IND",2003,"nuclear",18.14,0.028426809584254
+"305","India","IND",2003,"renewables",74.63,0.11695109147039
+"306","India","IND",2003,"fossil_fuels",545.36,0.854622098945356
+"307","India","IND",2004,"nuclear",21.26,0.0304444953602933
+"308","India","IND",2004,"renewables",109.2,0.156375300721732
+"309","India","IND",2004,"fossil_fuels",567.86,0.813180203917975
+"310","India","IND",2005,"nuclear",17.73,0.0251660705160961
+"311","India","IND",2005,"renewables",107.47,0.152543575767899
+"312","India","IND",2005,"fossil_fuels",579.32,0.822290353716005
+"313","India","IND",2006,"nuclear",17.63,0.0236825490643848
+"314","India","IND",2006,"renewables",127.56,0.171352578482866
+"315","India","IND",2006,"fossil_fuels",599.24,0.804964872452749
+"316","India","IND",2007,"nuclear",17.83,0.0223921834576646
+"317","India","IND",2007,"renewables",141.75,0.17801974229523
+"318","India","IND",2007,"fossil_fuels",636.68,0.799588074247105
+"319","India","IND",2008,"nuclear",15.23,0.0183846163131783
+"320","India","IND",2008,"renewables",138.91,0.167682669209691
+"321","India","IND",2008,"fossil_fuels",674.27,0.813932714477131
+"322","India","IND",2009,"nuclear",16.82,0.019119937252049
+"323","India","IND",2009,"renewables",134.33,0.152698048220436
+"324","India","IND",2009,"fossil_fuels",728.56,0.828182014527515
+"325","India","IND",2010,"nuclear",23.08,0.0246194544892103
+"326","India","IND",2010,"renewables",142.61,0.152122201243773
+"327","India","IND",2010,"fossil_fuels",771.78,0.823258344267016
+"328","India","IND",2011,"nuclear",32.22,0.0311605415860735
+"329","India","IND",2011,"renewables",173.62,0.167911025145068
+"330","India","IND",2011,"fossil_fuels",828.16,0.800928433268859
+"331","India","IND",2012,"nuclear",33.14,0.0303524325908558
+"332","India","IND",2012,"renewables",165.25,0.151350014654162
+"333","India","IND",2012,"fossil_fuels",893.45,0.818297552754982
+"334","India","IND",2013,"nuclear",33.31,0.0290627672012145
+"335","India","IND",2013,"renewables",187.9,0.163941577817719
+"336","India","IND",2013,"fossil_fuels",924.93,0.806995654981067
+"337","India","IND",2014,"nuclear",34.69,0.0274876784837007
+"338","India","IND",2014,"renewables",202.04,0.160092550038827
+"339","India","IND",2014,"fossil_fuels",1025.29,0.812419771477473
+"340","India","IND",2015,"nuclear",38.31,0.0289796968138219
+"341","India","IND",2015,"renewables",203.21,0.153718720687464
+"342","India","IND",2015,"fossil_fuels",1080.44,0.817301582498714
+"343","India","IND",2016,"nuclear",37.9,0.0270399463481803
+"344","India","IND",2016,"renewables",208.21,0.148548475703288
+"345","India","IND",2016,"fossil_fuels",1155.52,0.824411577948531
+"346","India","IND",2017,"nuclear",37.41,0.0254289132385329
+"347","India","IND",2017,"renewables",234.9,0.159669920334974
+"348","India","IND",2017,"fossil_fuels",1198.85,0.814901166426493
+"349","India","IND",2018,"nuclear",39.05,0.0247311555561185
+"350","India","IND",2018,"renewables",263.61,0.166949549709306
+"351","India","IND",2018,"fossil_fuels",1276.32,0.808319294734575
+"352","India","IND",2019,"nuclear",45.16,0.0278437151259934
+"353","India","IND",2019,"renewables",303.16,0.186915426873254
+"354","India","IND",2019,"fossil_fuels",1273.59,0.785240858000752
+"355","India","IND",2020,"nuclear",44.61,0.0285465633418869
+"356","India","IND",2020,"renewables",315.76,0.202059243237709
+"357","India","IND",2020,"fossil_fuels",1202.34,0.769394193420404
+"358","India","IND",2021,"nuclear",43.92,0.0256280087527352
+"359","India","IND",2021,"renewables",332.2,0.193843909555069
+"360","India","IND",2021,"fossil_fuels",1337.63,0.780528081692195
+"361","India","IND",2022,"nuclear",46.29,0.0251856688158002
+"362","India","IND",2022,"renewables",376.33,0.204755298022253
+"363","India","IND",2022,"fossil_fuels",1415.33,0.770059033161947
+"364","Norway","NOR",1990,"nuclear",0,0
+"365","Norway","NOR",1990,"renewables",121.35,0.999094352050058
+"366","Norway","NOR",1990,"fossil_fuels",0.11,0.000905647949942368
+"367","Norway","NOR",1991,"nuclear",0,0
+"368","Norway","NOR",1991,"renewables",110.34,0.998913633894622
+"369","Norway","NOR",1991,"fossil_fuels",0.12,0.00108636610537751
+"370","Norway","NOR",1992,"nuclear",0,0
+"371","Norway","NOR",1992,"renewables",116.9,0.999059909409452
+"372","Norway","NOR",1992,"fossil_fuels",0.11,0.000940090590547816
+"373","Norway","NOR",1993,"nuclear",0,0
+"374","Norway","NOR",1993,"renewables",119.48,0.998913134353315
+"375","Norway","NOR",1993,"fossil_fuels",0.13,0.00108686564668506
+"376","Norway","NOR",1994,"nuclear",0,0
+"377","Norway","NOR",1994,"renewables",111.92,0.997504456327986
+"378","Norway","NOR",1994,"fossil_fuels",0.28,0.00249554367201426
+"379","Norway","NOR",1995,"nuclear",0,0
+"380","Norway","NOR",1995,"renewables",121.83,0.997543601080816
+"381","Norway","NOR",1995,"fossil_fuels",0.3,0.00245639891918448
+"382","Norway","NOR",1996,"nuclear",0,0
+"383","Norway","NOR",1996,"renewables",104.17,0.9961748111313
+"384","Norway","NOR",1996,"fossil_fuels",0.4,0.00382518886870039
+"385","Norway","NOR",1997,"nuclear",0,0
+"386","Norway","NOR",1997,"renewables",110.03,0.996829135712992
+"387","Norway","NOR",1997,"fossil_fuels",0.35,0.00317086428700852
+"388","Norway","NOR",1998,"nuclear",0,0
+"389","Norway","NOR",1998,"renewables",115.98,0.997162754707248
+"390","Norway","NOR",1998,"fossil_fuels",0.33,0.00283724529275213
+"391","Norway","NOR",1999,"nuclear",0,0
+"392","Norway","NOR",1999,"renewables",121.75,0.99672533769955
+"393","Norway","NOR",1999,"fossil_fuels",0.4,0.00327466230045027
+"394","Norway","NOR",2000,"nuclear",0,0
+"395","Norway","NOR",2000,"renewables",142.11,0.997753282314119
+"396","Norway","NOR",2000,"fossil_fuels",0.32,0.00224671768588078
+"397","Norway","NOR",2001,"nuclear",0,0
+"398","Norway","NOR",2001,"renewables",120.74,0.996533509409046
+"399","Norway","NOR",2001,"fossil_fuels",0.42,0.00346649059095411
+"400","Norway","NOR",2002,"nuclear",0,0
+"401","Norway","NOR",2002,"renewables",129.7,0.996772210267446
+"402","Norway","NOR",2002,"fossil_fuels",0.42,0.00322778973255457
+"403","Norway","NOR",2003,"nuclear",0,0
+"404","Norway","NOR",2003,"renewables",106.03,0.994746223848391
+"405","Norway","NOR",2003,"fossil_fuels",0.56,0.00525377615160897
+"406","Norway","NOR",2004,"nuclear",0,0
+"407","Norway","NOR",2004,"renewables",109.39,0.994635388252409
+"408","Norway","NOR",2004,"fossil_fuels",0.59,0.00536461174759047
+"409","Norway","NOR",2005,"nuclear",0,0
+"410","Norway","NOR",2005,"renewables",136.52,0.995769511305616
+"411","Norway","NOR",2005,"fossil_fuels",0.58,0.00423048869438366
+"412","Norway","NOR",2006,"nuclear",0,0
+"413","Norway","NOR",2006,"renewables",120.4,0.994301759022215
+"414","Norway","NOR",2006,"fossil_fuels",0.69,0.00569824097778512
+"415","Norway","NOR",2007,"nuclear",0,0
+"416","Norway","NOR",2007,"renewables",134.94,0.992643813447109
+"417","Norway","NOR",2007,"fossil_fuels",1,0.00735618655289098
+"418","Norway","NOR",2008,"nuclear",0,0
+"419","Norway","NOR",2008,"renewables",140.35,0.995248900865126
+"420","Norway","NOR",2008,"fossil_fuels",0.67,0.00475109913487449
+"421","Norway","NOR",2009,"nuclear",0,0
+"422","Norway","NOR",2009,"renewables",126.49,0.966310160427807
+"423","Norway","NOR",2009,"fossil_fuels",4.41,0.0336898395721925
+"424","Norway","NOR",2010,"nuclear",0,0
+"425","Norway","NOR",2010,"renewables",117.97,0.958404419530425
+"426","Norway","NOR",2010,"fossil_fuels",5.12,0.0415955804695751
+"427","Norway","NOR",2011,"nuclear",0,0
+"428","Norway","NOR",2011,"renewables",121.9,0.965850566516124
+"429","Norway","NOR",2011,"fossil_fuels",4.31,0.0341494334838761
+"430","Norway","NOR",2012,"nuclear",0,0
+"431","Norway","NOR",2012,"renewables",143.6,0.979870351415899
+"432","Norway","NOR",2012,"fossil_fuels",2.95,0.020129648584101
+"433","Norway","NOR",2013,"nuclear",0,0
+"434","Norway","NOR",2013,"renewables",130.42,0.978614842049974
+"435","Norway","NOR",2013,"fossil_fuels",2.85,0.0213851579500263
+"436","Norway","NOR",2014,"nuclear",0,0
+"437","Norway","NOR",2014,"renewables",137.94,0.978714346530439
+"438","Norway","NOR",2014,"fossil_fuels",3,0.0212856534695615
+"439","Norway","NOR",2015,"nuclear",0,0
+"440","Norway","NOR",2015,"renewables",140.07,0.979099678456592
+"441","Norway","NOR",2015,"fossil_fuels",2.99,0.0209003215434084
+"442","Norway","NOR",2016,"nuclear",0,0
+"443","Norway","NOR",2016,"renewables",145.16,0.979950043880375
+"444","Norway","NOR",2016,"fossil_fuels",2.97,0.0200499561196247
+"445","Norway","NOR",2017,"nuclear",0,0
+"446","Norway","NOR",2017,"renewables",145.48,0.980257395054242
+"447","Norway","NOR",2017,"fossil_fuels",2.93,0.0197426049457584
+"448","Norway","NOR",2018,"nuclear",0,0
+"449","Norway","NOR",2018,"renewables",143.06,0.979728804273387
+"450","Norway","NOR",2018,"fossil_fuels",2.96,0.0202711957266128
+"451","Norway","NOR",2019,"nuclear",0,0
+"452","Norway","NOR",2019,"renewables",131.07,0.979376821340507
+"453","Norway","NOR",2019,"fossil_fuels",2.76,0.0206231786594934
+"454","Norway","NOR",2020,"nuclear",0,0
+"455","Norway","NOR",2020,"renewables",152.09,0.985741136820274
+"456","Norway","NOR",2020,"fossil_fuels",2.2,0.0142588631797265
+"457","Norway","NOR",2021,"nuclear",0,0
+"458","Norway","NOR",2021,"renewables",156.09,0.9931284596297
+"459","Norway","NOR",2021,"fossil_fuels",1.08,0.00687154037029968
+"460","Norway","NOR",2022,"nuclear",0,0
+"461","Norway","NOR",2022,"renewables",151.11,0.989717055279015
+"462","Norway","NOR",2022,"fossil_fuels",1.57,0.0102829447209851
+"463","South Africa","ZAF",1990,"nuclear",8.449,0.0510868579375397
+"464","South Africa","ZAF",1990,"renewables",1.01,0.00610696254194758
+"465","South Africa","ZAF",1990,"fossil_fuels",155.926,0.942806179520513
+"466","South Africa","ZAF",1991,"nuclear",9.144,0.0549149610838858
+"467","South Africa","ZAF",1991,"renewables",1.98,0.011891034880369
+"468","South Africa","ZAF",1991,"fossil_fuels",155.388,0.933194004035745
+"469","South Africa","ZAF",1992,"nuclear",9.288,0.0556978117759918
+"470","South Africa","ZAF",1992,"renewables",0.75200003,0.00450955599983637
+"471","South Africa","ZAF",1992,"fossil_fuels",156.717,0.939792632224172
+"472","South Africa","ZAF",1993,"nuclear",7.255,0.0418490894626014
+"473","South Africa","ZAF",1993,"renewables",0.14600004,0.000842173499035614
+"474","South Africa","ZAF",1993,"fossil_fuels",165.96,0.957308737038363
+"475","South Africa","ZAF",1994,"nuclear",9.697,0.0538204947765872
+"476","South Africa","ZAF",1994,"renewables",1.0739999,0.00596093699164744
+"477","South Africa","ZAF",1994,"fossil_fuels",169.402,0.940218568231765
+"478","South Africa","ZAF",1995,"nuclear",11.301,0.0609609399021475
+"479","South Africa","ZAF",1995,"renewables",0.529,0.00285358262173578
+"480","South Africa","ZAF",1995,"fossil_fuels",173.551,0.936185477476117
+"481","South Africa","ZAF",1996,"nuclear",11.775,0.0595262168420148
+"482","South Africa","ZAF",1996,"renewables",1.3189999,0.00666794684178308
+"483","South Africa","ZAF",1996,"fossil_fuels",184.718,0.933805836316202
+"484","South Africa","ZAF",1997,"nuclear",12.647,0.0609176910331008
+"485","South Africa","ZAF",1997,"renewables",2.092,0.0100766829794613
+"486","South Africa","ZAF",1997,"fossil_fuels",192.869,0.929005625987438
+"487","South Africa","ZAF",1998,"nuclear",13.601,0.0670915452567521
+"488","South Africa","ZAF",1998,"renewables",1.595,0.00786787844162338
+"489","South Africa","ZAF",1998,"fossil_fuels",187.52701,0.925040576301625
+"490","South Africa","ZAF",1999,"nuclear",12.837,0.0641128730498753
+"491","South Africa","ZAF",1999,"renewables",0.7259999,0.00362592034142885
+"492","South Africa","ZAF",1999,"fossil_fuels",186.662,0.932261206608696
+"493","South Africa","ZAF",2000,"nuclear",13.01,0.0662187611340154
+"494","South Africa","ZAF",2000,"renewables",1.79,0.00911080572097521
+"495","South Africa","ZAF",2000,"fossil_fuels",181.67,0.924670433145009
+"496","South Africa","ZAF",2001,"nuclear",10.72,0.0545436043553475
+"497","South Africa","ZAF",2001,"renewables",2.46,0.0125165360740816
+"498","South Africa","ZAF",2001,"fossil_fuels",183.36,0.932939859570571
+"499","South Africa","ZAF",2002,"nuclear",11.99,0.0588928729308905
+"500","South Africa","ZAF",2002,"renewables",2.81,0.013802249619333
+"501","South Africa","ZAF",2002,"fossil_fuels",188.79,0.927304877449776
+"502","South Africa","ZAF",2003,"nuclear",12.66,0.0580095307917889
+"503","South Africa","ZAF",2003,"renewables",1.19,0.00545271260997067
+"504","South Africa","ZAF",2003,"fossil_fuels",204.39,0.93653775659824
+"505","South Africa","ZAF",2004,"nuclear",14.28,0.0625657202944269
+"506","South Africa","ZAF",2004,"renewables",1.33,0.00582719943918682
+"507","South Africa","ZAF",2004,"fossil_fuels",212.63,0.931607080266386
+"508","South Africa","ZAF",2005,"nuclear",12.24,0.0533984818078702
+"509","South Africa","ZAF",2005,"renewables",1.75,0.00763458685978536
+"510","South Africa","ZAF",2005,"fossil_fuels",215.23,0.938966931332344
+"511","South Africa","ZAF",2006,"nuclear",10.07,0.0425612848689772
+"512","South Africa","ZAF",2006,"renewables",3.28,0.0138630600169062
+"513","South Africa","ZAF",2006,"fossil_fuels",223.25,0.943575655114117
+"514","South Africa","ZAF",2007,"nuclear",12.6,0.051051416069041
+"515","South Africa","ZAF",2007,"renewables",1.3,0.00526720959442486
+"516","South Africa","ZAF",2007,"fossil_fuels",232.91,0.943681374336534
+"517","South Africa","ZAF",2008,"nuclear",12.75,0.0529639014663731
+"518","South Africa","ZAF",2008,"renewables",1.66,0.0068956922693474
+"519","South Africa","ZAF",2008,"fossil_fuels",226.32,0.94014040626428
+"520","South Africa","ZAF",2009,"nuclear",11.57,0.0499568221070812
+"521","South Africa","ZAF",2009,"renewables",1.86,0.00803108808290155
+"522","South Africa","ZAF",2009,"fossil_fuels",218.17,0.942012089810017
+"523","South Africa","ZAF",2010,"nuclear",12.9,0.0530907893653799
+"524","South Africa","ZAF",2010,"renewables",2.51,0.0103300683183801
+"525","South Africa","ZAF",2010,"fossil_fuels",227.57,0.93657914231624
+"526","South Africa","ZAF",2011,"nuclear",12.94,0.0529265000613522
+"527","South Africa","ZAF",2011,"renewables",2.49,0.0101844656223158
+"528","South Africa","ZAF",2011,"fossil_fuels",229.06,0.936889034316332
+"529","South Africa","ZAF",2012,"nuclear",12.4,0.0514736405147364
+"530","South Africa","ZAF",2012,"renewables",1.66,0.00689082606890826
+"531","South Africa","ZAF",2012,"fossil_fuels",226.84,0.941635533416355
+"532","South Africa","ZAF",2013,"nuclear",13.61,0.0570625969561025
+"533","South Africa","ZAF",2013,"renewables",1.62,0.00679216804326863
+"534","South Africa","ZAF",2013,"fossil_fuels",223.28,0.936145235000629
+"535","South Africa","ZAF",2014,"nuclear",14.76,0.0623943185661143
+"536","South Africa","ZAF",2014,"renewables",3.38,0.014288129861346
+"537","South Africa","ZAF",2014,"fossil_fuels",218.42,0.92331755157254
+"538","South Africa","ZAF",2015,"nuclear",10.97,0.0472967146675864
+"539","South Africa","ZAF",2015,"renewables",6.09,0.02625679054928
+"540","South Africa","ZAF",2015,"fossil_fuels",214.88,0.926446494783134
+"541","South Africa","ZAF",2016,"nuclear",15.21,0.0644518835543879
+"542","South Africa","ZAF",2016,"renewables",7.69,0.0325861265307852
+"543","South Africa","ZAF",2016,"fossil_fuels",213.09,0.902961989914827
+"544","South Africa","ZAF",2017,"nuclear",15.09,0.0634300126103405
+"545","South Africa","ZAF",2017,"renewables",10.04,0.0422026061370324
+"546","South Africa","ZAF",2017,"fossil_fuels",212.77,0.894367381252627
+"547","South Africa","ZAF",2018,"nuclear",10.56,0.0445513226173902
+"548","South Africa","ZAF",2018,"renewables",12.22,0.051554655528836
+"549","South Africa","ZAF",2018,"fossil_fuels",214.25,0.903894021853774
+"550","South Africa","ZAF",2019,"nuclear",13.6,0.0579809004092769
+"551","South Africa","ZAF",2019,"renewables",12.57,0.0535896998635744
+"552","South Africa","ZAF",2019,"fossil_fuels",208.39,0.888429399727149
+"553","South Africa","ZAF",2020,"nuclear",11.62,0.0523541338139221
+"554","South Africa","ZAF",2020,"renewables",12.83,0.0578058121198468
+"555","South Africa","ZAF",2020,"fossil_fuels",197.5,0.889840054066231
+"556","South Africa","ZAF",2021,"nuclear",12.15,0.0544354838709677
+"557","South Africa","ZAF",2021,"renewables",16.88,0.0756272401433692
+"558","South Africa","ZAF",2021,"fossil_fuels",194.17,0.869937275985663
+"559","South Africa","ZAF",2022,"nuclear",10.07,0.0471441947565543
+"560","South Africa","ZAF",2022,"renewables",19.42,0.0909176029962547
+"561","South Africa","ZAF",2022,"fossil_fuels",184.11,0.861938202247191
+"562","United Kingdom","GBR",1990,"nuclear",65.75,0.206917170191339
+"563","United Kingdom","GBR",1990,"renewables",5.82,0.0183157099697885
+"564","United Kingdom","GBR",1990,"fossil_fuels",246.19,0.774767119838872
+"565","United Kingdom","GBR",1991,"nuclear",70.54,0.219518267255866
+"566","United Kingdom","GBR",1991,"renewables",5.32,0.016555673118815
+"567","United Kingdom","GBR",1991,"fossil_fuels",245.48,0.763926059625319
+"568","United Kingdom","GBR",1992,"nuclear",76.81,0.24052733763387
+"569","United Kingdom","GBR",1992,"renewables",6.4,0.0200413352539613
+"570","United Kingdom","GBR",1992,"fossil_fuels",236.13,0.739431327112169
+"571","United Kingdom","GBR",1993,"nuclear",89.35,0.277769142288681
+"572","United Kingdom","GBR",1993,"renewables",5.72,0.0177821991481954
+"573","United Kingdom","GBR",1993,"fossil_fuels",226.6,0.704448658563124
+"574","United Kingdom","GBR",1994,"nuclear",88.28,0.271614054519722
+"575","United Kingdom","GBR",1994,"renewables",6.95,0.0213832994892622
+"576","United Kingdom","GBR",1994,"fossil_fuels",229.79,0.707002645991016
+"577","United Kingdom","GBR",1995,"nuclear",88.96,0.267564966313763
+"578","United Kingdom","GBR",1995,"renewables",6.87,0.0206628970163619
+"579","United Kingdom","GBR",1995,"fossil_fuels",236.65,0.711772136669875
+"580","United Kingdom","GBR",1996,"nuclear",94.67,0.271012252376045
+"581","United Kingdom","GBR",1996,"renewables",5.68,0.016260162601626
+"582","United Kingdom","GBR",1996,"fossil_fuels",248.97,0.712727585022329
+"583","United Kingdom","GBR",1997,"nuclear",98.15,0.281079068701853
+"584","United Kingdom","GBR",1997,"renewables",6.95,0.0199032045591225
+"585","United Kingdom","GBR",1997,"fossil_fuels",244.09,0.699017726739025
+"586","United Kingdom","GBR",1998,"nuclear",99.49,0.275534507588346
+"587","United Kingdom","GBR",1998,"renewables",8.65,0.0239559100476349
+"588","United Kingdom","GBR",1998,"fossil_fuels",252.94,0.700509582364019
+"589","United Kingdom","GBR",1999,"nuclear",95.13,0.260451745379877
+"590","United Kingdom","GBR",1999,"renewables",9.62,0.0263381245722108
+"591","United Kingdom","GBR",1999,"fossil_fuels",260.5,0.713210130047912
+"592","United Kingdom","GBR",2000,"nuclear",85.06,0.227202307815588
+"593","United Kingdom","GBR",2000,"renewables",9.98,0.0266574069127624
+"594","United Kingdom","GBR",2000,"fossil_fuels",279.34,0.746140285271649
+"595","United Kingdom","GBR",2001,"nuclear",90.09,0.235609488192065
+"596","United Kingdom","GBR",2001,"renewables",9.56,0.0250019614509506
+"597","United Kingdom","GBR",2001,"fossil_fuels",282.72,0.739388550356984
+"598","United Kingdom","GBR",2002,"nuclear",87.85,0.228419136765471
+"599","United Kingdom","GBR",2002,"renewables",11.13,0.0289391575663026
+"600","United Kingdom","GBR",2002,"fossil_fuels",285.62,0.742641705668227
+"601","United Kingdom","GBR",2003,"nuclear",88.69,0.2242704698326
+"602","United Kingdom","GBR",2003,"renewables",10.62,0.026854802002731
+"603","United Kingdom","GBR",2003,"fossil_fuels",296.15,0.748874728164669
+"604","United Kingdom","GBR",2004,"nuclear",80,0.204451941015615
+"605","United Kingdom","GBR",2004,"renewables",14.14,0.03613688057451
+"606","United Kingdom","GBR",2004,"fossil_fuels",297.15,0.759411178409875
+"607","United Kingdom","GBR",2005,"nuclear",81.62,0.206413433817207
+"608","United Kingdom","GBR",2005,"renewables",16.93,0.0428152344342724
+"609","United Kingdom","GBR",2005,"fossil_fuels",296.87,0.750771331748521
+"610","United Kingdom","GBR",2006,"nuclear",75.45,0.191770028466856
+"611","United Kingdom","GBR",2006,"renewables",18.11,0.046029890199268
+"612","United Kingdom","GBR",2006,"fossil_fuels",299.88,0.762200081333876
+"613","United Kingdom","GBR",2007,"nuclear",63.03,0.160389841722225
+"614","United Kingdom","GBR",2007,"renewables",19.69,0.0501043310092117
+"615","United Kingdom","GBR",2007,"fossil_fuels",310.26,0.789505827268563
+"616","United Kingdom","GBR",2008,"nuclear",52.49,0.13639434570211
+"617","United Kingdom","GBR",2008,"renewables",21.85,0.0567768423240827
+"618","United Kingdom","GBR",2008,"fossil_fuels",310.5,0.806828811973807
+"619","United Kingdom","GBR",2009,"nuclear",69.1,0.185214967299239
+"620","United Kingdom","GBR",2009,"renewables",25.25,0.0676798541867696
+"621","United Kingdom","GBR",2009,"fossil_fuels",278.73,0.747105178513992
+"622","United Kingdom","GBR",2010,"nuclear",62.14,0.163996727455068
+"623","United Kingdom","GBR",2010,"renewables",26.18,0.0690929244411602
+"624","United Kingdom","GBR",2010,"fossil_fuels",290.59,0.766910348103771
+"625","United Kingdom","GBR",2011,"nuclear",68.98,0.188955240234482
+"626","United Kingdom","GBR",2011,"renewables",35.2,0.0964225058894428
+"627","United Kingdom","GBR",2011,"fossil_fuels",260.88,0.714622253876075
+"628","United Kingdom","GBR",2012,"nuclear",70.4,0.195073291030508
+"629","United Kingdom","GBR",2012,"renewables",41.24,0.114273047188894
+"630","United Kingdom","GBR",2012,"fossil_fuels",249.25,0.690653661780598
+"631","United Kingdom","GBR",2013,"nuclear",70.61,0.198688727559232
+"632","United Kingdom","GBR",2013,"renewables",53.21,0.149727052732287
+"633","United Kingdom","GBR",2013,"fossil_fuels",231.56,0.651584219708481
+"634","United Kingdom","GBR",2014,"nuclear",63.75,0.190179290593956
+"635","United Kingdom","GBR",2014,"renewables",64.52,0.192476358103875
+"636","United Kingdom","GBR",2014,"fossil_fuels",206.94,0.617344351302169
+"637","United Kingdom","GBR",2015,"nuclear",70.34,0.209757261287052
+"638","United Kingdom","GBR",2015,"renewables",82.57,0.246227709190672
+"639","United Kingdom","GBR",2015,"fossil_fuels",182.43,0.544015029522276
+"640","United Kingdom","GBR",2016,"nuclear",71.73,0.213304389199477
+"641","United Kingdom","GBR",2016,"renewables",82.99,0.246788390626859
+"642","United Kingdom","GBR",2016,"fossil_fuels",181.56,0.539907220173665
+"643","United Kingdom","GBR",2017,"nuclear",70.34,0.209907490301403
+"644","United Kingdom","GBR",2017,"renewables",98.85,0.294986571172784
+"645","United Kingdom","GBR",2017,"fossil_fuels",165.91,0.495105938525813
+"646","United Kingdom","GBR",2018,"nuclear",65.06,0.196853252647504
+"647","United Kingdom","GBR",2018,"renewables",110.03,0.332919818456884
+"648","United Kingdom","GBR",2018,"fossil_fuels",155.41,0.470226928895613
+"649","United Kingdom","GBR",2019,"nuclear",56.18,0.174661899580289
+"650","United Kingdom","GBR",2019,"renewables",120.48,0.37456863049899
+"651","United Kingdom","GBR",2019,"fossil_fuels",144.99,0.450769469920721
+"652","United Kingdom","GBR",2020,"nuclear",50.85,0.165435793994209
+"653","United Kingdom","GBR",2020,"renewables",131.74,0.428603962650877
+"654","United Kingdom","GBR",2020,"fossil_fuels",124.78,0.405960243354914
+"655","United Kingdom","GBR",2021,"nuclear",46.88,0.152624039588488
+"656","United Kingdom","GBR",2021,"renewables",122.2,0.397838260190129
+"657","United Kingdom","GBR",2021,"fossil_fuels",138.08,0.449537700221383
+"658","United Kingdom","GBR",2022,"nuclear",48.16,0.148234787158731
+"659","United Kingdom","GBR",2022,"renewables",134.66,0.414478746652713
+"660","United Kingdom","GBR",2022,"fossil_fuels",142.07,0.437286466188556
+"661","United States","USA",1990,"nuclear",607.22284,0.191876899789993
+"662","United States","USA",1990,"renewables",295.46846265,0.0933653493649833
+"663","United States","USA",1990,"fossil_fuels",2261.95666,0.714757750845023
+"664","United States","USA",1991,"nuclear",644.80536,0.201680446337548
+"665","United States","USA",1991,"renewables",290.7850316,0.0909509420972646
+"666","United States","USA",1991,"fossil_fuels",2261.5731,0.707368611565188
+"667","United States","USA",1992,"nuclear",651.34344,0.203178012852513
+"668","United States","USA",1992,"renewables",254.75120437,0.0794662850610439
+"669","United States","USA",1992,"fossil_fuels",2299.68255,0.717355702086443
+"670","United States","USA",1993,"nuclear",642.4118,0.193275126878796
+"671","United States","USA",1993,"renewables",282.76230068,0.0850714752444883
+"672","United States","USA",1993,"fossil_fuels",2398.64625,0.721653397876716
+"673","United States","USA",1994,"nuclear",674.1472,0.199541856854874
+"674","United States","USA",1994,"renewables",263.3251011,0.0779419978752289
+"675","United States","USA",1994,"fossil_fuels",2441.002825,0.722516145269897
+"676","United States","USA",1995,"nuclear",708.84436,0.203087299223341
+"677","United States","USA",1995,"renewables",314.9305068,0.090229096368983
+"678","United States","USA",1995,"fossil_fuels",2466.568265,0.706683604407676
+"679","United States","USA",1996,"nuclear",710.2406,0.198158842554657
+"680","United States","USA",1996,"renewables",351.35754755,0.0980296042571362
+"681","United States","USA",1996,"fossil_fuels",2522.60022,0.703811553188207
+"682","United States","USA",1997,"nuclear",661.7307,0.182053979727683
+"683","United States","USA",1997,"renewables",359.8270433,0.0989948709443437
+"684","United States","USA",1997,"fossil_fuels",2613.24717,0.718951149327974
+"685","United States","USA",1998,"nuclear",709.1601,0.187926172406523
+"686","United States","USA",1998,"renewables",325.67017804,0.0863020212586807
+"687","United States","USA",1998,"fossil_fuels",2738.77981,0.725771806334796
+"688","United States","USA",1999,"nuclear",766.5833,0.199043991110875
+"689","United States","USA",1999,"renewables",321.6568735,0.0835184745998065
+"690","United States","USA",1999,"fossil_fuels",2763.085836,0.717437534289318
+"691","United States","USA",2000,"nuclear",753.89,0.198282528076589
+"692","United States","USA",2000,"renewables",350.93,0.09229899266195
+"693","United States","USA",2000,"fossil_fuels",2697.28,0.709418479261461
+"694","United States","USA",2001,"nuclear",768.83,0.206255013319669
+"695","United States","USA",2001,"renewables",280.06,0.0751320565408564
+"696","United States","USA",2001,"fossil_fuels",2678.68,0.718612930139474
+"697","United States","USA",2002,"nuclear",780.06,0.202917099132986
+"698","United States","USA",2002,"renewables",336.34,0.0874921635802228
+"699","United States","USA",2002,"fossil_fuels",2727.83,0.709590737286791
+"700","United States","USA",2003,"nuclear",763.73,0.197400321535097
+"701","United States","USA",2003,"renewables",349.18,0.090252110397163
+"702","United States","USA",2003,"fossil_fuels",2756.03,0.712347568067739
+"703","United States","USA",2004,"nuclear",788.53,0.199529346272094
+"704","United States","USA",2004,"renewables",345.14,0.0873341008869039
+"705","United States","USA",2004,"fossil_fuels",2818.28,0.713136552841003
+"706","United States","USA",2005,"nuclear",781.99,0.19380221512321
+"707","United States","USA",2005,"renewables",353.04,0.0874946406310796
+"708","United States","USA",2005,"fossil_fuels",2899.96,0.718703144245711
+"709","United States","USA",2006,"nuclear",787.22,0.194522281032088
+"710","United States","USA",2006,"renewables",381.16,0.0941847420520196
+"711","United States","USA",2006,"fossil_fuels",2878.56,0.711292976915892
+"712","United States","USA",2007,"nuclear",806.42,0.194666595857161
+"713","United States","USA",2007,"renewables",347.91,0.0839840968287802
+"714","United States","USA",2007,"fossil_fuels",2988.24,0.721349307314059
+"715","United States","USA",2008,"nuclear",806.21,0.196276107539081
+"716","United States","USA",2008,"renewables",377.11,0.0918094329195405
+"717","United States","USA",2008,"fossil_fuels",2924.21,0.711914459541379
+"718","United States","USA",2009,"nuclear",798.85,0.202763070394079
+"719","United States","USA",2009,"renewables",415.56,0.105476899959897
+"720","United States","USA",2009,"fossil_fuels",2725.41,0.691760029646024
+"721","United States","USA",2010,"nuclear",806.97,0.196155024137445
+"722","United States","USA",2010,"renewables",424.48,0.10318089228331
+"723","United States","USA",2010,"fossil_fuels",2882.49,0.700664083579245
+"724","United States","USA",2011,"nuclear",790.2,0.193256327542817
+"725","United States","USA",2011,"renewables",509.74,0.124665249812295
+"726","United States","USA",2011,"fossil_fuels",2788.93,0.682078422644887
+"727","United States","USA",2012,"nuclear",769.33,0.190396642141031
+"728","United States","USA",2012,"renewables",492.32,0.121841179804339
+"729","United States","USA",2012,"fossil_fuels",2779.02,0.68776217805463
+"730","United States","USA",2013,"nuclear",789.02,0.194550264941649
+"731","United States","USA",2013,"renewables",520.38,0.128311154179026
+"732","United States","USA",2013,"fossil_fuels",2746.21,0.677138580879325
+"733","United States","USA",2014,"nuclear",797.17,0.194621106882063
+"734","United States","USA",2014,"renewables",546.83,0.133503092033467
+"735","United States","USA",2014,"fossil_fuels",2752.01,0.67187580108447
+"736","United States","USA",2015,"nuclear",797.18,0.195196364339776
+"737","United States","USA",2015,"renewables",556.49,0.136261352256005
+"738","United States","USA",2015,"fossil_fuels",2730.32,0.66854228340422
+"739","United States","USA",2016,"nuclear",805.69,0.197107810038262
+"740","United States","USA",2016,"renewables",624.91,0.152880936304299
+"741","United States","USA",2016,"fossil_fuels",2656.96,0.650011253657439
+"742","United States","USA",2017,"nuclear",804.95,0.198639788170204
+"743","United States","USA",2017,"renewables",707.19,0.174515276471938
+"744","United States","USA",2017,"fossil_fuels",2540.17,0.626844935357858
+"745","United States","USA",2018,"nuclear",807.08,0.192091014030536
+"746","United States","USA",2018,"renewables",733.17,0.174499886946484
+"747","United States","USA",2018,"fossil_fuels",2661.3,0.63340909902298
+"748","United States","USA",2019,"nuclear",809.41,0.194645510992261
+"749","United States","USA",2019,"renewables",760.76,0.182946243489051
+"750","United States","USA",2019,"fossil_fuels",2588.21,0.622408245518688
+"751","United States","USA",2020,"nuclear",789.88,0.195361077171929
+"752","United States","USA",2020,"renewables",821.4,0.203156921037401
+"753","United States","USA",2020,"fossil_fuels",2431.9,0.60148200179067
+"754","United States","USA",2021,"nuclear",779.65,0.187703737944251
+"755","United States","USA",2021,"renewables",861.58,0.207428700747781
+"756","United States","USA",2021,"fossil_fuels",2512.39,0.604867561307968
+"757","United States","USA",2022,"nuclear",771.54,0.179558191059559
+"758","United States","USA",2022,"renewables",967.69,0.225207592485711
+"759","United States","USA",2022,"fossil_fuels",2557.65,0.59523421645473
+"760","Vietnam","VNM",1990,"nuclear",0,0
+"761","Vietnam","VNM",1990,"renewables",5.369,0.618477133970741
+"762","Vietnam","VNM",1990,"fossil_fuels",3.312,0.381522866029259
+"763","Vietnam","VNM",1991,"nuclear",0,0
+"764","Vietnam","VNM",1991,"renewables",6.317,0.685884907709012
+"765","Vietnam","VNM",1991,"fossil_fuels",2.893,0.314115092290988
+"766","Vietnam","VNM",1992,"nuclear",0,0
+"767","Vietnam","VNM",1992,"renewables",7.228,0.744770736733642
+"768","Vietnam","VNM",1992,"fossil_fuels",2.477,0.255229263266358
+"769","Vietnam","VNM",1993,"nuclear",0,0
+"770","Vietnam","VNM",1993,"renewables",7.965,0.747045582442319
+"771","Vietnam","VNM",1993,"fossil_fuels",2.697,0.252954417557681
+"772","Vietnam","VNM",1994,"nuclear",0,0
+"773","Vietnam","VNM",1994,"renewables",9.243,0.752197265625
+"774","Vietnam","VNM",1994,"fossil_fuels",3.045,0.247802734375
+"775","Vietnam","VNM",1995,"nuclear",0,0
+"776","Vietnam","VNM",1995,"renewables",10.582,0.722419442927362
+"777","Vietnam","VNM",1995,"fossil_fuels",4.066,0.277580557072638
+"778","Vietnam","VNM",1996,"nuclear",0,0
+"779","Vietnam","VNM",1996,"renewables",12.008,0.708687440982058
+"780","Vietnam","VNM",1996,"fossil_fuels",4.936,0.291312559017941
+"781","Vietnam","VNM",1997,"nuclear",0,0
+"782","Vietnam","VNM",1997,"renewables",11.657,0.609293330545683
+"783","Vietnam","VNM",1997,"fossil_fuels",7.475,0.390706669454317
+"784","Vietnam","VNM",1998,"nuclear",0,0
+"785","Vietnam","VNM",1998,"renewables",11.095,0.511573220213943
+"786","Vietnam","VNM",1998,"fossil_fuels",10.593,0.488426779786057
+"787","Vietnam","VNM",1999,"nuclear",0,0
+"788","Vietnam","VNM",1999,"renewables",13.774,0.584659790313681
+"789","Vietnam","VNM",1999,"fossil_fuels",9.785,0.41534020968632
+"790","Vietnam","VNM",2000,"nuclear",0,0
+"791","Vietnam","VNM",2000,"renewables",14.55,0.547816265060241
+"792","Vietnam","VNM",2000,"fossil_fuels",12.01,0.452183734939759
+"793","Vietnam","VNM",2001,"nuclear",0,0
+"794","Vietnam","VNM",2001,"renewables",18.21,0.594903626265926
+"795","Vietnam","VNM",2001,"fossil_fuels",12.4,0.405096373734074
+"796","Vietnam","VNM",2002,"nuclear",0,0
+"797","Vietnam","VNM",2002,"renewables",18.2,0.508379888268156
+"798","Vietnam","VNM",2002,"fossil_fuels",17.6,0.491620111731844
+"799","Vietnam","VNM",2003,"nuclear",0,0
+"800","Vietnam","VNM",2003,"renewables",18.99,0.46396286342536
+"801","Vietnam","VNM",2003,"fossil_fuels",21.94,0.53603713657464
+"802","Vietnam","VNM",2004,"nuclear",0,0
+"803","Vietnam","VNM",2004,"renewables",17.82,0.385714285714286
+"804","Vietnam","VNM",2004,"fossil_fuels",28.38,0.614285714285714
+"805","Vietnam","VNM",2005,"nuclear",0,0
+"806","Vietnam","VNM",2005,"renewables",16.58,0.318356374807988
+"807","Vietnam","VNM",2005,"fossil_fuels",35.5,0.681643625192012
+"808","Vietnam","VNM",2006,"nuclear",0,0
+"809","Vietnam","VNM",2006,"renewables",19.77,0.341450777202073
+"810","Vietnam","VNM",2006,"fossil_fuels",38.13,0.658549222797927
+"811","Vietnam","VNM",2007,"nuclear",0,0
+"812","Vietnam","VNM",2007,"renewables",22.52,0.350997506234414
+"813","Vietnam","VNM",2007,"fossil_fuels",41.64,0.649002493765586
+"814","Vietnam","VNM",2008,"nuclear",0,0
+"815","Vietnam","VNM",2008,"renewables",26.03,0.366878083157153
+"816","Vietnam","VNM",2008,"fossil_fuels",44.92,0.633121916842847
+"817","Vietnam","VNM",2009,"nuclear",0,0
+"818","Vietnam","VNM",2009,"renewables",30.05,0.372643849206349
+"819","Vietnam","VNM",2009,"fossil_fuels",50.59,0.627356150793651
+"820","Vietnam","VNM",2010,"nuclear",0,0
+"821","Vietnam","VNM",2010,"renewables",28.62,0.312036633231574
+"822","Vietnam","VNM",2010,"fossil_fuels",63.1,0.687963366768426
+"823","Vietnam","VNM",2011,"nuclear",0,0
+"824","Vietnam","VNM",2011,"renewables",41.19,0.405772830263028
+"825","Vietnam","VNM",2011,"fossil_fuels",60.32,0.594227169736972
+"826","Vietnam","VNM",2012,"nuclear",0,0
+"827","Vietnam","VNM",2012,"renewables",53.42,0.46391663048198
+"828","Vietnam","VNM",2012,"fossil_fuels",61.73,0.53608336951802
+"829","Vietnam","VNM",2013,"nuclear",0,0
+"830","Vietnam","VNM",2013,"renewables",57.96,0.465691788526434
+"831","Vietnam","VNM",2013,"fossil_fuels",66.5,0.534308211473566
+"832","Vietnam","VNM",2014,"nuclear",0,0
+"833","Vietnam","VNM",2014,"renewables",62.3,0.441061946902655
+"834","Vietnam","VNM",2014,"fossil_fuels",78.95,0.558938053097345
+"835","Vietnam","VNM",2015,"nuclear",0,0
+"836","Vietnam","VNM",2015,"renewables",57.43,0.363596074707186
+"837","Vietnam","VNM",2015,"fossil_fuels",100.52,0.636403925292814
+"838","Vietnam","VNM",2016,"nuclear",0,0
+"839","Vietnam","VNM",2016,"renewables",64.45,0.366714082503556
+"840","Vietnam","VNM",2016,"fossil_fuels",111.3,0.633285917496444
+"841","Vietnam","VNM",2017,"nuclear",0,0
+"842","Vietnam","VNM",2017,"renewables",88.04,0.459498956158664
+"843","Vietnam","VNM",2017,"fossil_fuels",103.56,0.540501043841336
+"844","Vietnam","VNM",2018,"nuclear",0,0
+"845","Vietnam","VNM",2018,"renewables",85.21,0.40733304651274
+"846","Vietnam","VNM",2018,"fossil_fuels",123.98,0.59266695348726
+"847","Vietnam","VNM",2019,"nuclear",0,0
+"848","Vietnam","VNM",2019,"renewables",72.64,0.319409022953126
+"849","Vietnam","VNM",2019,"fossil_fuels",154.78,0.680590977046874
+"850","Vietnam","VNM",2020,"nuclear",0,0
+"851","Vietnam","VNM",2020,"renewables",85.44,0.362956669498726
+"852","Vietnam","VNM",2020,"fossil_fuels",149.96,0.637043330501274
+"853","Vietnam","VNM",2021,"nuclear",0,0
+"854","Vietnam","VNM",2021,"renewables",104.22,0.425787473955142
+"855","Vietnam","VNM",2021,"fossil_fuels",140.55,0.574212526044859
+"856","Vietnam","VNM",2022,"nuclear",0,0
+"857","Vietnam","VNM",2022,"renewables",135.75,0.515512854593096
+"858","Vietnam","VNM",2022,"fossil_fuels",127.58,0.484487145406904
+"859","World","OWID_WRL",1990,"nuclear",2000.596,0.169857277193217
+"860","World","OWID_WRL",1990,"renewables",2162.87482055,0.183635290647583
+"861","World","OWID_WRL",1990,"fossil_fuels",7614.6292,0.6465074321592
+"862","World","OWID_WRL",1991,"nuclear",2096.3098,0.174230465809578
+"863","World","OWID_WRL",1991,"renewables",2213.2934299,0.183953318953504
+"864","World","OWID_WRL",1991,"fossil_fuels",7722.2179,0.641816215236918
+"865","World","OWID_WRL",1992,"nuclear",2112.223,0.174083338160862
+"866","World","OWID_WRL",1992,"renewables",2213.6586911,0.182443375768322
+"867","World","OWID_WRL",1992,"fossil_fuels",7807.5196,0.643473286070816
+"868","World","OWID_WRL",1993,"nuclear",2184.9646,0.176334594820029
+"869","World","OWID_WRL",1993,"renewables",2347.7205465,0.189469592009744
+"870","World","OWID_WRL",1993,"fossil_fuels",7858.3298,0.634195813170227
+"871","World","OWID_WRL",1994,"nuclear",2225.9788,0.175149338874235
+"872","World","OWID_WRL",1994,"renewables",2363.9317129,0.186004052086333
+"873","World","OWID_WRL",1994,"fossil_fuels",8119.1229,0.638846609039432
+"874","World","OWID_WRL",1995,"nuclear",2322.5298,0.176613044717941
+"875","World","OWID_WRL",1995,"renewables",2492.59780576,0.189545592798221
+"876","World","OWID_WRL",1995,"fossil_fuels",8335.2589,0.633841362483838
+"877","World","OWID_WRL",1996,"nuclear",2406.615,0.177472300508558
+"878","World","OWID_WRL",1996,"renewables",2526.94483096,0.186345847760726
+"879","World","OWID_WRL",1996,"fossil_fuels",8626.9507,0.636181851730716
+"880","World","OWID_WRL",1997,"nuclear",2390.0642,0.17225023046011
+"881","World","OWID_WRL",1997,"renewables",2574.1368718,0.185516217264547
+"882","World","OWID_WRL",1997,"fossil_fuels",8911.3345,0.642233552275343
+"883","World","OWID_WRL",1998,"nuclear",2431.1948,0.170687875149875
+"884","World","OWID_WRL",1998,"renewables",2597.861512,0.182389112306805
+"885","World","OWID_WRL",1998,"fossil_fuels",9214.4557,0.64692301254332
+"886","World","OWID_WRL",1999,"nuclear",2523.7056,0.172328271075328
+"887","World","OWID_WRL",1999,"renewables",2622.7821859,0.179093599310204
+"888","World","OWID_WRL",1999,"fossil_fuels",9498.2689,0.648578129614468
+"889","World","OWID_WRL",2000,"nuclear",2507.43,0.167476968351814
+"890","World","OWID_WRL",2000,"renewables",2854.62,0.190666580281984
+"891","World","OWID_WRL",2000,"fossil_fuels",9609.74,0.641856451366203
+"892","World","OWID_WRL",2001,"nuclear",2573.71,0.169363695887499
+"893","World","OWID_WRL",2001,"renewables",2796.25,0.184008001921514
+"894","World","OWID_WRL",2001,"fossil_fuels",9826.39,0.646628302190987
+"895","World","OWID_WRL",2002,"nuclear",2601.89,0.165375976121801
+"896","World","OWID_WRL",2002,"renewables",2865.81,0.182150715875621
+"897","World","OWID_WRL",2002,"fossil_fuels",10265.48,0.652473308002578
+"898","World","OWID_WRL",2003,"nuclear",2577.71,0.158218303215483
+"899","World","OWID_WRL",2003,"renewables",2891.81,0.177497573979061
+"900","World","OWID_WRL",2003,"fossil_fuels",10822.59,0.664284122805456
+"901","World","OWID_WRL",2004,"nuclear",2682.73,0.156947757989462
+"902","World","OWID_WRL",2004,"renewables",3127.14,0.182947077014522
+"903","World","OWID_WRL",2004,"fossil_fuels",11283.27,0.660105164996016
+"904","World","OWID_WRL",2005,"nuclear",2686.95,0.151258673469962
+"905","World","OWID_WRL",2005,"renewables",3270.02,0.184081909756507
+"906","World","OWID_WRL",2005,"fossil_fuels",11806.97,0.664659416773531
+"907","World","OWID_WRL",2006,"nuclear",2721.42,0.147332826599622
+"908","World","OWID_WRL",2006,"renewables",3420.5,0.185179771363482
+"909","World","OWID_WRL",2006,"fossil_fuels",12329.32,0.667487402036896
+"910","World","OWID_WRL",2007,"nuclear",2666.92,0.137771068964057
+"911","World","OWID_WRL",2007,"renewables",3530.02,0.182358161798816
+"912","World","OWID_WRL",2007,"fossil_fuels",13160.68,0.679870769237127
+"913","World","OWID_WRL",2008,"nuclear",2656.04,0.135098402648214
+"914","World","OWID_WRL",2008,"renewables",3786.91,0.192619648790135
+"915","World","OWID_WRL",2008,"fossil_fuels",13217.09,0.672281948561651
+"916","World","OWID_WRL",2009,"nuclear",2619,0.133886464891227
+"917","World","OWID_WRL",2009,"renewables",3872.19,0.197951061659855
+"918","World","OWID_WRL",2009,"fossil_fuels",13070.16,0.668162473448918
+"919","World","OWID_WRL",2010,"nuclear",2686.44,0.128304150432275
+"920","World","OWID_WRL",2010,"renewables",4179.97,0.199635018717111
+"921","World","OWID_WRL",2010,"fossil_fuels",14071.65,0.672060830850614
+"922","World","OWID_WRL",2011,"nuclear",2575.35,0.118930573841693
+"923","World","OWID_WRL",2011,"renewables",4393.6,0.202898001914637
+"924","World","OWID_WRL",2011,"fossil_fuels",14685.28,0.67817142424367
+"925","World","OWID_WRL",2012,"nuclear",2403.21,0.10839972593459
+"926","World","OWID_WRL",2012,"renewables",4711.06,0.212498122453472
+"927","World","OWID_WRL",2012,"fossil_fuels",15055.62,0.679102151611939
+"928","World","OWID_WRL",2013,"nuclear",2418.44,0.106033376460927
+"929","World","OWID_WRL",2013,"renewables",5024.97,0.220313315903998
+"930","World","OWID_WRL",2013,"fossil_fuels",15364.88,0.673653307635075
+"931","World","OWID_WRL",2014,"nuclear",2472.7,0.105567943754021
+"932","World","OWID_WRL",2014,"renewables",5294.75,0.226050823064506
+"933","World","OWID_WRL",2014,"fossil_fuels",15655.38,0.668381233181473
+"934","World","OWID_WRL",2015,"nuclear",2502.45,0.105765508217119
+"935","World","OWID_WRL",2015,"renewables",5510.64,0.232906008192606
+"936","World","OWID_WRL",2015,"fossil_fuels",15647.27,0.661328483590275
+"937","World","OWID_WRL",2016,"nuclear",2540.48,0.104570643675351
+"938","World","OWID_WRL",2016,"renewables",5853.02,0.240920640526475
+"939","World","OWID_WRL",2016,"fossil_fuels",15900.89,0.654508715798174
+"940","World","OWID_WRL",2017,"nuclear",2566.22,0.102540517213822
+"941","World","OWID_WRL",2017,"renewables",6236.37,0.249191653613784
+"942","World","OWID_WRL",2017,"fossil_fuels",16223.81,0.648267829172394
+"943","World","OWID_WRL",2018,"nuclear",2619.57,0.100667473419617
+"944","World","OWID_WRL",2018,"renewables",6646.42,0.255415319569856
+"945","World","OWID_WRL",2018,"fossil_fuels",16756.02,0.643917207010527
+"946","World","OWID_WRL",2019,"nuclear",2724.08,0.103319555268649
+"947","World","OWID_WRL",2019,"renewables",7007.46,0.26578061245002
+"948","World","OWID_WRL",2019,"fossil_fuels",16634.04,0.63089983228133
+"949","World","OWID_WRL",2020,"nuclear",2634.69,0.100266355518971
+"950","World","OWID_WRL",2020,"renewables",7475.85,0.284502629875431
+"951","World","OWID_WRL",2020,"fossil_fuels",16166.37,0.615231014605599
+"952","World","OWID_WRL",2021,"nuclear",2740.78,0.0984655246000348
+"953","World","OWID_WRL",2021,"renewables",7892.81,0.28355784748079
+"954","World","OWID_WRL",2021,"fossil_fuels",17201.33,0.617976627919175
+"955","World","OWID_WRL",2022,"nuclear",2610.04,0.0914912352038856
+"956","World","OWID_WRL",2022,"renewables",8532.57,0.299097089992344
+"957","World","OWID_WRL",2022,"fossil_fuels",17385.15,0.60941167480377

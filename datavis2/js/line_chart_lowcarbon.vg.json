@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
   "data": {"url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/share_elec_low_carbon_filtered.csv"},
   "width": "container",
   "height": "container",
@@ -23,9 +22,19 @@
       "axis": {"format": ".0%"},
       "scale": {"domain": [0, 1]}
     },
+    
     "color": {
       "field": "Entity",
-      "legend": null,
+      "legend": {
+        "title": "Click country name to highlight", 
+        "symbolSize": {
+          "expr": "datum.label=='Norway'?0:100 || datum.label=='Norway'?0:100"
+        },
+        "labelExpr": "datum.label == 'Norway' ? null : datum.label || datum.label == 'Norway' ? null : datum.label",
+        "titleFontSize": 16,
+        "titleLimit": 250,
+        "orient": "top"
+      },
       "scale": {
         "domain": [
           "Norway",
@@ -56,10 +65,6 @@
         {
           "param": "click",
           "value": 1
-        },
-        {
-          "param": "hover",
-          "value": 0.5
         }
       ],
       "value": 0.4
@@ -68,7 +73,14 @@
 
   "layer": [
     {
-      "mark": {"type": "line", "point": true}
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "tooltip": [
+          {"field": "Entity", "type": "nominal", "title": "Country"}, 
+          {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
+          {"field": "low_carbon_prop", "title": "Energy from low carbon sources", "type": "quantitative", "format": ",.2%"}
+        ]
+      }
     }, 
     {
       "encoding": {
@@ -81,15 +93,6 @@
         }, 
         {
           "params": [
-            {
-              "name": "hover",
-              "value": [{"Entity": "World"}],
-              "select": {
-                "type": "point",
-                "fields": ["Entity"],
-                "on": "mouseover"
-              }
-            },
             {
               "name": "click",
               "value": null,
@@ -128,7 +131,7 @@
                   "United Kingdom",
                   "Vietnam"
                 ],
-                "name": "Country Selection: "
+                "name": "Select country: "
               },
               "select": {"type": "point", "fields": ["Entity"]}
             }
@@ -146,8 +149,10 @@
       "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13},
       "legend": {
         "titleFontSize": 14,
-        "labelFontSize": 12
+        "labelFontSize": 12,
+        "layout": {"top": {"anchor": "end", "center": true, "offset": 2}}
       },
+      
       "style": {
         "cell": {
           "stroke": "transparent"
