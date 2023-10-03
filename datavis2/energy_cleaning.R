@@ -56,7 +56,8 @@ elec_prod_by_source_rank <- elec_prod_by_source |>
   mutate(energy_prop = energy_twh / sum(energy_twh)) |> 
   mutate(energy_prop_cum = cumsum(energy_prop)) |> 
   mutate(energy_prop_pos = energy_prop_cum + (lag(energy_prop_cum) - energy_prop_cum)/2) |> 
-  mutate(energy_prop_pos = coalesce(energy_prop_pos, energy_prop/2))
+  mutate(energy_prop_pos = coalesce(energy_prop_pos, energy_prop/2)) |> 
+  filter(energy_prop > 0)
 
 write.csv(elec_prod_by_source_rank, "data/elec_prod_source_prop_rank.csv")
 
