@@ -42,6 +42,7 @@ h2 {
 	font-size: 30pt;
 	display: block;
 	/* text-transform: uppercase; */
+	margin-bottom: 5px;
 }
 
 h3 {
@@ -132,6 +133,31 @@ p {
 
 #plot_desc {
 	padding-top: 200px;
+}
+
+#treemap_sectors {
+	width: 100%;
+	height: 500px;
+}
+
+.industry {
+	font-weight: bold;
+	color: #8D3BBA;
+}
+
+.buildings {
+	font-weight: bold;
+	color: #363537;
+}
+
+.land_use {
+	font-weight: bold;
+	color: #0AAE59;
+}
+
+.transport {
+	font-weight: bold;
+	color: #3185FC;
 }
 
 #elec_rank_svg {

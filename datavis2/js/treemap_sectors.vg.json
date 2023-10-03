@@ -1,8 +1,39 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "width": 500,
-    "height": 400,
-    "padding": 5,
+    "padding": 0,
+
+    "signals": [
+      { 
+        "name": "width", 
+        "value": 200,
+        "on": 
+        [ 
+          { 
+            "events": { "source": "window", "type": "resize" }, 
+            "update": "containerSize()[0]" 
+          },
+          {
+            "events": {"throttle": 10, "type": "timer"}, 
+            "update": "containerSize()[0]" 
+          }
+        ] 
+      },
+      { 
+        "name": "height", 
+        "value": 0,
+        "on": 
+        [ 
+          { 
+            "events": { "source": "window", "type": "resize" }, 
+            "update": "containerSize()[1]" 
+          },
+          {
+            "events": {"throttle": 10, "type": "timer"}, 
+            "update": "containerSize()[1]" 
+          }
+        ]  
+      }
+    ],
   
     "data": [
       {
@@ -41,7 +72,7 @@
       {
         "name": "labels",
         "source": "sectors",
-        "transform": [{ "type": "filter", "expr": "!datum.children && datum.ghg_emissions_perc > 3" }]
+        "transform": [{ "type": "filter", "expr": "!datum.children && datum.ghg_emissions_perc > 5" }]
       }
     ],
   
@@ -50,7 +81,14 @@
         "name": "color",
         "type": "ordinal",
         "domain": { "data": "leaves", "field": "parent" },
-        "range": { "scheme": "category10" }
+        "range": [
+          "#3185FC",
+          "#363537",
+          "#8D3BBA",
+          "#0AAE59",
+          "#A599B5",
+          "#C99740"
+        ]
       }
     ],
   
@@ -87,11 +125,11 @@
             "y2": {"field": "y1"},
             "fill": {"value": "transparent"},
             "tooltip": {
-              "signal": "{title: 'Sector: ' + datum.parent, 'Sub-sector: ': datum.id, 'Percentage of total emissions': datum.ghg_emissions_perc + '%'}"
+              "signal": "{'Sector': datum.parent, 'Sub-sector': datum.id, 'Percentage of total emissions': datum.ghg_emissions_perc + '%'}"
             }
           },
           "hover": {
-            "fill": {"value": "red"}
+            "fill": {"value": "#cccccc"}
           }
         }
       },
@@ -106,9 +144,9 @@
             "fontWeight": {"value": "bold"},
             "align": {"value": "center"},
             "baseline": {"value": "middle"},
-            "fill": {"value": "#000"},
-            "opacity": {"value": 0.4},
-            "text": {"field": "id"}
+            "fill": {"value": "#ffffff"},
+            "opacity": {"value": 0.5},
+            "text": {"signal": "datum.id + ' ' + datum.ghg_emissions_perc + '%'"}
           },
           "update": {
             "x": {"signal": "0.5 * (datum.x0 + datum.x1)"},
@@ -125,16 +163,16 @@
         "encode": {
           "enter": {
             "font": {"value": "Helvetica Neue, Arial"},
-            "fontSize": {"value": 8},
+            "fontSize": {"value": 12},
             "fontWeight": {"value": "normal"},
-            "align": {"value": "center"},
+            "align": {"value": "left"},
             "baseline": {"value": "bottom"},
             "fill": {"value": "#ffffff"},
-            "text": {"signal": "split(split(datum.id, ' ') + ' ' + datum.ghg_emissions_perc + '%', ' ')"}
+            "text": {"signal": "split(datum.id + ' ' + datum.ghg_emissions_perc + '%', ' ')"}
           },
           "update": {
-            "x": {"signal": "0.5 * (datum.x0 + datum.x1)"},
-            "y": {"signal": "0.5 * (datum.y0 + datum.y1)"}
+            "x": {"signal": "datum.x0 + 10"},
+            "y": {"signal": "datum.y0 + 20"}
           }
         }
       }

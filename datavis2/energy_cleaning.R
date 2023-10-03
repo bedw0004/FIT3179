@@ -50,9 +50,12 @@ elec_prod_by_source <- elec_prod_by_source |> rename_at(vars(oldnames), ~ newnam
 elec_prod_by_source_rank <- elec_prod_by_source |> 
   pivot_longer(cols=other_renewables:coal, names_to="source", values_to = "energy_twh") |> 
   mutate_all(~replace(., is.na(.), 0)) |> 
-  group_by(Year) |> 
+  group_by(Year, Entity) |> 
   arrange(desc(energy_twh), .by_group = TRUE) |> 
-  mutate(rank = row_number())
+  mutate(rank = row_number()) |> 
+  mutate(energy_prop = energy_twh / sum(energy_twh))
+
+write.csv(elec_prod_by_source_rank, "data/elec_prod_source_prop_rank.csv")
 
 elec_prod_source_rank <- elec_prod_by_source_rank |> filter(Entity == "World")
 

@@ -126,6 +126,34 @@
     </div>
 
     <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h3>Where do the world's CO₂ emissions come from?</h3>
+        <div id="treemap_sectors"></div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="intro_text_left">
+          <p>
+            The majority of the world's emissions come from <span class="industry">industry</span>. 
+            With byproducts from mining and chemical processes and gigantic servers running for digital companies, it's no surprise that <span class="industry">industry</span> makes up <span class="industry">29.4%</span> of our emissions.
+            <br><br>
+            
+          </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="intro_text_right">
+          <p>
+            <span class="buildings">Buildings</span> produce emissions through lighting and heating/cooling. Whilst with <span class="land_use">agriculture</span> it's largely methane from livestock.
+            The <span class="transport">transport</span> industry uses a majority of the world's oil to produce its emissions, with cars, trucks, planes and ships being the major contributors.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pure-g">
       <div class="pure-u-1-2">
         <h3>Energy consumption by source</h3>
         <div id="area_energy_source"></div>
@@ -155,8 +183,7 @@
         <h3>Electricity production by source</h3>
         <div id="bump_area_elec_source"></div>
       </div>
-      <div class="pure-u-1-2">
-        <h3>Country breakdown of electricity production by source</h3>
+      <div class="pure-u-1-2"> 
       </div>
     </div>
 
@@ -173,8 +200,7 @@
 
     <div class="pure-g">
       <div class="pure-u-1-2">
-        <h3>Energy breakdown per country</h3>
-        <h3>CREATE TREE MAP THAT BREAKS DOWN EACH COUNTRY INTO FOSSIL FUELS, NUCLEAR AND RENEWABLES WITH DROP DOWN SELECTION</h3>
+        
       </div>
       <div class="pure-u-1-2">
         <div class="description description-right" id="plot_desc">
@@ -286,6 +312,11 @@
 
     var spec2 = "js/co2_multiples.vg.json"
     vegaEmbed('#co2_multiples', spec2, {"actions": false}).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec_treemap = "js/treemap_sectors.vg.json"
+    vegaEmbed('#treemap_sectors', spec_treemap, {"actions": false}).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
