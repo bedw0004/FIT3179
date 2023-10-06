@@ -38,9 +38,9 @@
             "field": "source",
             "scale": {
               "range": [
-                "#79491D",
-                "#0AAE59",
-                "#5EA0FD"
+                "#6E6D6C",
+                "#66D68E",
+                "#82B5EF"
               ]
             },
             "legend": {"title": "Source", "labelExpr": "{'fossil_fuels': 'Fossil fuels', 'renewables': 'Renewables', 'nuclear': 'Nuclear'}[datum.label]"}
@@ -48,7 +48,7 @@
         }
       }, 
       {
-        "mark": {"type": "text", "color": "white"},
+        "mark": {"type": "text", "color": "white", "fontSize": 13},
         "encoding": {
           "x": {
             "aggregate": "sum", "field": "energy_twh",
@@ -64,7 +64,7 @@
           },
           "opacity": {
             "condition": {
-              "test": "datum['sum_energy_prop'] > 0.1",
+              "test": "datum['sum_energy_prop'] > 0.05",
               "value": 0.9
             },
             "value": 0

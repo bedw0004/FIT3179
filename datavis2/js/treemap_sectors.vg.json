@@ -1,180 +1,180 @@
 {
-    "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "padding": 0,
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "padding": 0,
 
-    "signals": [
-      { 
-        "name": "width", 
-        "value": 200,
-        "on": 
-        [ 
-          { 
-            "events": { "source": "window", "type": "resize" }, 
-            "update": "containerSize()[0]" 
-          },
-          {
-            "events": {"throttle": 10, "type": "timer"}, 
-            "update": "containerSize()[0]" 
-          }
-        ] 
-      },
-      { 
-        "name": "height", 
-        "value": 0,
-        "on": 
-        [ 
-          { 
-            "events": { "source": "window", "type": "resize" }, 
-            "update": "containerSize()[1]" 
-          },
-          {
-            "events": {"throttle": 10, "type": "timer"}, 
-            "update": "containerSize()[1]" 
-          }
-        ]  
-      }
-    ],
-  
-    "data": [
-      {
-        "name": "sectors",
-        "url":
-          "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ghg_emission_sector_network_full.csv",
-        "format": {"type": "csv", "parse": "auto"},
-        "transform": [
-          { 
-            "type": "stratify", 
-            "key": "id", 
-            "parentKey": "parent" 
-          },
-          {
-            "type": "treemap",
-            "field": "ghg_emissions_perc",
-            "sort": {"field": "value"},
-            "method": "binary",
-            "paddingInner": 1,
-            "size": [{ "signal": "width" }, { "signal": "height" }]
-          }
-        ]
-      },
-      { 
-        "name": "nodes",
-        "source": "sectors",
-        "transform": [
-          { "type": "filter", "expr": "datum.children && datum.id != 'Emissions'" }
-        ]
-      },
-      {
-        "name": "leaves",
-        "source": "sectors",
-        "transform": [{ "type": "filter", "expr": "!datum.children" }]
-      },
-      {
-        "name": "labels",
-        "source": "sectors",
-        "transform": [{ "type": "filter", "expr": "!datum.children && datum.ghg_emissions_perc > 5" }]
-      }
-    ],
-  
-    "scales": [
-      {
-        "name": "color",
-        "type": "ordinal",
-        "domain": { "data": "leaves", "field": "parent" },
-        "range": [
-          "#3185FC",
-          "#363537",
-          "#8D3BBA",
-          "#0AAE59",
-          "#A599B5",
-          "#C99740"
-        ]
-      }
-    ],
-  
-    "marks": [
-      {
-        "type": "rect",
-        "from": {"data": "nodes"},
-        "encode": {
-          "enter": {
-            "fill": {"scale": "color", "field": "id"}
-          },
-          "update": {
-            "x": {"field": "x0"},
-            "y": {"field": "y0"},
-            "x2": {"field": "x1"},
-            "y2": {"field": "y1"},
-            "tooltip": {
-              "signal": "{title: 'Sector: ' + datum.id, 'Sub-sector: ': datum.id, 'Percentage of total emissions': datum.ghg_emissions_perc + '%'}"
-            }
-          }
-        }
-      },
-      {
-        "type": "rect",
-        "from": {"data": "leaves"},
-        "encode": {
-          "enter": {
-            "stroke": {"value": "#fff"}
-          },
-          "update": {
-            "x": {"field": "x0"},
-            "y": {"field": "y0"},
-            "x2": {"field": "x1"},
-            "y2": {"field": "y1"},
-            "fill": {"value": "transparent"},
-            "tooltip": {
-              "signal": "{'Sector': datum.parent, 'Sub-sector': datum.id, 'Percentage of total emissions': datum.ghg_emissions_perc + '%'}"
-            }
-          },
-          "hover": {
-            "fill": {"value": "#cccccc"}
-          }
-        }
-      },
-      {
-        "type": "text",
-        "from": {"data": "nodes"},
-        "interactive": false,
-        "encode": {
-          "enter": {
-            "font": {"value": "Helvetica Neue, Arial"},
-            "fontSize": {"value": 24},
-            "fontWeight": {"value": "bold"},
-            "align": {"value": "center"},
-            "baseline": {"value": "middle"},
-            "fill": {"value": "#ffffff"},
-            "opacity": {"value": 0.5},
-            "text": {"signal": "datum.id + ' ' + datum.ghg_emissions_perc + '%'"}
-          },
-          "update": {
-            "x": {"signal": "0.5 * (datum.x0 + datum.x1)"},
-            "y": {"signal": "0.5 * (datum.y0 + datum.y1)"}
-          }
-        }
-      },
-      {
-        "type": "text",
-        "from": {
-          "data": "labels"
+  "signals": [
+    { 
+      "name": "width", 
+      "value": 200,
+      "on": 
+      [ 
+        { 
+          "events": { "source": "window", "type": "resize" }, 
+          "update": "containerSize()[0]" 
         },
-        "interactive": false,
-        "encode": {
-          "enter": {
-            "font": {"value": "Helvetica Neue, Arial"},
-            "fontSize": {"value": 12},
-            "fontWeight": {"value": "normal"},
-            "align": {"value": "left"},
-            "baseline": {"value": "bottom"},
-            "fill": {"value": "#ffffff"},
-            "text": {"signal": "split(datum.id + ' ' + datum.ghg_emissions_perc + '%', ' ')"}
-          },
-          "update": {
-            "x": {"signal": "datum.x0 + 10"},
-            "y": {"signal": "datum.y0 + 20"}
+        {
+          "events": {"throttle": 10, "type": "timer"}, 
+          "update": "containerSize()[0]" 
+        }
+      ] 
+    },
+    { 
+      "name": "height", 
+      "value": 0,
+      "on": 
+      [ 
+        { 
+          "events": { "source": "window", "type": "resize" }, 
+          "update": "containerSize()[1]" 
+        },
+        {
+          "events": {"throttle": 10, "type": "timer"}, 
+          "update": "containerSize()[1]" 
+        }
+      ]  
+    }
+  ],
+
+  "data": [
+    {
+      "name": "sectors",
+      "url":
+        "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/ghg_emission_sector_network_full.csv",
+      "format": {"type": "csv", "parse": "auto"},
+      "transform": [
+        { 
+          "type": "stratify", 
+          "key": "id", 
+          "parentKey": "parent" 
+        },
+        {
+          "type": "treemap",
+          "field": "ghg_emissions_perc",
+          "sort": {"field": "value"},
+          "method": "binary",
+          "paddingInner": 1,
+          "size": [{ "signal": "width" }, { "signal": "height" }]
+        }
+      ]
+    },
+    { 
+      "name": "nodes",
+      "source": "sectors",
+      "transform": [
+        { "type": "filter", "expr": "datum.children && datum.id != 'Emissions'" }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "sectors",
+      "transform": [{ "type": "filter", "expr": "!datum.children" }]
+    },
+    {
+      "name": "labels",
+      "source": "sectors",
+      "transform": [{ "type": "filter", "expr": "!datum.children && datum.ghg_emissions_perc > 5" }]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": { "data": "leaves", "field": "parent" },
+      "range": [
+        "#82B5EF",
+        "#6E6D6C",
+        "#B893CC",
+        "#66D68E",
+        "#EADC9A",
+        "#E4B886"
+      ]
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data": "nodes"},
+      "encode": {
+        "enter": {
+          "fill": {"scale": "color", "field": "id"}
+        },
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "tooltip": {
+            "signal": "{title: 'Sector: ' + datum.id, 'Sub-sector: ': datum.id, 'Percentage of total emissions': datum.ghg_emissions_perc + '%'}"
           }
         }
       }
-    ]
-  }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "leaves"},
+      "encode": {
+        "enter": {
+          "stroke": {"value": "#fff"}
+        },
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "fill": {"value": "transparent"},
+          "tooltip": {
+            "signal": "{'Sector': datum.parent, 'Sub-sector': datum.id, 'Percentage of total emissions': datum.ghg_emissions_perc + '%'}"
+          }
+        },
+        "hover": {
+          "fill": {"value": "#cccccc"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "nodes"},
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "font": {"value": "Helvetica Neue, Arial"},
+          "fontSize": {"value": 24},
+          "fontWeight": {"value": "bold"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"},
+          "fill": {"value": "#ffffff"},
+          "opacity": {"value": 0.7},
+          "text": {"signal": "datum.id + ' ' + datum.ghg_emissions_perc + '%'"}
+        },
+        "update": {
+          "x": {"signal": "0.5 * (datum.x0 + datum.x1)"},
+          "y": {"signal": "datum.id == 'Land-Use' ? 0.5 * (datum.y0 + datum.y1) + 10 : 0.5 * (datum.y0 + datum.y1) "}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "labels"
+      },
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "font": {"value": "Helvetica Neue, Arial"},
+          "fontSize": {"value": 12},
+          "fontWeight": {"value": "normal"},
+          "align": {"value": "left"},
+          "baseline": {"value": "bottom"},
+          "fill": {"value": "#ffffff"},
+          "text": {"signal": "split(datum.id + ' ' + datum.ghg_emissions_perc + '%', ' ')"}
+        },
+        "update": {
+          "x": {"signal": "datum.x0 + 10"},
+          "y": {"signal": "datum.y0 + 20"}
+        }
+      }
+    }
+  ]
+}

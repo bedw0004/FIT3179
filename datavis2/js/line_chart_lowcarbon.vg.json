@@ -26,13 +26,13 @@
     "color": {
       "field": "Entity",
       "legend": {
-        "title": "Click country name to highlight", 
+        "title": "Click country name to highlight 🖱️", 
         "symbolSize": {
           "expr": "datum.label=='Norway'?0:100 || datum.label=='Norway'?0:100"
         },
         "labelExpr": "datum.label == 'Norway' ? null : datum.label || datum.label == 'Norway' ? null : datum.label",
         "titleFontSize": 16,
-        "titleLimit": 250,
+        "titleLimit": 270,
         "orient": "top"
       },
       "scale": {
@@ -48,15 +48,15 @@
           "South Africa"
         ],
         "range": [
-          "#3185FC",
-          "#0AAE59",
-          "#8D3BBA",
-          "#FE5F55",
+          "#82B5EF",
+          "#66D68E",
+          "#B893CC",
+          "#FF9999",
           "#A599B5",
-          "#eea9df",
-          "#79491D",
-          "#363537",
-          "#C99740"
+          "#EADC9A",
+          "#A67E51",
+          "#6E6D6C",
+          "#E4B886"
         ]
       }
     },
@@ -136,7 +136,7 @@
               "select": {"type": "point", "fields": ["Entity"]}
             }
           ],
-          "mark": {"type": "text", "align": "left", "dx": 6},
+          "mark": {"type": "text", "align": "left", "dx": 6, "fontWeight": "bold", "cursor": "pointer"},
           "encoding": {"text": {"field":"Entity", "type": "nominal"}}
           }
       ]

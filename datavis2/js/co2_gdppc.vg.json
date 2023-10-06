@@ -21,7 +21,7 @@
   
 
   "transform": [
-    {"filter": "datum.Year == Year_select"},
+    
     {"filter": "datum.population != 'NA'"},
     {"filter": "datum.GDP_pc != 'NA'"},
     {"filter": "datum.annual_co2_pc != 'NA'"},
@@ -46,13 +46,24 @@
   },
   "layer": [
     {
-      "params": [{
-        "name": "continent_highlight",
-        "select": {"type": "point", "fields": ["Continent"]},
-        "bind": "legend"
-      }],
-      "mark": "circle",
+      "params": [
+        {
+          "name": "continent_highlight",
+          "select": {"type": "point", "fields": ["Continent"]},
+          "bind": "legend"
+        },
+        {
+          "name": "highlight",
+          "select": {"type": "point", "on": "mouseover"}
+        },
+        {
+          "name": "select", 
+          "select": {"type": "point", "fields": ["Entity"]}
+        }
+      ],
+      "mark": {"type": "circle", "cursor": "pointer"},
       "transform": [
+        {"filter": "datum.Year == Year_select"},
         {"calculate": "datum.population/1000000","as": "population_mil"}
       ],
       "encoding": {
@@ -80,17 +91,25 @@
               "Oceania"
             ],
             "range": [
-              "#3185FC",
-              "#8D3BBA",
-              "#0AAE59",
-              "#A599B5",
-              "#363537",
-              "#C99740"
+              "#82B5EF",
+              "#EADC9A",
+              "#66D68E",
+              "#CAB6C6",
+              "#6E6D6C",
+              "#A67E51"
             ]
           }
         },
         "opacity": {
-          "condition": {"param": "continent_highlight", "value": 0.7},
+          "condition": {
+            "test": {
+              "and": [
+                {"param": "highlight"},
+                {"param": "continent_highlight"}
+              ]
+            },
+            "value": 0.8
+          },
           "value": 0.1
         },
         "tooltip": [
@@ -112,6 +131,7 @@
         "fontWeight": "bold"
       },
       "transform": [
+        {"filter": "datum.Year == Year_select"},
         {"filter": "(datum['Entity'] == 'China' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Russia'|| datum['Entity'] == 'India' ||  datum['Entity'] == 'United States')"
         }
       ],
@@ -130,17 +150,25 @@
               "Oceania"
             ],
             "range": [
-              "#e41a1c",
-              "#377eb8",
-              "#4daf4a",
-              "#E6D554",
-              "#ff7f00",
-              "#984ea3"
+              "#82B5EF",
+              "#EADC9A",
+              "#66D68E",
+              "#CAB6C6",
+              "#6E6D6C",
+              "#A67E51"
             ]
           }
         },
         "opacity": {
-          "condition": {"param": "continent_highlight", "value": 0.9},
+          "condition": {
+            "test": {
+              "and": [
+                {"param": "highlight"},
+                {"param": "continent_highlight"}
+              ]
+            },
+            "value": 0.9
+          },
           "value": 0.1
         }
       }
@@ -152,8 +180,8 @@
     "font": "Roboto",
     "axis": {"gridColor": "#edeff0d7"},
     "legend": {
-      "titleFontSize": 14,
-      "labelFontSize": 12
+      "titleFontSize": 16,
+      "labelFontSize": 14
     },
     "style": {
       "cell": {

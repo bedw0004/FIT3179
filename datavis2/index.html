@@ -112,7 +112,7 @@
 
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h3><b class="annual_co2_pc">CO₂ emissions per capita </b> & <b class="GDP_pc">GDP per capita</b> (<span class="developing_countries">developing</span> vs. <span class="developed_countries">developed</span> countries)</h3>
+        <h3><b class="annual_co2_pc">CO₂ emissions per capita </b> & <b class="GDP_pc">GDP per capita</b> (<span class="developed_countries">developed</span> vs. <span class="developing_countries">developing</span> countries)</h3>
         <div id="co2_multiples"></div>
       </div>
     </div>
@@ -192,10 +192,10 @@
       <div class="pure-u-1-2">
         <div id="intro_text_left">
           <p>
-            In recent years it is clear to see the downward trend in <span class="coal">fossil fuel</span> use. 
-            However, these toxic chemicals still make up a <span class="coal">large percentange</span> of the energy mix world wide. 
+            In recent years it is clear to see the downward trend in <span class="oil">fossil fuel</span> use. 
+            However, these toxic chemicals still make up a <span class="oil">large percentange</span> of the energy mix world wide. 
             <br><br>
-            In particular, Australia, India, South Africa and USA all produce around <span class="coal">2/3</span> of their electricity from <span class="coal">fossil fuels</span>.
+            In particular, Australia, India, South Africa and USA all produce around <span class="oil">2/3</span> of their electricity from <span class="oil">fossil fuels</span>.
           </p>
         </div>
       </div>
@@ -226,7 +226,16 @@
       </div>
       <div class="pure-u-1-2">
         <h3>Price of electricity from new power plants ($/MWh)</h3>
-        <div id="slope_chart_lcoe"></div>
+        <div id="slope_parent">
+          <p id="slope_desc">
+            <span class="solar">Solar</span> energy has <b>plummeted</b> in price. 
+            <br class="bigger_br">
+            <span class="coal">Coal</span> and <span class="gas">gas</span> have persisted at a <b>constant</b> price.
+            <br class="bigger_br">
+            While the price of <span class="nuclear">nuclear</span> has <b>increased</b> due to reduced government funding in research. 
+          </p>
+          <div id="slope_chart_lcoe"></div>
+        </div>
       </div>
     </div>
 
@@ -263,19 +272,13 @@
         <div id="intro_text_left">
           <p>
             Not only are renewable sources now cheaper than fossil fuels, they are also safer!<br><br>
-            In the butterfly chart below, deaths from air pollution and accidents in the supply chain are considered.
-            <br><br>
-            <span class="coal">Coal</span> and <span class="oil">oil</span> are orders of magnitude more dangerous for humans than other sources. With millions that die every year due to health impacts of air pollution.
           </p>
         </div>
       </div>
       <div class="pure-u-1-2">
         <div id="intro_text_right">
           <p>
-            <span class="nuclear">Nuclear</span> deaths are largely influenced by the two prominent accidents in recent history (Chernobyl and Fukushima).
-            The same goes for <span class="hydro">hydropower</span> with the single Banqiao Dam Failure in 1975 killing approximately 171,000 people.
-            <br><br>
-            Yet again, <span class="solar">solar</span> and <span class="wind">wind</span> energy prove to be the best sources of energy. With the lowest deaths rates and emissions.
+            In the butterfly chart below, deaths from air pollution and accidents in the supply chain are considered.
           </p>
         </div>
       </div>
@@ -285,9 +288,21 @@
     <div class="pure-g">
       <div class="pure-u-1-1">
         <div id="butterfly_parent">
-          <p id="butterfly_desc">
-            <span class="solar">Solar</span>, <span class="wind">wind</span> and <span class="nuclear">nuclear</span>'s 
-            prominence should be increased in every countries energy mix.
+          <p id="butterfly_desc_solar">
+            Yet again, <span class="solar">solar</span> and <span class="wind">wind</span> energy prove to be the best sources of energy. With the lowest deaths rates and emissions.
+            
+            Clearly <span class="solar">solar</span>, <span class="wind">wind</span> and <span class="nuclear">nuclear</span>'s 
+            prominence should be increased in every country's energy mix!
+          </p>
+          <p id="butterfly_desc_coal">
+            <span class="coal">Coal</span> and <span class="oil">oil</span> are orders of magnitude more dangerous for humans than other sources. With millions that die every year due to health impacts of air pollution.
+          </p>
+          <p id="butterfly_desc_gas">
+            <span class="coal">Coal</span>, <span class="oil">oil</span> and <span class="gas">gas</span> are orders of magnitude worse for our environment too!
+          </p>
+          <p id="butterfly_desc_nuclear">            
+            <span class="nuclear">Nuclear</span> deaths are largely influenced by the two prominent accidents in recent history (Chernobyl and Fukushima).
+            The same goes for <span class="hydro">hydropower</span> with the single Banqiao Dam Failure in 1975 killing approximately 171,000 people.
           </p>
           <div id="butterfly_chart_deaths_ghg"></div>
         </div>
@@ -309,18 +324,18 @@
       <div class="pure-u-1-1">
         <h3>Share of electricity production from low carbon sources</h3>
         <div id="choropleth_map_low_carbon"></div>
+        <h3>How does this breakdown per country over the years?</h3>
       </div>
     </div>
 
     <div class="pure-g">
       <div class="pure-u-1-2">
-        <h3>How does this breakdown per country over the years?</h3>
         <div id="line_lowcarbon"></div>
       </div>
       <div class="pure-u-1-2">
-        <div class="description description-left">
-          <br><br><br><br><br>
+        <div class="intro_text_right">
           <p>
+            <br>
             There are a number of different and effective techniques for reaching net zero:
             <br><br>
             <span class="hydro">Norway</span> has a very high percentage of <span class="hydro">hydropower</span> plants with its unique environment low to the sea.

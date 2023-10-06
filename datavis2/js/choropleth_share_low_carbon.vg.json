@@ -22,7 +22,7 @@
           "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/oceans.topojson",
           "format": {"type": "topojson", "feature": "oceans"}
         },
-        "mark": {"type": "geoshape", "fill": "#a3deec"}
+        "mark": {"type": "geoshape", "fill": "#C9EAF6"}
       },
       {
         "data": {
@@ -96,7 +96,7 @@
                 "scale": {
                     "type": "threshold",
                     "domain": [ 10, 20, 30, 40, 50, 60, 70, 80],
-                    "range": ["#fff5eb","#fee6ce","#fdd0a2","#fdae6b","#fd8d3c","#f16913","#d94801","#a63603","#7f2704"]
+                    "range": ["#FFF4E1", "#FEE4C0", "#FDD0A0", "#FDBE7A", "#FD9C4D", "#F17F28", "#D95E17", "#A5430F", "#7D350D"]
                 }
             },
             "tooltip": [

@@ -25,6 +25,7 @@ h1 {
 	font-size: 42pt;
 	text-align: center;
 	white-space: nowrap;
+	margin-bottom: 5px;
 }
 
 .title_block {
@@ -54,6 +55,11 @@ h3 {
 
 body {
     background-color: #CCE6E5;
+	/* background: rgb(46,47,47);
+	background: radial-gradient(circle, rgba(46,47,47,1) 0%, rgba(76,80,80,1) 15%, rgba(46,47,47,1) 100%); */
+	/* background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
+	/* background: linear-gradient(to top, #c79081 0%, #dfa579 100%); */
+
 }
 
 p {
@@ -62,12 +68,18 @@ p {
 	font-size: 14pt;
 }
 
+.bigger_br {
+	display: block;
+	margin-top: 8px;
+}
+
 .section {
-    border-style: solid;
+    /* border-style: solid; */
 	border-radius: 20px;
-	border-color: #44535f;
+	/* border-color: #44535f; */
 	margin-bottom: 15px;
-	background-color: #EBF5F5;
+	background-color: #eff7f7;
+	/* background-color: #ebd7c8; */
 }
 
 .description-right {
@@ -124,7 +136,7 @@ p {
 }
 
 .annual_co2_pc {
-	color: #5f6aca;
+	color: #A67E51;
 }
 
 .GDP_pc {
@@ -142,22 +154,22 @@ p {
 
 .industry {
 	font-weight: bold;
-	color: #8D3BBA;
+	color: #B893CC;
 }
 
 .buildings {
 	font-weight: bold;
-	color: #363537;
+	color: #6E6D6C;
 }
 
 .land_use {
 	font-weight: bold;
-	color: #0AAE59;
+	color: #66D68E;
 }
 
 .transport {
 	font-weight: bold;
-	color: #3185FC;
+	color: #82B5EF;
 }
 
 #bump_area_chart_world {
@@ -167,37 +179,37 @@ p {
 
 .coal {
 	font-weight: bold;
-	color: #79491D;
+	color: #A67E51;
 }
 
 .gas {
 	font-weight: bold;
-	color: #C99740;
+	color: #E4B886;
 }
 
 .oil {
 	font-weight: bold;
-	color: #363537;
+	color: #6E6D6C;
 }
 
 .solar {
 	font-weight: bold;
-	color: #E6D554;
+	color: #EADC9A;
 }
 
 .wind {
 	font-weight: bold;
-	color: #8D3BBA;
+	color: #B893CC;
 }
 
 .nuclear {
 	font-weight: bold;
-	color: #0AAE59;
+	color: #66D68E;
 }
 
 .hydro {
 	font-weight: bold;
-	color: #3185FC;
+	color: #82B5EF;
 }
 
 .renewables {
@@ -214,11 +226,31 @@ p {
 #area_renewables {
 	width: 100%;
 	height: 500px;
+	margin-top: -20px;
+}
+
+#slope_parent {
+	position: relative;
+	z-index: 1;
+}
+
+#slope_desc {
+	width: 250px;
+	height: auto;
+	display: block;
+	text-align: left;
+	position: absolute;
+	padding-left: 220px;
+	margin-left: 0px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 #slope_chart_lcoe {
 	width: 100%;
 	height: 500px;
+	z-index: 2;
+	margin-top: -20px;
 }
 
 #safer_heading {
@@ -226,6 +258,7 @@ p {
 }
 
 #butterfly_parent {
+	margin-top: -20px;
 	position: relative;
 	z-index: 1;
 }
@@ -238,19 +271,51 @@ p {
 	z-index: 2;
 }
 
-#butterfly_desc {
+#butterfly_desc_coal {
 	width: 300px;
 	height: auto;
 	display: block;
 	text-align: left;
-	background-color: white;	
-	border: 2px solid;
-	border-radius: 10px;
-	border-color: #44535f;
+	position: absolute;
+	padding-left: 10px;
+	margin-left: 0px;
+	margin-top: 130px;
+	margin-bottom: 40px;
+}
+
+#butterfly_desc_nuclear {
+	width: 370px;
+	height: auto;
+	display: block;
+	text-align: left;
+	position: absolute;
+	padding-left: 10px;
+	margin-left: 0px;
+	margin-top: 275px;
+	margin-bottom: 40px;
+}
+
+#butterfly_desc_solar {
+	width: 360px;
+	height: auto;
+	display: block;
+	text-align: left;
 	position: absolute;
 	padding-left: 10px;
 	margin-left: 600px;
-	margin-top: 300px;
+	margin-top: 275px;
+	margin-bottom: 40px;
+}
+
+#butterfly_desc_gas {
+	width: 210px;
+	height: auto;
+	display: block;
+	text-align: left;
+	position: absolute;
+	padding-left: 10px;
+	margin-left: 770px;
+	margin-top: 130px;
 	margin-bottom: 40px;
 }
 
@@ -266,7 +331,7 @@ p {
 
 #line_lowcarbon {
 	width: 100%;
-	height: 500px;
+	height: 400px;
 	margin-bottom: 50px;
 }
 

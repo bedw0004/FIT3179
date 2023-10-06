@@ -44,8 +44,10 @@ elec_prod_by_source <- read.csv("data/electricity_prod_source_stacked.csv")
 
 oldnames <- colnames(elec_prod_by_source)[4:12]
 newnames <- c("other_renewables", "bioenergy", "solar", "wind", "hydro", "nuclear", "oil", "gas", "coal")
+filter_interest_countries <- c("World", "Australia", "India", "France", "United Kingdom","United States", 
+                               "Norway", "South Africa", "Finland", "Vietnam")
 elec_prod_by_source <- elec_prod_by_source |> rename_at(vars(oldnames), ~ newnames) |> 
-  filter(Entity %in% interesting_countries)
+  filter(Entity %in% filter_interest_countries)
 
 elec_prod_by_source_filtered <- elec_prod_by_source |> 
   mutate_all(~replace(., is.na(.), 0)) |> 
@@ -91,6 +93,8 @@ elec_prod_source_rank <- elec_prod_by_source_rank |> filter(Entity == "World")
 
 write.csv(elec_prod_source_rank, "data/elec_prod_source_rank.csv")
 
+# stacked bar
+
 elec_prod_by_source <- elec_prod_by_source |> 
   mutate_all(~replace(., is.na(.), 0)) |> 
   mutate(renewables = other_renewables + bioenergy + solar + wind + hydro,
@@ -100,7 +104,7 @@ elec_prod_by_source <- elec_prod_by_source |>
   group_by(Year, Entity) |> 
   mutate(energy_prop = energy_twh / sum(energy_twh))
 
-write.csv(elec_prod_by_source, "data/elec_prod_by_source.csv")
+write.csv(elec_prod_by_source, "data/stacked_bar_elec_source.csv")
 
 ######## ENERGY CONSUMPTION BY SOURCE
 energy_consump_by_source <- read.csv("data/energy_consumption_source.csv")

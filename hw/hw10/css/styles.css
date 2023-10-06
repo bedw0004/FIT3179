@@ -28,6 +28,14 @@ h1 {
 	width: 100%;
 }
 
+.multiples_heading {
+	margin-bottom: 50px;
+}
+
+#multiples_text {
+	margin-top: 100px
+}
+
 #co2_multiples {
 	height: 400px;
 	width: 100%;
