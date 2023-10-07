@@ -380,3 +380,22 @@ input[type="range"]::-moz-range-thumb {
 	border: none;
 	transition: .2s ease-in-out;
 }
+
+#energy_parent input[type="range"] {
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none; 
+	/* creating a custom design */
+	width: 40%;
+	cursor: pointer;
+	outline: none;
+	border-radius: 10px;
+	/*  overflow: hidden;  remove this line*/
+	
+	/* New additions */
+	height: 8px;
+	background: #dce2e6d2;
+
+	margin-left: 10px;
+	margin-right: 10px;
+  }

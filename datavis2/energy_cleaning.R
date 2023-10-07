@@ -25,7 +25,10 @@ co2_gdppc <- read.csv("data/consumption-co2-per-capita-vs-gdppc.csv") |>
   filter(Year > 1985) |> 
   rename("GDP_pc" = "GDP.per.capita..PPP..constant.2017.international...") |> 
   rename("population" = "Population..historical.estimates.") |> 
-  rename("annual_co2_pc" = "Annual.consumption.based.CO..emissions..per.capita.")
+  rename("annual_co2_pc" = "Annual.consumption.based.CO..emissions..per.capita.") |> 
+  drop_na(population, GDP_pc, annual_co2_pc) |> 
+  group_by(Entity) |> 
+  filter(max(annual_co2_pc) < 30)
 not_in <- unique(co2_gdppc[!(co2_gdppc$Entity %in% valid_countries),]$Entity)
 co2_gdppc <- co2_gdppc[co2_gdppc$Entity %in% valid_countries,]
 

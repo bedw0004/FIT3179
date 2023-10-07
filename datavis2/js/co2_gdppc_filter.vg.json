@@ -17,7 +17,7 @@
       "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/co2_gdppc.csv"
     },
     "hconcat": [{
-    "width": 400,
+    "width": 500,
     "height": 300,
     "transform": [
       {"filter": "datum.population != 'NA'"},
@@ -178,8 +178,8 @@
     ]
     },
     {
-        "width": 135,
-        "height": 135,
+        "width": 300,
+        "height": 300,
         "title": {"text": {"expr": "select['Entity']"}, "color": "#eea9df"},
         "transform": [
           {"filter": "year(datum.Year) < 2021"},
@@ -217,7 +217,7 @@
                   "gridOpacity": 0.2, "titleColor": "#2E2F2F",
                   "title": "GDP per capita ($)"
                 },
-                "scale": {"type": "linear", "domain": [0, 80000]}
+                "scale": {"type": "linear", "domain": [0, 100000]}
               },
               "color": {"value": "#2E2F2F"}
             }
@@ -263,8 +263,9 @@
       "font": "Roboto",
       "axis": {"gridColor": "#edeff0d7"},
       "legend": {
-        "titleFontSize": 16,
-        "labelFontSize": 14
+        "titleFontSize": 14,
+        "labelFontSize": 12,
+        "orient": "top-left"
       },
       "style": {
         "cell": {
