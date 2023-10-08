@@ -16,244 +16,281 @@
     "data": {
       "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/co2_gdppc.csv"
     },
-    "hconcat": [{
-    "width": 500,
-    "height": 300,
-    "transform": [
-      {"filter": "datum.population != 'NA'"},
-      {"filter": "datum.GDP_pc != 'NA'"},
-      {"filter": "datum.annual_co2_pc != 'NA'"},
-      {"filter": "datum.annual_co2_pc < 30"}
-    ],
+    "transform": [{"filter": "datum.Continent != 'NA'"}],
+    "vconcat": [
+    {
+      "width": 850,
+      "height": 500,
+      "transform": [
+        {"filter": "datum.population != 'NA'"},
+        {"filter": "datum.GDP_pc != 'NA'"},
+        {"filter": "datum.annual_co2_pc != 'NA'"},
+        {"filter": "datum.annual_co2_pc < 30"}
+      ],
   
-    "encoding": {
-      "x": {
-        "field": "GDP_pc",
-        "type": "quantitative",
-        "title": "GDP per capita (International $)",
-        "axis": {"tickCount": 2, "gridOpacity": 0.4, "format": "$,"},
-        "scale": {"type": "log", "domain": [400, 200000]}
-      },
-      "y": {
-        "field": "annual_co2_pc",
-        "title": "Emissions per capita (tonnes)",
-        "type": "quantitative",
-        "axis": {"tickCount": 4, "gridOpacity": 0.4},
-        "scale": {"type": "linear", "domain": [0, 30]}
-      }
-    },
-    "layer": [
-      {
-        "params": [
-          {
-            "name": "continent_highlight",
-            "select": {"type": "point", "fields": ["Continent"]},
-            "bind": "legend"
-          },
-          {
-            "name": "highlight",
-            "select": {"type": "point", "on": "mouseover"}
-          },
-          {
-            "name": "select", 
-            "select": {
-              "type": "point", 
-              "fields": ["Entity"]
-            },
-            "value": "Australia"
-          }
-        ],
-        "mark": {"type": "circle", "cursor": "pointer"},
-        "transform": [
-          {"filter": "year(datum.Year) == Year_select"},
-          {"calculate": "datum.population/1000000","as": "population_mil"}
-        ],
-        "encoding": {
-          "size": {
-            "field": "population_mil",
-            "title": "Population (millions)",
-            "type": "quantitative",
-            "scale": {
-              "type": "linear",
-              "domain": [1, 1000],
-              "range": [50, 1000]
-            },
-            "legend": {"format": ".0f"}
-          },
-          "color": {
-            "field": "Continent",
-            "type": "nominal",
-            "scale": {
-              "domain": [
-                "North America",
-                "South America",
-                "Europe",
-                "Africa",
-                "Asia",
-                "Oceania"
-              ],
-              "range": [
-                "#82B5EF",
-                "#EADC9A",
-                "#66D68E",
-                "#CAB6C6",
-                "#6E6D6C",
-                "#A67E51"
-              ]
-            }
-          },
-          "opacity": {
-            "condition": {
-              "test": {
-                "and": [
-                  {"param": "highlight"},
-                  {"param": "continent_highlight"}
-                ]
-              },
-              "value": 0.8
-            },
-            "value": 0.1
-          },
-          "tooltip": [
-            {"field": "Entity", "title": "Country", "type": "nominal"},
-            {"field": "Year", "type": "quantitative"},
-            {"field": "annual_co2_pc", "title": "Annual CO2 consumption (tonnes)", "type": "quantitative", "format": ".2f"},
-            {"field": "GDP_pc", "title": "GDP per capita", "type": "quantitative", "format": "$,.2f"},
-            {"field": "population", "title": "Population", "type": "quantitative", "format": ","}
-          ]
-        }
-      },
-      {
-        "mark": {
-          "type": "text",
-          "align": "right",
-          "baseline": "middle",
-          "dx": -18,
-          "fontSize": 11.5,
-          "fontWeight": "bold"
+      "encoding": {
+        "x": {
+          "field": "GDP_pc",
+          "type": "quantitative",
+          "title": "GDP per capita (International $)",
+          "axis": {"tickCount": 2, "gridOpacity": 0.4, "format": "$,"},
+          "scale": {"type": "log", "domain": [400, 200000]}
         },
-        "transform": [
-          {"filter": "year(datum.Year) == Year_select"},
-          {"filter": "(datum['Entity'] == 'China' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Russia'|| datum['Entity'] == 'India' ||  datum['Entity'] == 'United States')"
-          }
-        ],
-        "encoding": {
-          "text": {"field": "Entity", "type": "nominal"},
-          "color": {
-            "field": "Continent",
-            "type": "nominal",
-            "scale": {
-              "domain": [
-                "North America",
-                "South America",
-                "Europe",
-                "Africa",
-                "Asia",
-                "Oceania"
-              ],
-              "range": [
-                "#82B5EF",
-                "#EADC9A",
-                "#66D68E",
-                "#CAB6C6",
-                "#6E6D6C",
-                "#A67E51"
-              ]
-            }
-          },
-          "opacity": {
-            "condition": {
-              "test": {
-                "and": [
-                  {"param": "highlight"},
-                  {"param": "continent_highlight"}
-                ]
-              },
-              "value": 0.9
+        "y": {
+          "field": "annual_co2_pc",
+          "title": "Emissions per capita (tonnes)",
+          "type": "quantitative",
+          "axis": {"tickCount": 4, "gridOpacity": 0.4},
+          "scale": {"type": "linear", "domain": [0, 30]}
+        }
+      },
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "continent_highlight",
+              "select": {"type": "point", "fields": ["Continent"]},
+              "bind": "legend"
             },
-            "value": 0.1
+            {
+              "name": "highlight",
+              "select": {"type": "point", "on": "mouseover"}
+            },
+            {
+              "name": "brush", 
+              "select": {
+                "type": "interval",
+                "mark": {
+                  "fill": "#ebf1f1", "fillOpacity": 0.5, "stroke": "white",
+                  "cursor": "pointer"
+                }
+              }
+            },
+            {
+              "name": "select", 
+              "select": {
+                "type": "point", 
+                "fields": ["Entity"],
+                "clear": false
+              },
+              "value": "Australia"
+            }
+          ],
+          "mark": {"type": "circle", "cursor": "pointer"},
+          "transform": [
+            {"filter": "year(datum.Year) == Year_select"},
+            {"calculate": "datum.population/1000000","as": "population_mil"}
+          ],
+          "encoding": {
+            "size": {
+              "field": "population_mil",
+              "title": "Population (millions)",
+              "type": "quantitative",
+              "scale": {
+                "type": "linear",
+                "domain": [1, 1000],
+                "range": [50, 1000]
+              },
+              "legend": {"format": ".0f"}
+            },
+            "color": {
+              "field": "Continent",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "North America",
+                  "South America",
+                  "Europe",
+                  "Africa",
+                  "Asia",
+                  "Oceania"
+                ],
+                "range": [
+                  "#82B5EF",
+                  "#EADC9A",
+                  "#66D68E",
+                  "#CAB6C6",
+                  "#6E6D6C",
+                  "#A67E51"
+                ]
+              }
+            },
+            "opacity": {
+              "condition": {
+                "test": {
+                  "and": [
+                    {"param": "highlight"},
+                    {"param": "continent_highlight"}
+                  ]
+                },
+                "value": 0.8
+              },
+              "value": 0.1
+            },
+            "tooltip": [
+              {"field": "Entity", "title": "Country", "type": "nominal"},
+              {"field": "Year", "type": "quantitative"},
+              {"field": "annual_co2_pc", "title": "Annual CO2 consumption (tonnes)", "type": "quantitative", "format": ".2f"},
+              {"field": "GDP_pc", "title": "GDP per capita", "type": "quantitative", "format": "$,.2f"},
+              {"field": "population", "title": "Population", "type": "quantitative", "format": ","}
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "dx": -18,
+            "fontSize": 11.5,
+            "fontWeight": "bold"
+          },
+          "transform": [
+            {"filter": "year(datum.Year) == Year_select"},
+            {"filter": "(datum['Entity'] == 'China' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Russia'|| datum['Entity'] == 'India' ||  datum['Entity'] == 'United States')"
+            }
+          ],
+          "encoding": {
+            "text": {"field": "Entity", "type": "nominal"},
+            "color": {
+              "field": "Continent",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "North America",
+                  "South America",
+                  "Europe",
+                  "Africa",
+                  "Asia",
+                  "Oceania"
+                ],
+                "range": [
+                  "#82B5EF",
+                  "#EADC9A",
+                  "#66D68E",
+                  "#CAB6C6",
+                  "#6E6D6C",
+                  "#A67E51"
+                ]
+              }
+            },
+            "opacity": {
+              "condition": {
+                "test": {
+                  "and": [
+                    {"param": "highlight"},
+                    {"param": "continent_highlight"}
+                  ]
+                },
+                "value": 0.9
+              },
+              "value": 0.1
+            }
           }
         }
-      }
-    ]
+      ]
     },
     {
-        "width": 300,
-        "height": 300,
-        "title": {"text": {"expr": "select['Entity']"}, "color": "#eea9df"},
-        "transform": [
-          {"filter": "year(datum.Year) < 2021"},
-          {"filter": {"param": "select"}}
-        ],
-        "layer": [
-          {
-            "mark": "line",
-            "encoding": {
-              "x": {
-                "field": "Year", "type": "temporal",
-                "axis": {"gridOpacity": 0.2},"scale": {"type": "time", "domain": [{"year": 1990},{"year": 2020}]}
-              },
-              "y": {
-                "field": "annual_co2_pc", "type": "quantitative",
-                "axis": {
-                  "gridOpacity": 0.2, "titleColor": "#A67E51",
-                  "title": "Emissions (p.c., tonnes)"
-                },
-                "scale": {"type": "linear", "domain": [0, 30]}
-              },
-              "color": {"value": "#A67E51"}
-            }
-          },
-          {
-            "mark": "line",
-            "encoding": {
-              "x": {
-                "field": "Year", "type": "temporal",
-                "axis": {"gridOpacity": 0.2},"scale": {"type": "time", "domain": [{"year": 1990},{"year": 2020}]}
-              },
-              "y": {
-                "field": "GDP_pc", "type": "quantitative",
-                "axis": {
-                  "gridOpacity": 0.2, "titleColor": "#2E2F2F",
-                  "title": "GDP per capita ($)"
-                },
-                "scale": {"type": "linear", "domain": [0, 100000]}
-              },
-              "color": {"value": "#2E2F2F"}
-            }
-          },
-          {
-            "mark": "rule",
-            "encoding": {
-              "x": {
-                "field": "Year", "type": "temporal",
-                "axis": {"gridOpacity": 0.2},"scale": {"type": "time", "domain": [{"year": 1990},{"year": 2020}]}
-              },
-              "opacity": {
-                "condition": {"value": 0.3, "param": "hover", "empty": false},
-                "value": 0
-              },
-              "tooltip": [
-                {"field": "Year", "title": "Year", "type": "temporal", "timeUnit": "year"},
-                {"field": "annual_co2_pc", "title": "Annual CO2 consumption (tonnes)", "type": "quantitative", "format": ".2f"},
-                {"field": "GDP_pc", "title": "GDP per capita", "type": "quantitative", "format": "$,.2f"}
-              ]
+      "hconcat": [
+        {
+          "width": 350,
+          "height":300,
+          "transform": [
+            {"filter": {"param": "brush"}},
+            {"filter": "year(datum.Year) == Year_select"}
+          ],
+          "encoding": {
+            "color": {
+              "field": "Continent"
             },
-            "params": [{
-              "name": "hover",
-              "select": {
-                "type": "point",
-                "fields": ["GDP_pc"],
-                "nearest": true,
-                "on": "mouseover",
-                "clear": "mouseout"
+            "x": {
+                "aggregate": "count", "title": "Number of countries in selection area",
+                "axis": {"gridOpacity": 0.2}
+            },
+            "y": {
+                "title": false, "field": "Continent"
+            }
+          },
+          "mark": "bar"
+        },
+        {
+          "width": 350,
+          "height": 300,
+          "title": {"text": {"expr": "select['Entity']"}, "color": "black"},
+          "transform": [
+            {"filter": "year(datum.Year) < 2021"},
+            {"filter": {"param": "select", "empty": false}}
+          ],
+          "layer": [
+            {
+              "mark": "line",
+              "encoding": {
+                "x": {
+                  "field": "Year", "type": "temporal",
+                  "axis": {"gridOpacity": 0.2},"scale": {"type": "time", "domain": [{"year": 1990},{"year": 2020}]}
+                },
+                "y": {
+                  "field": "annual_co2_pc", "type": "quantitative",
+                  "axis": {
+                    "gridOpacity": 0.2, "titleColor": "#A67E51",
+                    "title": "Emissions (p.c., tonnes)"
+                  },
+                  "scale": {"type": "linear", "domain": [0, 30]}
+                },
+                "color": {"value": "#A67E51"}
               }
-            }]
-          }
-        ],
-        "resolve": {"scale": {"y": "independent"}}
-      }
-  
+            },
+            {
+              "mark": "line",
+              "encoding": {
+                "x": {
+                  "field": "Year", "type": "temporal",
+                  "axis": {"gridOpacity": 0.2},"scale": {"type": "time", "domain": [{"year": 1990},{"year": 2020}]}
+                },
+                "y": {
+                  "field": "GDP_pc", "type": "quantitative",
+                  "axis": {
+                    "gridOpacity": 0.2, "titleColor": "#2E2F2F",
+                    "title": "GDP per capita ($)"
+                  },
+                  "scale": {"type": "linear", "domain": [0, 100000]}
+                },
+                "color": {"value": "#2E2F2F"}
+              }
+            },
+            {
+              "mark": "rule",
+              "encoding": {
+                "x": {
+                  "field": "Year", "type": "temporal",
+                  "axis": {"gridOpacity": 0.2},"scale": {"type": "time", "domain": [{"year": 1990},{"year": 2020}]}
+                },
+                "opacity": {
+                  "condition": {"value": 0.3, "param": "hover", "empty": false},
+                  "value": 0
+                },
+                "tooltip": [
+                  {"field": "Year", "title": "Year", "type": "temporal", "timeUnit": "year"},
+                  {"field": "annual_co2_pc", "title": "Annual CO2 consumption (tonnes)", "type": "quantitative", "format": ".2f"},
+                  {"field": "GDP_pc", "title": "GDP per capita", "type": "quantitative", "format": "$,.2f"}
+                ]
+              },
+              "params": [{
+                "name": "hover",
+                "select": {
+                  "type": "point",
+                  "fields": ["GDP_pc"],
+                  "nearest": true,
+                  "on": "mouseover",
+                  "clear": "mouseout"
+                }
+              }]
+            }
+          ],
+          "resolve": {"scale": {"y": "independent"}}
+        }
+      ]
+    }
     ],
   
   
@@ -262,11 +299,13 @@
       "background": "transparent",
       "font": "Roboto",
       "axis": {"gridColor": "#edeff0d7"},
+      "title": {"fontSize": 16, "fontWeight": "bold"},
       "legend": {
         "titleFontSize": 14,
         "labelFontSize": 12,
         "orient": "top-left"
       },
+      "concat": {"spacing": 80},
       "style": {
         "cell": {
           "stroke": "transparent"
