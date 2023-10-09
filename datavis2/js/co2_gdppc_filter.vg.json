@@ -107,7 +107,7 @@
                 ],
                 "range": [
                   "#82B5EF",
-                  "#EADC9A",
+                  "#FE8E86",
                   "#66D68E",
                   "#CAB6C6",
                   "#6E6D6C",
@@ -209,7 +209,12 @@
             },
             "y": {
                 "title": false, "field": "Continent"
-            }
+            },
+            "tooltip": [
+              {"field": "Year", "title": "Year", "type": "temporal", "timeUnit": "year"},
+              {"field": "Continent", "title": "Continent", "type": "nominal"},
+              {"aggregate": "count", "field": "Continent", "title": "Number in area", "type": "quantitative"}
+            ]
           },
           "mark": "bar"
         },

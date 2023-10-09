@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": "container",
+  "data": {
+    "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/co2_gdppc.csv"
+  },
+  "params": [
+    {
+      "name": "Year_select",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 1990,
+        "max": 2020,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  
+
+  "transform": [
+    
+    {"filter": "datum.population != 'NA'"},
+    {"filter": "datum.GDP_pc != 'NA'"},
+    {"filter": "datum.annual_co2_pc != 'NA'"},
+    {"filter": "datum.annual_co2_pc < 30"}
+  ],
+
+  "encoding": {
+    "x": {
+      "field": "GDP_pc",
+      "type": "quantitative",
+      "title": "GDP per capita (International $)",
+      "axis": {"tickCount": 2, "gridOpacity": 0.4, "format": "$,"},
+      "scale": {"type": "log", "domain": [400, 200000]}
+    },
+    "y": {
+      "field": "annual_co2_pc",
+      "title": "Emissions per capita (tonnes)",
+      "type": "quantitative",
+      "axis": {"tickCount": 4, "gridOpacity": 0.4},
+      "scale": {"type": "linear", "domain": [0, 30]}
+    }
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "continent_highlight",
+          "select": {"type": "point", "fields": ["Continent"]},
+          "bind": "legend"
+        },
+        {
+          "name": "highlight",
+          "select": {"type": "point", "on": "mouseover"}
+        },
+        {
+          "name": "select", 
+          "select": {"type": "point", "fields": ["Entity"]}
+        }
+      ],
+      "mark": {"type": "circle", "cursor": "pointer"},
+      "transform": [
+        {"filter": "datum.Year == Year_select"},
+        {"calculate": "datum.population/1000000","as": "population_mil"}
+      ],
+      "encoding": {
+        "size": {
+          "field": "population_mil",
+          "title": "Population (millions)",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [1, 1000],
+            "range": [50, 1000]
+          },
+          "legend": {"format": ".0f"}
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania"
+            ],
+            "range": [
+              "#82B5EF",
+              "#EADC9A",
+              "#66D68E",
+              "#CAB6C6",
+              "#6E6D6C",
+              "#A67E51"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "and": [
+                {"param": "highlight"},
+                {"param": "continent_highlight"}
+              ]
+            },
+            "value": 0.8
+          },
+          "value": 0.1
+        },
+        "tooltip": [
+          {"field": "Entity", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "quantitative"},
+          {"field": "annual_co2_pc", "title": "Annual CO2 consumption (tonnes)", "type": "quantitative", "format": ".2f"},
+          {"field": "GDP_pc", "title": "GDP per capita", "type": "quantitative", "format": "$,.2f"},
+          {"field": "population", "title": "Population", "type": "quantitative", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -18,
+        "fontSize": 11.5,
+        "fontWeight": "bold"
+      },
+      "transform": [
+        {"filter": "datum.Year == Year_select"},
+        {"filter": "(datum['Entity'] == 'China' || datum['Entity'] == 'Australia' || datum['Entity'] == 'Russia'|| datum['Entity'] == 'India' ||  datum['Entity'] == 'United States')"
+        }
+      ],
+      "encoding": {
+        "text": {"field": "Entity", "type": "nominal"},
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania"
+            ],
+            "range": [
+              "#82B5EF",
+              "#EADC9A",
+              "#66D68E",
+              "#CAB6C6",
+              "#6E6D6C",
+              "#A67E51"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "and": [
+                {"param": "highlight"},
+                {"param": "continent_highlight"}
+              ]
+            },
+            "value": 0.9
+          },
+          "value": 0.1
+        }
+      }
+    }
+  ],
+
+  "config": {
+    "background": "transparent",
+    "font": "Roboto",
+    "axis": {"gridColor": "#edeff0d7"},
+    "legend": {
+      "titleFontSize": 16,
+      "labelFontSize": 14
+    },
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ body {
 	width: 1000px;
 	margin: auto;
   	padding: 50px;
+	
 }
 
 body *{
@@ -240,7 +241,7 @@ p {
 
 .solar {
 	font-weight: bold;
-	color: #EADC9A;
+	color: #FE8E86;
 }
 
 .wind {
@@ -337,7 +338,7 @@ p {
 	position: absolute;
 	padding-left: 10px;
 	margin-left: 0px;
-	margin-top: 275px;
+	margin-top: 240px;
 	margin-bottom: 40px;
 }
 
@@ -349,7 +350,7 @@ p {
 	position: absolute;
 	padding-left: 10px;
 	margin-left: 600px;
-	margin-top: 275px;
+	margin-top: 240px;
 	margin-bottom: 40px;
 }
 

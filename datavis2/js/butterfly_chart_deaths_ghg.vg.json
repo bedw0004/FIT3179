@@ -2,6 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": { "url": "https://raw.githubusercontent.com/bedw0004/FIT3179/main/datavis2/data/death_ghg_energy_source.csv"},
   "spacing": 3,
+  "transform": [{"filter": "datum.source != 'Biomass'"}],
   "hconcat": [
     {
       "width": 350,
@@ -58,11 +59,11 @@
                 "#A67E51",
                 "#6E6D6C",
                 "#E4B886",
-                "#FF9999",
+                "#D2D2D2",
                 "#82B5EF",
                 "#B893CC",
                 "#66D68E",
-                "#EADC9A"
+                "#FE8E86"
             ]
           }, 
           "legend": null,
