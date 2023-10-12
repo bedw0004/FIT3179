@@ -18,7 +18,7 @@
     "y": {
       "field": "low_carbon_prop", 
       "type": "quantitative", 
-      "title": "Energy from low carbon sources",
+      "title": "Electricity from low carbon sources",
       "axis": {"format": ".0%"},
       "scale": {"domain": [0, 1]}
     },
@@ -78,7 +78,7 @@
         "tooltip": [
           {"field": "Entity", "type": "nominal", "title": "Country"}, 
           {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
-          {"field": "low_carbon_prop", "title": "Energy from low carbon sources", "type": "quantitative", "format": ",.2%"}
+          {"field": "low_carbon_prop", "title": "Electricity from low carbon sources", "type": "quantitative", "format": ",.2%"}
         ]
       }
     }, 
