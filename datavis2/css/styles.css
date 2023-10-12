@@ -6,7 +6,7 @@ body {
 	width: 1000px;
 	margin: auto;
   	padding: 50px;
-	
+	text-align: justify;
 }
 
 body *{
@@ -52,6 +52,8 @@ h3 {
 	color: black;
 	font-weight: 400;
 	font-size: 20pt;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 body {
@@ -81,6 +83,8 @@ p {
 	margin-bottom: 15px;
 	background-color: #eff7f7;
 	/* background-color: #ebd7c8; */
+	box-shadow: .8em 0.5em .4em  #bfc5c5, -.8em 0.5em .4em  #bfc5c5;
+	
 }
 
 .description-right {
@@ -93,14 +97,38 @@ p {
 	padding-left: 50px;
 }
 
+input[type=button] {
+	padding:5px 15px; 
+    background:#d7ebea; 
+	/* border:0; */
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=button]:hover {
+	background-color: #abdad8;
+}
+
 #intro_text_left {
-	padding-left: 0px;
-	padding-right: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #intro_text_right {
-	padding-right: 0px;
-	padding-left: 40px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.left_button {
+	width: 45%;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.right_button {
+	width: 45%;
+	margin-left: 15px;
 }
 
 #dot_title {
@@ -135,14 +163,14 @@ p {
 }
 
 #dot_info1 {
-	width: 300px;
+	width: 260px;
 	position: absolute;
 	margin-top: 20px;
 	margin-left: 360px;
 }
 
 #dot_info2 {
-	width: 300px;
+	width: 260px;
 	position: absolute;
 	margin-top: 20px;
 	margin-left: 670px;
@@ -152,7 +180,7 @@ p {
 	width: 350px;
 	position: absolute;
 	margin-top: 230px;
-	margin-left: 100px;
+	margin-left: 60px;
 }
 
 #slide_interaction_dot {
@@ -188,6 +216,30 @@ p {
 
 .GDP_pc {
 	color: #2E2F2F;
+}
+
+.Africa {
+	color: #CAB6C6;
+	font-weight: bold;
+}
+
+.Asia {
+	color: #6E6D6C;
+	font-weight: bold;
+}
+
+.Europe {
+	color: #66D68E;
+	font-weight: bold;
+}
+
+.Oceania {
+	color: #A67E51;
+	font-weight: bold;
+}
+
+#co2_multiples_area {
+	margin-top: -30px;
 }
 
 #plot_desc {
@@ -264,6 +316,18 @@ p {
 	color: #5EA0FD;
 }
 
+#stacked_parent {
+	position: relative;
+	z-index: 1;
+}
+
+#slide_stacked {
+	width: 700px;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 80px;
+}
+
 #stacked_bar_elec_source {
 	width: 100%;
 	height: 500px;
@@ -285,7 +349,6 @@ p {
 	width: 250px;
 	height: auto;
 	display: block;
-	text-align: left;
 	position: absolute;
 	padding-left: 220px;
 	margin-left: 0px;
@@ -322,21 +385,19 @@ p {
 	width: 300px;
 	height: auto;
 	display: block;
-	text-align: left;
 	position: absolute;
-	padding-left: 10px;
+	padding-left: 15px;
 	margin-left: 0px;
 	margin-top: 130px;
 	margin-bottom: 40px;
 }
 
 #butterfly_desc_nuclear {
-	width: 370px;
+	width: 360px;
 	height: auto;
 	display: block;
-	text-align: left;
 	position: absolute;
-	padding-left: 10px;
+	padding-left: 15px;
 	margin-left: 0px;
 	margin-top: 240px;
 	margin-bottom: 40px;
@@ -346,22 +407,20 @@ p {
 	width: 360px;
 	height: auto;
 	display: block;
-	text-align: left;
 	position: absolute;
-	padding-left: 10px;
-	margin-left: 600px;
+	padding-left: 0px;
+	margin-left: 580px;
 	margin-top: 240px;
 	margin-bottom: 40px;
 }
 
 #butterfly_desc_gas {
-	width: 210px;
+	width: 190px;
 	height: auto;
 	display: block;
-	text-align: left;
 	position: absolute;
-	padding-left: 10px;
-	margin-left: 770px;
+	padding-left: 0px;
+	margin-left: 750px;
 	margin-top: 130px;
 	margin-bottom: 40px;
 }

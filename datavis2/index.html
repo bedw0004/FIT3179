@@ -56,6 +56,28 @@
   <div class="section">
     <div class="pure-g">
       <div class="pure-u-1-1">
+        <h3 id="intro_text_left">
+          🖱️ Click on a button below to jump to section
+        </h3>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        
+        <input class="left_button" type="button" onClick="document.getElementById('twin_energy_problem').scrollIntoView();" value="The twin energy problem">
+        <input class="right_button" type="button" onClick="document.getElementById('current_energy_breakdown').scrollIntoView();" value="Current energy breakdown">
+      </div>
+      <div class="pure-u-1-2">
+        <input class="left_button" type="button" onClick="document.getElementById('why_renewables_are_better').scrollIntoView();" value="Why renewables are better">
+        <input class="right_button" type="button" onClick="document.getElementById('how_to_get_to_net_zero').scrollIntoView();" value="How to get to net zero">
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="twin_energy_problem">
+    <div class="pure-g">
+      <div class="pure-u-1-1">
         <h2>The twin energy problem</h2>
       </div>
     </div>
@@ -86,7 +108,7 @@
           <p id="dot_interaction">
             👆 Select a point to view that country's trends on the line chart below
             <br><br>
-            🖱️ Click and drag to see which continents are <span class="developed_countries">developed</span> vs <span class="developing_countries">developing</span>
+            🖱️ Click and drag to see which continents are <b class="developed_countries">developed</b> vs <b class="developing_countries">developing</b>
           </p>
           <p id="dot_info1">
             <b>1.</b> <b class="developing_countries">Developing countries</b> with low carbon emissions <b class="developing_countries">lack access to energy</b>.
@@ -106,24 +128,26 @@
       <div class="pure-u-1-2">
         <div id="intro_text_left">
           <p>
-            A few countries have been selected below to show the <b>downward trend</b> of <b>CO2 emissions per capita</b> in the countries with <b class="developed_countries">higher GDP per capita</b>.
+            🖱️ Clicking and dragging you can see that <span class="Africa">Africa</span> and <span class="Asia">Asia</span> preside in the <b class="developing_countries">pink</b> ellipse, the developing area. 
+            Whilst <b class="Europe">Europe</b> and <b class="Oceania">Oceania</b> preside in the <b class="developed_countries">green</b> ellipse, the developed area.
             <br><br>
-            While in countries with <b class="developing_countries">lower GDP per capita</b>, the emissions curve is <b>flattening</b>, but is <b>not decreasing</b>. 
+            A few countries have been selected in the small multiples below to show the <b>downward trend</b> of <b>CO2 emissions per capita</b> in the countries with <b class="developed_countries">higher GDP per capita</b>.
           </p>
         </div>
       </div>
       <div class="pure-u-1-2">
         <div id="intro_text_right">
           <p>
-            <span class="developed_countries">Richer countries</span> need to help <span class="developing_countries">developing nations</span> to transition their energy habits if the world is to have any hope of meeting its emissions targets.
+            Whereas in countries with <b class="developing_countries">lower GDP per capita</b>, the emissions curve is <b>flattening</b>, but is <b>not yet decreasing</b> at the same rate. 
             <br><br>
+            <b class="developed_countries">Richer countries</b> need to help <b class="developing_countries">developing nations</b> to transition their energy habits if the world is to have any hope of meeting its emissions targets.
             The obligation is on the more fortunate of us, to help those who aren't so lucky.
           </p>
         </div>
       </div>
     </div>
 
-    <div class="pure-g">
+    <div class="pure-g" id="co2_multiples_area">
       <div class="pure-u-1-1">
         <h3><b class="annual_co2_pc">CO₂ emissions per capita </b> & <b class="GDP_pc">GDP per capita</b> (<span class="developed_countries">developed</span> vs. <span class="developing_countries">developing</span> countries)</h3>
         <div id="co2_multiples"></div>
@@ -131,7 +155,7 @@
     </div>
   </div> 
 
-  <div class="section">
+  <div class="section" id="current_energy_breakdown">
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h2>The current energy breakdown</h2>
@@ -196,8 +220,13 @@
 
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h3>How are individual countries forming their electricity percentages?</h3>
-        <div id="stacked_bar_elec_source"></div>
+        <div id="stacked_parent">
+          <h3>How are individual countries forming their electricity percentages?</h3>
+          <div id="stacked_bar_elec_source"></div>
+          <p id="slide_stacked">
+            👆 Slide to see how fossil fuel percentages are decreasing over time
+          </p>
+        </div>
       </div>
     </div>
 
@@ -226,7 +255,7 @@
     
   </div>
 
-  <div class="section">
+  <div class="section" id="why_renewables_are_better">
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h2>Renewable is better, full stop</h2>
@@ -326,7 +355,7 @@
 
   </div>
 
-  <div class="section">
+  <div class="section" id="how_to_get_to_net_zero">
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h2>Who should we learn from to achieve net zero?</h2>
@@ -347,7 +376,7 @@
       </div>
       <div class="pure-u-1-2">
         <div class="intro_text_right">
-          <p>
+          <p id="intro_text_right">
             <br>
             There are a number of different and effective techniques for reaching net zero:
             <br><br>
